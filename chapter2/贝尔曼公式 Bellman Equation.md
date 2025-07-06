@@ -94,8 +94,7 @@ $$
 \begin{aligned}
 v_{\pi}(s) &= \mathbb{E}[R_{t+1} | S_t = s] + \gamma \mathbb{E}[G_{t+1} | S_t = s] \\
 &= \sum_a  \pi(a|s) \cdot \left[\sum_r p(r|s,a) \cdot r \right] + \gamma \cdot \sum_{s'} v_{\pi}(s') \cdot \sum_a p(s' | s, a)\pi(a|s) \\
-&= \sum_a \pi(a|s) \left[ \sum_r p(r|s,a) + \gamma \sum_{s'}p(s' | s,a) v_{\pi}(s') \right], \forall{s} \
-
+&= \sum_a \pi(a|s) \left[ \sum_r p(r|s,a) + \gamma \sum_{s'}p(s' | s,a) v_{\pi}(s') \right], \forall{s} \in \mathcal{S}.
 \end{aligned}
 $$
 ### 矩阵向量形式
