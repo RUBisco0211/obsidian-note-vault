@@ -62,6 +62,7 @@ v_{\pi}(s) &= \mathbb{E}[G_t | S_t = s] \\
 &= \mathbb{E}[R_{t+1} | S_t = s ] + \gamma \mathbb{E}[G_{t+1} | S_t = s]
 \end{aligned}
 $$
+
 其中$\mathbb{E}[R_{t+1} | S_t = s]$计算如下：
 $$
 \begin{aligned}
@@ -84,10 +85,14 @@ $$
 &= \sum_{s'} v_{\pi}(s') \cdot \sum_a p(s' | s, a)\pi(a|s)
 \end{aligned}
 $$
-
 **理解**
 - $\mathbb{E}[G_{t+1} | S_t = s]$是对于当前状态$s$，其可能的下一步状态得到的$G_{t+1}$的期望
 - $\mathbb{E}[G_{t+1} | S_t = s, S_{t+1} = s']$与$\mathbb{E}[G_{t+1} | S_{t+1} = s']$相等的依据[[基本概念#马尔可夫决策过程 Markov Decision Process (MDP)]]中的*Markov property*，即==与历史无关的性质==。
+
+故：
+$$
+
+$$
 ### 矩阵向量形式
 
 ### 求解状态值
