@@ -66,7 +66,7 @@ $$
 $$
 \begin{aligned}
 \mathbb{E}[R_{t+1} | S_t = s] &= \sum_a \pi(a|s) \mathbb{E}[R_{t+1} | S_t = s, A_t = a] \\ 
-&= \sum_a \pi(a|s) \cdot \left[\sum_r p(r|s,a) \cdot r \right]
+&= \sum_a  \pi(a|s) \cdot \left[\sum_r p(r|s,a) \cdot r \right] \
 \end{aligned}
 $$
 **理解：**
@@ -79,10 +79,14 @@ $\mathbb{E}[G_{t+1} | S_t = s]$计算如下：
 $$
 \begin{aligned}
 \mathbb{E}[G_{t+1} | S_t = s] &= \sum_{s'} \mathbb{E}[G_{t+1} | S_t = s, S_{t+1} = s'] \cdot p(s' | s) \\
-&= 
-
+&= \sum_{s'} \mathbb{E}[G_{t+1} | S_{t+1} = s'] \cdot p(s'|s) \\
+&= \sum_{s'} v_{\pi}(s') \cdot p(s'|s) \\
+&= \sum_{s'} v_{\pi}(s') \cdot \sum_a p(s' | s, a)\pi(a|s)
 \end{aligned}
 $$
+
+**理解**
+- $\mathbb{E}[G_{t+1} | S_t = s]$是对于当前状态$s$，其可能的下一步状态得到的$G_{t+1}$的期望
 ### 矩阵向量形式
 
 ### 求解状态值
