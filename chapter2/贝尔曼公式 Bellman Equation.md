@@ -65,10 +65,11 @@ $$
 其中$\mathbb{E}[R_{t+1} | S_t = s]$计算如下：
 $$
 \begin{aligned}
-\mathbb{E}[R_{t+1} | S_t = s] &= \sum_{a \in \mathcal{A_t}(S)} \pi(a|s) \mathbb{E}[R_{t+1} | S_t = s, A_t = a] \\ 
+\mathbb{E}[R_{t+1} | S_t = s] &= \sum_a \pi(a|s) \mathbb{E}[R_{t+1} | S_t = s, A_t = a] \\ 
 &= \sum_a \pi(a|s) \sum_r p(r|s,a)r
 \end{aligned}
 $$
+- 理解：$t$时刻，在状态$s$进行一步action获得reward的期望
 
 ### 矩阵向量形式
 
