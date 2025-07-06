@@ -14,10 +14,27 @@
 ![PixPin_2025-07-06_09-01-16.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1751763699218_PixPin_2025-07-06_09-01-16.png)
 
 即为特定条件的确定性问题上的**贝尔曼公式**
+
+---
 ## 状态值 State value
 
+考虑如下单步状态转换过程：
+$$S_t\xrightarrow{A_t}R_{t+1},S_{t+1}$$
+**此处$S$、$R$、$A$都为随机变量**
 
+-  $S_t \rightarrow A_t$ 由策略 $\pi(A_t=a|S_t=s)$ 决定
+- $S_t,A_t \rightarrow R_{t+1}$ 由 $p(R_{t+1}=r|S_t=s,A_t=a)$ 决定
+- $S_t,A_t \rightarrow S_{t+1}$ 由 $p(S_{t+1}=s'|S_t=s,A_t=a)$ 决定
 
+推广到多步的trajectory：
+$$S_t\xrightarrow{A_t}R_{t+1},S_{t+1}\xrightarrow{A_{t+1}}R_{t+2},S_{t+2}\xrightarrow{A_{t+2}}R_{t+3},\ldots$$
+对应的discounted return $G_t$
+$$G_t=R_{t+1}+\gamma R_{t+2}+\gamma^2R_{t+3}+\ldots$$
+### 定义
+
+状态值State value，为==**从状态$s$出发得到的$G_t$的期望**==
+$$v_\pi(s)=\mathbb{E}[G_t|S_t=s]$$
+可以表征状态的价值
 ## 贝尔曼公式
 
 ### 推导
