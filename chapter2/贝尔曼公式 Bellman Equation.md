@@ -22,7 +22,7 @@
 $$S_t\xrightarrow{A_t}R_{t+1},S_{t+1}$$
 **此处$S$、$R$、$A$都为随机变量**
 
--  $S_t \rightarrow A_t$ 由策略 $\pi(A_t=a|S_t=s)$ 决定
+- $S_t \rightarrow A_t$ 由策略 $\pi(A_t=a|S_t=s)$ 决定
 - $S_t,A_t \rightarrow R_{t+1}$ 由 $p(R_{t+1}=r|S_t=s,A_t=a)$ 决定
 - $S_t,A_t \rightarrow S_{t+1}$ 由 $p(S_{t+1}=s'|S_t=s,A_t=a)$ 决定
 
@@ -32,12 +32,20 @@ $$S_t\xrightarrow{A_t}R_{t+1},S_{t+1}\xrightarrow{A_{t+1}}R_{t+2},S_{t+2}\xright
 $$G_t=R_{t+1}+\gamma R_{t+2}+\gamma^2R_{t+3}+\ldots$$
 ### 定义
 
-状态值State value，为==**从状态$s$出发得到的$G_t$的期望**==
+状态值State value，为在策略$\pi$下，==**从状态$s$出发得到的$G_t$的期望**==
 $$v_\pi(s)=\mathbb{E}[G_t|S_t=s]$$
-可以表征状态的价值
-## 贝尔曼公式
+可以表征状态的价值 
+**确定性策略的状态值和**
+![PixPin_2025-07-06_09-56-26.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1751767006334_PixPin_2025-07-06_09-56-26.png)
 
+---
+## 贝尔曼公式 Bellman Equation
+
+描述不同状态的State value之间的关系
 ### 推导
+
+考虑trajectory：
+$$S_t \xrightarrow{A_t} R_{t+1},S_{t+1} \xrightarrow{A_{t+1}}R_{t+1},S_{t+2} \xrightarrow$$
 
 ### 矩阵向量形式
 

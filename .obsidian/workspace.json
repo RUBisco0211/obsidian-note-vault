@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -166,7 +167,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,12 +182,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a7647c4f7e52d880",
+  "active": "d8484ba04ed695ad",
   "lastOpenFiles": [
-    "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
-    "chapter2/贝尔曼公式 Bellman Equation.md",
     "chapter1/基本概念.md",
+    "chapter2/贝尔曼公式 Bellman Equation.md",
     "chapter0/引言.md",
+    "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
     "PixPin_2025-07-05_10-18-37.png",
     "src/PixPin_2025-07-05_10-02-03.png",
     "src/PixPin_2025-07-05_10-13-06.png",
