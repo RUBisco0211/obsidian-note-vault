@@ -105,15 +105,31 @@ $$
 > - 状态值$v_{\pi}(s)$依赖于其他状态的状态值 --> 通过自举Bootstrapping计算
 > - $\pi(a|s)$表示策略，$p(r|s,a)$和$p(s'|s,a)$是环境模型的内容
 
-### 案例
+### 案例1
 
 ![PixPin_2025-07-06_16-26-57.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1751790427311_PixPin_2025-07-06_16-26-57.png)
 
-则
+则有方程组
 $$
 \begin{aligned}
-& v_{\pi}(s_1) = 0 + \gamma v_{\pi}(s_3) \\
-& v_
+& v_{\pi}(s_1) = 0 + \gamma v_{\pi}(s_3), \\
+& v_{\pi}(s_2) = 1 + \gamma v_{\pi}(s_4), \\
+& v_{\pi}(s_3) = 1 + \gamma v_{\pi}(s_4), \\
+& v_{\pi}(s_4) = 1 + \gamma v_{\pi}(s_4). 
+\end{aligned}
+$$
+
+### 案例2
+
+![PixPin_2025-07-06_16-35-58.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1751790978257_PixPin_2025-07-06_16-35-58.png)
+
+$$
+\begin{aligned}
+ v_{\pi}(s_1) &= 0.5 \cdot [-1 + \gamma v_{\pi}(s_2)] + 0.5 \cdot [0 + \gamma v_{\pi}(s_3)] \\
+&= -0.5 + 0.5\gamma[v_{\pi}(s_2) + v_{\pi}(s_3)], \\
+v_{\pi}(s_2) &= 1 + \gamma v_{\pi}(s_4), \\
+v_{\pi}(s_3) &= 1 + \gamma v_{\pi}(s_4), \\
+v_{\pi}(s_4) &= 1 + \gamma v_{\pi}(s_4)
 \end{aligned}
 $$
 ### 矩阵向量形式
