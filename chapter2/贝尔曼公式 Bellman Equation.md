@@ -103,7 +103,19 @@ $$
 
 >[!理解]
 > - 状态值$v_{\pi}(s)$依赖于其他状态的状态值 --> 通过自举Bootstrapping计算
-> - 
+> - $\pi(a|s)$表示策略，$p(r|s,a)$和$p(s'|s,a)$是环境模型的内容
+
+### 案例
+
+![PixPin_2025-07-06_16-26-57.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1751790427311_PixPin_2025-07-06_16-26-57.png)
+
+则
+$$
+\begin{aligned}
+& v_{\pi}(s_1) = 0 + \gamma v_{\pi}(s_3) \\
+& v_
+\end{aligned}
+$$
 ### 矩阵向量形式
 
 ### 求解状态值
