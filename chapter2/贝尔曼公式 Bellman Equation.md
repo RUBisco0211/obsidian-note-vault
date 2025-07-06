@@ -62,10 +62,14 @@ v_{\pi}(s) &= \mathbb{E}[G_t | S_t = s] \\
 &= \mathbb{E}[R_{t+1} | S_t = s ] + \gamma \mathbb{E}[G_{t+1} | S_t = s]
 \end{aligned}
 $$
-即
+其中$\mathbb{E}[R_{t+1} | S_t = s]$计算如下：
 $$
-v_{\pi}(s) = \mathbb{E}[R_{t+1} | S_t = s] + \gamma 
+\begin{aligned}
+\mathbb{E}[R_{t+1} | S_t = s] &= \sum_{a \in \mathcal{A_t}(S)} \pi(a|s) \mathbb{E}[R_{t+1} | S_t = s, A_t = a] \\ 
+&= \sum_a \pi(a|s) \sum_r p(r|s,a)r
+\end{aligned}
 $$
+
 ### 矩阵向量形式
 
 ### 求解状态值
