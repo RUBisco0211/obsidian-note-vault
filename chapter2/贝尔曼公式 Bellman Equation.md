@@ -28,7 +28,7 @@ $$S_t\xrightarrow{A_t}R_{t+1},S_{t+1}$$
 
 推广到多步的trajectory：
 $$S_t\xrightarrow{A_t}R_{t+1},S_{t+1}\xrightarrow{A_{t+1}}R_{t+2},S_{t+2}\xrightarrow{A_{t+2}}R_{t+3},\ldots$$
-对应的discounted return $G_t$
+==对应的discounted return $G_t$==
 $$G_t=R_{t+1}+\gamma R_{t+2}+\gamma^2R_{t+3}+\ldots$$
 ### 定义
 
@@ -44,7 +44,7 @@ $$v_\pi(s)=\mathbb{E}[G_t|S_t=s]$$
 描述不同状态的State value之间的关系
 ### 推导
 
-考虑trajectory：
+考虑随机变量trajectory：
 $$S_t \xrightarrow{A_t} R_{t+1},S_{t+1} \xrightarrow{A_{t+1}}R_{t+1},S_{t+2} \xrightarrow{A_{t+2}}R_{t+3}, \dots$$
 则：
 $$
@@ -102,7 +102,7 @@ $$
 [^1]
 
 >[!理解]
-> - 状态值$v_{\pi}(s)$依赖于其他状态的状态值 --> 通过自举Bootstrapping计算
+> - 状态值$v_{\pi}(s)$依赖于其他状态的状态值 -> 通过自举Bootstrapping计算
 > - $\pi(a|s)$表示策略，$p(r|s,a)$和$p(s'|s,a)$是环境模型的内容
 
 ### 案例1
