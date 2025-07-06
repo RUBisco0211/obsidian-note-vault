@@ -69,7 +69,10 @@ $$
 &= \sum_a \pi(a|s) \sum_r p(r|s,a)r
 \end{aligned}
 $$
-- 理解：$t$时刻，在状态$s$进行一步action获得reward的期望
+**理解：**
+- $\pi(a|s) = p(A_t = a | S_t = s)$
+- $R_{t+1}$是$S_t$与$A_t$的函数
+- $t$时刻，在状态$s$进行一步action获得reward的期望
 
 ### 矩阵向量形式
 
