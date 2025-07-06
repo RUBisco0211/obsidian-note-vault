@@ -71,9 +71,17 @@ $$
 $$
 **理解：**
 - $\pi(a|s) = p(A_t = a | S_t = s)$
-- $R_{t+1}$是$S_t$与$A_t$的函数
-- $t$时刻，在状态$s$进行一步action获得reward的期望
+- **$R_{t+1}$是$S_t$与$A_t$的函数**
+- $\mathbb{E}[R_{t+1} | S_t = s]$在状态$s$进行一步action获得reward的期望
 
+$\mathbb{E}[G_{t+1} | S_t = s]$计算如下：
+
+$$
+\begin{aligned}
+\mathbb{E}[G_{t+1} | S_t = s] &= \
+
+\end{aligned}
+$$
 ### 矩阵向量形式
 
 ### 求解状态值
