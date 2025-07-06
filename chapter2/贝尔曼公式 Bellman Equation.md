@@ -70,10 +70,11 @@ $$
 &= \sum_a  \pi(a|s) \cdot \left[\sum_r p(r|s,a) \cdot r \right] \
 \end{aligned}
 $$
-**理解：**
-- $\pi(a|s) = p(A_t = a | S_t = s)$
-- **$R_{t+1}$是$S_t$与$A_t$的函数**
-- $\mathbb{E}[R_{t+1} | S_t = s]$在状态$s$进行一步action获得reward的期望
+
+> [!理解]
+> - $\pi(a|s) = p(A_t = a | S_t = s)$
+> - **$R_{t+1}$是$S_t$与$A_t$的函数**
+> - $\mathbb{E}[R_{t+1} | S_t = s]$在状态$s$进行一步action获得reward的期望
 
 $\mathbb{E}[G_{t+1} | S_t = s]$计算如下：
 
@@ -85,9 +86,10 @@ $$
 &= \sum_{s'} v_{\pi}(s') \cdot \sum_a p(s' | s, a)\pi(a|s)
 \end{aligned}
 $$
-**理解**
-- $\mathbb{E}[G_{t+1} | S_t = s]$是对于当前状态$s$，其可能的下一步状态得到的$G_{t+1}$的期望
-- $\mathbb{E}[G_{t+1} | S_t = s, S_{t+1} = s']$与$\mathbb{E}[G_{t+1} | S_{t+1} = s']$相等的依据[[基本概念#马尔可夫决策过程 Markov Decision Process (MDP)]]中的*Markov property*，即==与历史无关的性质==。
+
+> [!理解]
+> - $\mathbb{E}[G_{t+1} | S_t = s]$是对于当前状态$s$，其可能的下一步状态$s'$得到的$G_{t+1}$的期望
+> - $\mathbb{E}[G_{t+1} | S_t = s, S_{t+1} = s']$与$\mathbb{E}[G_{t+1} | S_{t+1} = s']$相等的依据[[基本概念#马尔可夫决策过程 Markov Decision Process (MDP)]]中的*Markov property*，即==与历史无关的性质==。
 
 故：
 $$
@@ -97,8 +99,11 @@ v_{\pi}(s) &= \mathbb{E}[R_{t+1} | S_t = s] + \gamma \mathbb{E}[G_{t+1} | S_t = 
 &= \sum_a \pi(a|s) \left[ \sum_r p(r|s,a) + \gamma \sum_{s'}p(s' | s,a) v_{\pi}(s') \right], \forall{s} \in \mathcal{S}.
 \end{aligned}
 $$
+[^1]
 ### 矩阵向量形式
 
 ### 求解状态值
 
 ## 动作值 Action value
+
+[^1]: 第二项中如何提出策略pi？
