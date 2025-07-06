@@ -45,8 +45,27 @@ $$v_\pi(s)=\mathbb{E}[G_t|S_t=s]$$
 ### 推导
 
 考虑trajectory：
-$$S_t \xrightarrow{A_t} R_{t+1},S_{t+1} \xrightarrow{A_{t+1}}R_{t+1},S_{t+2} \xrightarrow$$
-
+$$S_t \xrightarrow{A_t} R_{t+1},S_{t+1} \xrightarrow{A_{t+1}}R_{t+1},S_{t+2} \xrightarrow{A_{t+2}}R_{t+3}, \dots$$
+则：
+$$
+\begin{aligned}
+G_t &= R_{t+1}+\gamma R_{t+2}+\gamma^2 R_{t+3} + \dots, \\
+ &= R_{t+1} + \gamma(R_{t+2} + \gamma R_{t+3} + \dots), \\
+ &= R_{t+1} + \gamma G_{t+1}
+\end{aligned}
+$$
+则根据State value定义，有：
+$$
+\begin{aligned}
+v_{\pi}(s) &= \mathbb{E}[G_t | S_t = s] \\
+&= \mathbb{E}[R_{t+1} + \gamma G_{t+1} | S_t = s] \\
+&= \mathbb{E}[R_{t+1} | S_t = s ] + \gamma \mathbb{E}[G_{t+1} | S_t = s]
+\end{aligned}
+$$
+即
+$$
+v_{\pi}(s) = \mathbb{E}[R_{t+1} | S_t = s] + \gamma 
+$$
 ### 矩阵向量形式
 
 ### 求解状态值
