@@ -66,7 +66,7 @@ $$
 $$
 \begin{aligned}
 \mathbb{E}[R_{t+1} | S_t = s] &= \sum_a \pi(a|s) \mathbb{E}[R_{t+1} | S_t = s, A_t = a] \\ 
-&= \sum_a \pi(a|s) \sum_r p(r|s,a)r
+&= \sum_a \pi(a|s) \cdot \left[\sum_r p(r|s,a) \cdot r \right]
 \end{aligned}
 $$
 **理解：**
@@ -78,7 +78,8 @@ $\mathbb{E}[G_{t+1} | S_t = s]$计算如下：
 
 $$
 \begin{aligned}
-\mathbb{E}[G_{t+1} | S_t = s] &= \
+\mathbb{E}[G_{t+1} | S_t = s] &= \sum_{s'} \mathbb{E}[G_{t+1} | S_t = s, S_{t+1} = s'] \cdot p(s' | s) \\
+&= 
 
 \end{aligned}
 $$
