@@ -118,7 +118,6 @@ $$
 & v_{\pi}(s_4) = 1 + \gamma v_{\pi}(s_4). 
 \end{aligned}
 $$
-
 ### 案例2
 
 ![PixPin_2025-07-06_16-35-58.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1751790978257_PixPin_2025-07-06_16-35-58.png)

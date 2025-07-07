@@ -2,5 +2,7 @@
   "theme": "moonstone",
   "baseFontSize": 16,
   "baseFontSizeAction": true,
-  "monospaceFontFamily": "Agave Nerd Font,Cascadia Code,Monaco,Jetbrains Mono,Consolas"
+  "monospaceFontFamily": "Agave Nerd Font,Cascadia Code,Monaco,Jetbrains Mono,Consolas",
+  "accentColor": "#8067bc",
+  "cssTheme": "AnuPpuccin"
 }
