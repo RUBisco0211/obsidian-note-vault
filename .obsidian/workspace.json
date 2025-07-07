@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter1/基本概念.md",
+                "file": "chapter2/贝尔曼公式 Bellman Equation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "基本概念"
+              "title": "贝尔曼公式 Bellman Equation"
             }
           }
         ]
@@ -182,9 +182,9 @@
   },
   "active": "5cd59a702aa835d5",
   "lastOpenFiles": [
+    "chapter1/基本概念.md",
     "chapter2/贝尔曼公式 Bellman Equation.md",
     "未命名.canvas",
-    "chapter1/基本概念.md",
     "chapter7/持续差分的方法 Temporal-Difference Learning.md",
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
     "chapter5/蒙特卡洛的方法 Monte Carlo.md",
