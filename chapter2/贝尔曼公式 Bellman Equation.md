@@ -143,10 +143,22 @@ $$
 其中
 $$
 \begin{aligned}
-r_\pi(s) \triangleq \sum_a \pi(a|s) \sum_r p(r|s, a) r \\
-p_\pi(s' | s) \triangleq \sum_a \pi(a | s) p(s' | s, a)\
+r_\pi(s) \triangleq \sum_a \pi(a|s) \sum_r p(r|s, a) r, \\
+p_\pi(s' | s) \triangleq \sum_a \pi(a | s) p(s' | s, a). \\
 \end{aligned}
 $$
+令状态$s_i (i=1,2,...n).$则对$s_i$的贝尔曼公式为
+$$
+v_{\pi}(s_i) = r_{\pi}(s) + \gamma \sum_{s_j}p_{\pi}(s_j | s_i)v_{\pi}(s_j) 
+$$
+则其**矩阵向量形式为**
+$$
+v_\pi = r_\pi + \gamma P_\pi v_\pi
+$$
+其中
+- $v_\pi = [v_\pi(s_1),...,v_\pi(s_n)]^T$
+- $r_\pi = [r_\pi(s_1),...,r_\pi(s_n)]^T$
+- $P_\pi  \in \mathbb{R}^{n \times n}$ 其中$[P_\pi]_{ij} = p_\pi(s_j|s_i)$，为状态转移矩阵
 ### 求解状态值
 
 ## 动作值 Action value
