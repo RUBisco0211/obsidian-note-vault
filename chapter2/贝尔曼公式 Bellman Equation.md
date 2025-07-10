@@ -105,7 +105,7 @@ $$
 > - 状态值$v_{\pi}(s)$依赖于其他状态的状态值 -> 通过自举Bootstrapping计算
 > - $\pi(a|s)$表示策略，$p(r|s,a)$和$p(s'|s,a)$是环境模型的内容
 
-### 案例1
+#### 案例1
 
 ![PixPin_2025-07-06_16-26-57.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1751790427311_PixPin_2025-07-06_16-26-57.png)
 
@@ -118,7 +118,7 @@ $$
 & v_{\pi}(s_4) = 1 + \gamma v_{\pi}(s_4). 
 \end{aligned}
 $$
-### 案例2
+#### 案例2
 
 ![PixPin_2025-07-06_16-35-58.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1751790978257_PixPin_2025-07-06_16-35-58.png)
 
@@ -133,6 +133,20 @@ v_{\pi}(s_4) &= 1 + \gamma v_{\pi}(s_4)
 $$
 ### 矩阵向量形式
 
+贝尔曼公式重写
+$$
+\begin{aligned}
+v_{\pi}(s) &= \sum_a \pi(a|s) \left[ \sum_r p(r|s,a) + \gamma \sum_{s'}p(s' | s,a) v_{\pi}(s') \right], \forall{s} \in \mathcal{S}. \\
+&= r_{\pi}(s) + \gamma \sum_{s'}p_{\pi}(s' | s)v_{\pi}(s') 
+\end{aligned}
+$$
+其中
+$$
+\begin{aligned}
+r_\pi(s) \triangleq \sum_a \pi(a|s) \sum_r p(r|s, a) r \\
+p_\pi(s' | s) \triangleq \sum_a \pi(a | s) p(s' | s, a)\
+\end{aligned}
+$$
 ### 求解状态值
 
 ## 动作值 Action value
