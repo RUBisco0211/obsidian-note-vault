@@ -155,10 +155,20 @@ $$
 $$
 v_\pi = r_\pi + \gamma P_\pi v_\pi
 $$
-其中
-- $v_\pi = [v_\pi(s_1),...,v_\pi(s_n)]^T$
-- $r_\pi = [r_\pi(s_1),...,r_\pi(s_n)]^T$
-- $P_\pi  \in \mathbb{R}^{n \times n}$ 其中$[P_\pi]_{ij} = p_\pi(s_j|s_i)$，为状态转移矩阵
+
+> [!NOTE] 其中
+> 
+> - $v_\pi = [v_\pi(s_1),...,v_\pi(s_n)]^T$
+> - $r_\pi = [r_\pi(s_1),...,r_\pi(s_n)]^T$
+> - $P_\pi  \in \mathbb{R}^{n \times n}$ 其中$[P_\pi]_{ij} = p_\pi(s_j|s_i)$，为状态转移矩阵
+
+#### 示例
+![PixPin_2025-07-10_10-19-35.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1752113997413_PixPin_2025-07-10_10-19-35.png)
+
+
+
+
+
 ### 求解状态值
 
 ## 动作值 Action value
