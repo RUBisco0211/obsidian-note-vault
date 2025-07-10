@@ -164,7 +164,29 @@ $$
 
 #### 示例
 ![PixPin_2025-07-10_10-19-35.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1752113997413_PixPin_2025-07-10_10-19-35.png)
-
+$$
+\left[ \begin{array}{l}
+v_\pi(s_1) \\
+v_\pi(s_2) \\
+v_\pi(s_3) \\
+v_\pi(s_4)
+\end{array} \right] = \left[ \begin{array}{ll}
+r_\pi(s_1) \\
+r_\pi(s_2) \\
+r_\pi(s_3) \\
+r_\pi(s_4)
+\end{array} \right] + \gamma \left[ \begin{array}{llll}
+p_\pi(s_1|s_1) & p_\pi(s_2|s_1) & p_\pi(s_3|s_1) & p_\pi(s_4|s_1) \\
+p_\pi(s_1|s_2) & p_\pi(s_3|s_2) & p_\pi(s_3|s_2) & p_\pi(s_4|s_2) \\
+p_\pi(s_1|s_3) & p_\pi(s_2|s_3) & p_\pi(s_3|s_3) & p_\pi(s_4|s_3) \\
+p_\pi(s_1|s_4) & p_\pi(s_2|s_4) & p_\pi(s_3|s_4) & p_\pi(s_4|s_4) \\
+\end{array} \right] \left[ \begin{array}{l}
+v_\pi(s_1) \\
+v_\pi(s_2) \\
+v_\pi(s_3) \\
+v_\pi(s_4)
+\end{array} \right]
+$$
 
 
 
