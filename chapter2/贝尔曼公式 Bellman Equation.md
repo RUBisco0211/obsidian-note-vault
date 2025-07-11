@@ -162,38 +162,18 @@ $$
 > - $r_\pi = [r_\pi(s_1),...,r_\pi(s_n)]^T$
 > - $P_\pi  \in \mathbb{R}^{n \times n}$ 其中$[P_\pi]_{ij} = p_\pi(s_j|s_i)$，为状态转移矩阵
 
-#### 示例
-![PixPin_2025-07-10_10-19-35.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1752113997413_PixPin_2025-07-10_10-19-35.png)
+#### 示例1
 
-$$
-\left[ \begin{array}{l}
-v_\pi(s_1) \\
-v_\pi(s_2) \\
-v_\pi(s_3) \\
-v_\pi(s_4)
-\end{array} \right] = \left[ \begin{array}{ll}
-r_\pi(s_1) \\
-r_\pi(s_2) \\
-r_\pi(s_3) \\
-r_\pi(s_4)
-\end{array} \right] + \gamma \left[ \begin{array}{llll}
-p_\pi(s_1|s_1) & p_\pi(s_2|s_1) & p_\pi(s_3|s_1) & p_\pi(s_4|s_1) \\
-p_\pi(s_1|s_2) & p_\pi(s_3|s_2) & p_\pi(s_3|s_2) & p_\pi(s_4|s_2) \\
-p_\pi(s_1|s_3) & p_\pi(s_2|s_3) & p_\pi(s_3|s_3) & p_\pi(s_4|s_3) \\
-p_\pi(s_1|s_4) & p_\pi(s_2|s_4) & p_\pi(s_3|s_4) & p_\pi(s_4|s_4) \\
-\end{array} \right] \left[ \begin{array}{l}
-v_\pi(s_1) \\
-v_\pi(s_2) \\
-v_\pi(s_3) \\
-v_\pi(s_4)
-\end{array} \right]
-$$
+![PixPin_2025-07-11_10-09-28.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1752199787801_PixPin_2025-07-11_10-09-28.png)
 
+#### 示例2
 
+![PixPin_2025-07-11_10-11-26.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1752199904325_PixPin_2025-07-11_10-11-26.png)
 
 
 ### 求解状态值
 
+给定一个策略，求出对应状态值的过程称为**Policy Evaluation 策略评估**
 ## 动作值 Action value
 
 [^1]: ==第二项中如何提出policy $\pi(a|s)$ ？==
