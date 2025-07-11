@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300.5
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -166,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,12 +179,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5cd59a702aa835d5",
+  "active": "a7647c4f7e52d880",
   "lastOpenFiles": [
-    "未命名.canvas",
-    "chapter2/贝尔曼公式 Bellman Equation.md",
-    "chapter1/基本概念.md",
     "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
+    "chapter2/贝尔曼公式 Bellman Equation.md",
+    "未命名.canvas",
+    "chapter1/基本概念.md",
     "chapter7/持续差分的方法 Temporal-Difference Learning.md",
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
     "chapter5/蒙特卡洛的方法 Monte Carlo.md",
