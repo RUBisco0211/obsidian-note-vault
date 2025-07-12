@@ -145,7 +145,7 @@
               "state": {
                 "file": "chapter2/贝尔曼公式 Bellman Equation.md",
                 "followCursor": false,
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
@@ -167,8 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,10 +180,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5cd59a702aa835d5",
+  "active": "6c9f9b8a96d96c19",
   "lastOpenFiles": [
-    "chapter1/基本概念.md",
+    "[!help].md",
     "chapter2/贝尔曼公式 Bellman Equation.md",
+    "chapter1/基本概念.md",
     "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
     "未命名.canvas",
     "chapter7/持续差分的方法 Temporal-Difference Learning.md",

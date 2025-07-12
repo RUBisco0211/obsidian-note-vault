@@ -71,7 +71,7 @@ $$
 \end{aligned}
 $$
 
-> [!理解]
+> [!info] 理解
 > - $\pi(a|s) = p(A_t = a | S_t = s)$
 > - **$R_{t+1}$是$S_t$与$A_t$的函数**
 > - $\mathbb{E}[R_{t+1} | S_t = s]$在状态$s$进行一步action获得reward的期望
@@ -87,7 +87,7 @@ $$
 \end{aligned}
 $$
 
-> [!理解]
+> [!info] 理解
 > - $\mathbb{E}[G_{t+1} | S_t = s]$是对于当前状态$s$，其可能的下一步状态$s'$得到的$G_{t+1}$的期望
 > - $\mathbb{E}[G_{t+1} | S_t = s, S_{t+1} = s']$与$\mathbb{E}[G_{t+1} | S_{t+1} = s']$相等的依据[[基本概念#马尔可夫决策过程 Markov Decision Process (MDP)]]中的*Markov property*，即==与历史无关的性质==。
 
@@ -100,10 +100,12 @@ v_{\pi}(s) &= \mathbb{E}[R_{t+1} | S_t = s] + \gamma \mathbb{E}[G_{t+1} | S_t = 
 \end{aligned}
 $$
 
-
->[!理解]
+>[!info] 理解
 > - 状态值$v_{\pi}(s)$依赖于其他状态的状态值 -> 通过自举Bootstrapping计算
 > - $\pi(a|s)$表示策略，$p(r|s,a)$和$p(s'|s,a)$是环境模型的内容
+
+> [!help] 疑问
+> 第二项中如何提出policy $\pi(a|s)$ ？
 
 #### 案例1
 
@@ -156,7 +158,7 @@ $$
 v_\pi = r_\pi + \gamma P_\pi v_\pi
 $$
 
-> [!NOTE] 其中
+> [!info] 理解
 > 
 > - $v_\pi = [v_\pi(s_1),...,v_\pi(s_n)]^T$
 > - $r_\pi = [r_\pi(s_1),...,r_\pi(s_n)]^T$
@@ -192,11 +194,10 @@ v_k \to v_{\pi} = (I - \gamma P_{\pi})^{-1} r_{\pi}, \quad k \to \infty
 \end{align*}
 $$
 
-> [!NOTE] 证明过程
+> [!info]+ 证明过程
 > 
 > ![PixPin_2025-07-12_09-12-18.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1752282749047_PixPin_2025-07-12_09-12-18.png)
 
- 
 ## 动作值 Action value
 
 ### 定义
@@ -226,7 +227,6 @@ q_\pi(s, a) = \sum_r p(r|s, a) r + \gamma \sum_{s'} p(s' |s, a) v_\pi(s')
 \end{align*}
 $$
 
-> 
 ### 案例
 ![image.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1752287059629_20250712102410816.png)
 
@@ -236,6 +236,4 @@ q_{\pi}(s_1, a_2) = -1 + \gamma v_{\pi}(s_2),
 
 \end{align*}
 $$
-## 脚注
 
-[^1]: ==第二项中如何提出policy $\pi(a|s)$ ？==
