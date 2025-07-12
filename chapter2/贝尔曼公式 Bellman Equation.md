@@ -174,6 +174,12 @@ $$
 ### 求解状态值
 
 给定一个策略，求出对应状态值的过程称为**Policy Evaluation 策略评估**
+#### 直接求解
+$$v_\pi = \left(I - \gamma P_\pi\right)^{-1} r_\pi$$
+- 需要求逆，计算量较大
+#### 迭代法
+
+
 ## 动作值 Action value
 
 [^1]: ==第二项中如何提出policy $\pi(a|s)$ ？==
