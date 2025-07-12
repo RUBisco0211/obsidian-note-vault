@@ -213,7 +213,7 @@ $$
 $$
 
 \begin{align*}
-\mathbb{E}[G_t|S_t = s] = \gamma \left[G_t|S_t = s, A_t = a \right] \pi(a|s)
+\mathbb{E}[G_t|S_t = s] = \sum_a \mathbb{E} \left[G_t|S_t = s, A_t = a \right] \pi(a|s)
 \end{align*}
 $$
 
