@@ -220,6 +220,14 @@ $$
 $$
 v_{\pi}(s) = \sum \pi(a|s) q_{\pi}(s, a)
 $$
+$$
+\begin{align*}
+q_\pi(s, a) = \sum_r p(r|s, a) r + \gamma \sum_{s'} p(s' |s, a) v_\pi(s')
+\end{align*}
+$$
+### 案例
+![image.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1752287059629_20250712102410816.png)
+
 
 ## 脚注
 
