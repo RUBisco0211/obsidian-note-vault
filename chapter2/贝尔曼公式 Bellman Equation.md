@@ -177,7 +177,24 @@ $$
 #### 直接求解
 $$v_\pi = \left(I - \gamma P_\pi\right)^{-1} r_\pi$$
 - 需要求逆，计算量较大
-#### 迭代法
+#### ==迭代法==
+
+通过迭代
+$$
+\begin{align*}
+v_{k+1}=r_\pi+\gamma P_\pi v_k
+\end{align*}
+$$
+得到序列$\{v_0,v_1,...\}$，可以证明
+$$
+\begin{align*}
+v_k \to v_{\pi} = (I - \gamma P_{\pi})^{-1} r_{\pi}, \quad k \to \infty
+\end{align*}
+$$
+
+> [!NOTE] 证明过程
+> 
+> ![PixPin_2025-07-12_09-12-18.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1752282749047_PixPin_2025-07-12_09-12-18.png)
 
 
 ## 动作值 Action value
