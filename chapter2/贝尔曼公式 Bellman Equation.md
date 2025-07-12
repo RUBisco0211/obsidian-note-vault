@@ -199,4 +199,24 @@ $$
  
 ## 动作值 Action value
 
+### 定义
+
+agent从一个state出发选择某个action之后能得到的平均return
+记作$q_\pi(s,a)$，依赖于策略$\pi$
+$$
+\begin{align*}
+q_\pi(s, a) = \mathbb{E}[G_t|S_t = s, A_t = a]
+\end{align*}
+$$
+### 与状态值的联系
+
+$$
+
+\begin{align*}
+\mathbb{E}[G_t|S_t = s] = \gamma \left[G_t|S_t = s, A_t = a \right] \pi(a|s)
+\end{align*}
+$$
+
+## 脚注
+
 [^1]: ==第二项中如何提出policy $\pi(a|s)$ ？==
