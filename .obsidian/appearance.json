@@ -4,5 +4,8 @@
   "baseFontSizeAction": true,
   "monospaceFontFamily": "Agave Nerd Font,Cascadia Code,Monaco,Jetbrains Mono,Consolas",
   "accentColor": "#8067bc",
-  "cssTheme": "AnuPpuccin"
+  "cssTheme": "AnuPpuccin",
+  "showRibbon": true,
+  "nativeMenus": false,
+  "showViewHeader": true
 }
