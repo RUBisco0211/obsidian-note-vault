@@ -107,7 +107,7 @@ $$
 > [!help] 疑问
 > 第二项中如何提出policy $\pi(a|s)$ ？
 
-#### 案例1
+#### 示例1
 
 ![PixPin_2025-07-06_16-26-57.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1751790427311_PixPin_2025-07-06_16-26-57.png)
 
@@ -120,7 +120,7 @@ $$
 & v_{\pi}(s_4) = 1 + \gamma v_{\pi}(s_4). 
 \end{aligned}
 $$
-#### 案例2
+#### 示例2
 
 ![PixPin_2025-07-06_16-35-58.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1751790978257_PixPin_2025-07-06_16-35-58.png)
 
@@ -198,6 +198,7 @@ $$
 > 
 > ![PixPin_2025-07-12_09-12-18.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1752282749047_PixPin_2025-07-12_09-12-18.png)
 
+---
 ## 动作值 Action value
 
 ### 定义
@@ -229,13 +230,16 @@ $$
 > [!info] 其中 
 > -  $\sum_r p(r|s, a) r$是从状态$s$采取动作$a$的reward期望
 > 
-### 案例
+### 示例
 ![image.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1752287059629_20250712102410816.png)
-
+- 碰壁的reward为-1
+则对于$s_1$
 $$
 \begin{align*}
-q_{\pi}(s_1, a_2) = -1 + \gamma v_{\pi}(s_2),
-
+& q_{\pi}(s_1, a_1) = -1 + \gamma v_{\pi}(s_1), \\
+& q_{\pi}(s_1, a_2) = -1 + \gamma v_{\pi}(s_2), \\
+& q_{\pi}(s_1, a_3) = 0 + \gamma v_{\pi}(s_3), \\
+& q_{\pi}(s_1, a_4) = -1 + \gamma v_{\pi}(s_1), \\
+& q_{\pi}(s_1, a_2) = 0 + \gamma v_{\pi}(s_1).
 \end{align*}
 $$
-
