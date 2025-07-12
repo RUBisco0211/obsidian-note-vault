@@ -1,4 +1,8 @@
 {
   "promptDelete": false,
-  "showInlineTitle": true
+  "showInlineTitle": true,
+  "foldHeading": true,
+  "showLineNumber": true,
+  "rightToLeft": false,
+  "attachmentFolderPath": "assets"
 }

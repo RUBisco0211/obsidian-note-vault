@@ -226,7 +226,9 @@ $$
 q_\pi(s, a) = \sum_r p(r|s, a) r + \gamma \sum_{s'} p(s' |s, a) v_\pi(s')
 \end{align*}
 $$
-
+> [!info] 其中 
+> -  $\sum_r p(r|s, a) r$是从状态$s$采取动作$a$的reward期望
+> 
 ### 案例
 ![image.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1752287059629_20250712102410816.png)
 
