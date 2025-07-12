@@ -99,7 +99,7 @@ v_{\pi}(s) &= \mathbb{E}[R_{t+1} | S_t = s] + \gamma \mathbb{E}[G_{t+1} | S_t = 
 &= \sum_a \pi(a|s) \left[ \sum_r p(r|s,a) + \gamma \sum_{s'}p(s' | s,a) v_{\pi}(s') \right], \forall{s} \in \mathcal{S}.
 \end{aligned}
 $$
-[^1]
+
 
 >[!理解]
 > - 状态值$v_{\pi}(s)$依赖于其他状态的状态值 -> 通过自举Bootstrapping计算
@@ -225,10 +225,17 @@ $$
 q_\pi(s, a) = \sum_r p(r|s, a) r + \gamma \sum_{s'} p(s' |s, a) v_\pi(s')
 \end{align*}
 $$
+
+> 
 ### 案例
 ![image.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1752287059629_20250712102410816.png)
 
+$$
+\begin{align*}
+q_{\pi}(s_1, a_2) = -1 + \gamma v_{\pi}(s_2),
 
+\end{align*}
+$$
 ## 脚注
 
 [^1]: ==第二项中如何提出policy $\pi(a|s)$ ？==
