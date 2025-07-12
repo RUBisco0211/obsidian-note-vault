@@ -196,7 +196,7 @@ $$
 > 
 > ![PixPin_2025-07-12_09-12-18.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1752282749047_PixPin_2025-07-12_09-12-18.png)
 
-
+ 
 ## 动作值 Action value
 
 [^1]: ==第二项中如何提出policy $\pi(a|s)$ ？==
