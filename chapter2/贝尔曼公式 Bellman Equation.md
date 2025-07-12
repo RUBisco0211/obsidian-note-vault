@@ -216,6 +216,10 @@ $$
 \mathbb{E}[G_t|S_t = s] = \sum_a \mathbb{E} \left[G_t|S_t = s, A_t = a \right] \pi(a|s)
 \end{align*}
 $$
+即 
+$$
+v_{\pi}(s) = \sum \pi(a|s) q_{\pi}(s, a)
+$$
 
 ## 脚注
 
