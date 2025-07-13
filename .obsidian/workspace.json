@@ -178,18 +178,20 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "workspaces:管理工作区布局": false
     }
   },
   "active": "5cd59a702aa835d5",
   "lastOpenFiles": [
     "chapter2/贝尔曼公式 Bellman Equation.md",
+    "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
     "chapter1/基本概念.md",
     "chapter0/引言.md",
     "2025-07-12.md",
     "未命名.canvas",
     "[!help].md",
-    "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
     "chapter7/持续差分的方法 Temporal-Difference Learning.md",
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
     "chapter5/蒙特卡洛的方法 Monte Carlo.md",
