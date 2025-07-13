@@ -2,7 +2,7 @@
   "promptDelete": false,
   "showInlineTitle": true,
   "foldHeading": true,
-  "showLineNumber": true,
+  "showLineNumber": false,
   "rightToLeft": false,
   "attachmentFolderPath": "assets"
 }
