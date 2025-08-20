@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "贝尔曼公式 Bellman Equation"
             }
+          },
+          {
+            "id": "0b0e80e90be007b2",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.9.10"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -143,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
+                "file": "chapter2/贝尔曼公式 Bellman Equation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "贝尔曼最优公式 Bellman Optimality Equation 的大纲"
+              "title": "贝尔曼公式 Bellman Equation 的大纲"
             }
           },
           {
@@ -172,6 +185,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -182,7 +196,7 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "5cd59a702aa835d5",
+  "active": "0b0e80e90be007b2",
   "lastOpenFiles": [
     "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
     "chapter2/贝尔曼公式 Bellman Equation.md",

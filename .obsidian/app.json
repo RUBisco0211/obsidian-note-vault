@@ -4,5 +4,6 @@
   "foldHeading": true,
   "showLineNumber": false,
   "rightToLeft": false,
-  "attachmentFolderPath": "assets"
+  "attachmentFolderPath": "assets",
+  "readableLineLength": true
 }
