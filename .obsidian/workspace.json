@@ -22,15 +22,15 @@
             }
           },
           {
-            "id": "0b0e80e90be007b2",
+            "id": "f039af2a724e2492",
             "type": "leaf",
             "state": {
               "type": "release-notes",
               "state": {
-                "currentVersion": "1.9.10"
+                "currentVersion": "1.9.12"
               },
               "icon": "lucide-book-up",
-              "title": "版本说明 1.9.10"
+              "title": "版本说明 1.9.12"
             }
           }
         ],
@@ -196,7 +196,7 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "0b0e80e90be007b2",
+  "active": "f039af2a724e2492",
   "lastOpenFiles": [
     "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
     "chapter2/贝尔曼公式 Bellman Equation.md",
