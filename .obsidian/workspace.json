@@ -11,10 +11,14 @@
             "id": "4528ce9b797fa6aa",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "贝尔曼最优公式 Bellman Optimality Equation"
             }
           }
         ]
@@ -182,8 +186,8 @@
   "active": "4528ce9b797fa6aa",
   "lastOpenFiles": [
     "chapter2/贝尔曼公式 Bellman Equation.md",
-    "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
     "chapter1/基本概念.md",
+    "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
     "chapter0/引言.md",
     "2025-07-12.md",
     "未命名.canvas",
