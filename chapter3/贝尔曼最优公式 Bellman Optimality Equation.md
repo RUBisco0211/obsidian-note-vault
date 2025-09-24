@@ -18,6 +18,7 @@
 ---
 ## 贝尔曼最优公式 BOE
 
+实际为一最优化问题
 ### 元素形式
 $$
 \begin{align*}
@@ -32,7 +33,13 @@ $$
 $$
 v=\max _\pi\left(r_\pi+\gamma P_\pi v\right)
 $$
-其中
+其中$r_\pi \in \mathbb{R}^n$，$P_{\pi} \in \mathbb{R}^{n \times n}$
+$$
+\begin{aligned}
+& {\left[r_\pi\right]_s \triangleq \sum_a \pi(a \mid s) \sum_r p(r \mid s, a) r} \\
+& {\left[P_\pi\right]_{s, s^{\prime}}=p\left(s^{\prime} \mid s\right) \triangleq \sum_a \pi(a \mid s) \sum_{s^{\prime}} p\left(s^{\prime} \mid s, a\right)}
+\end{aligned}
+$$
 
 ---
 ## 最优状态值
