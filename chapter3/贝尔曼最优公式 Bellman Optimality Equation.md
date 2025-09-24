@@ -59,6 +59,8 @@ $$
 >[!info] 先决条件：压缩映射原理
 > - 不动点：$x \in X, f:X \rightarrow X$，若$f(x) = x$则$x$为不动点
 > - 压缩映射：若$\|f(x_{1}) - f(x_{2}) \| \leq \gamma \|x_{1} - x_{2} \|, \gamma \in (0,1)$则称$f$为一压缩映射
+> - 推广到向量函数：$x = f(x) = Ax, x \in \mathbb{R}^n, A \in \mathbb{R}^{n \times n}, \|A \| \leq \gamma < 1$则 $f(x) = Ax$为一压缩映射
+
 
 ---
 ## 最优状态值
