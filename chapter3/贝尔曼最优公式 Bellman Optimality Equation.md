@@ -7,7 +7,7 @@
 若 $v_{\pi_1}(s) \geq v_{\pi_2}(s), \forall s \in \mathcal{S}$ 则认为策略$\pi_1$优于$\pi_2$
 ### 定义
 
-若$v_{\pi^*}(s) \geq v_\pi(s), \forall s \in \mathcal{S}$对于其他任意策略$\pi$都成立，则认为$\pi^*$为最优策略
+若 $v_{\pi^*}(s) \geq v_\pi(s), \forall s \in \mathcal{S}$ 对于其他任意策略$\pi$都成立，则认为$\pi^*$为最优策略
 
 > [!question] 问题
 > - 是否存在？
@@ -97,7 +97,7 @@ $v(s) = \max_\pi \sum_a \pi(a \mid s)\left(\sum_r p(r \mid s, a) r+\gamma \sum_{
 
 需要求解的量：$v(s), v(s'), \pi(a \mid s)$
 
-### 案例
+### 案例1
 
 ![PixPin_2025-09-24_22-39-43.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1758724796174_PixPin_2025-09-24_22-39-43.png)
 
@@ -109,7 +109,9 @@ $\gamma$减小到0，策略变得及其短视，退化为完全贪心策略，�
 
 ![PixPin_2025-09-24_22-44-33.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1758725084952_PixPin_2025-09-24_22-44-33.png)
 
-对原有的奖励进行线性变换 $r \longrightarrow ar+b, a \not = 0$，不影响最佳策略
+设原有的最优状态值$v^* = \max_{\pi}(r_{\pi} + \gamma P_{\pi} v^*)$
+对原有的所有奖励进行**线性变换** $r \longrightarrow ar+b, a \not = 0$，**不影响最优策略$\pi^*$**
+新的最优状态值 $v' = av^* + \frac{b}{1-\gamma} \mathbf{1}$，其中 $\mathbf{1} = [1,\dots,1]^\top$
 
 ![PixPin_2025-09-24_22-49-07.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1758725365849_PixPin_2025-09-24_22-49-07.png)
 
