@@ -167,7 +167,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,10 +185,10 @@
   },
   "active": "4528ce9b797fa6aa",
   "lastOpenFiles": [
-    "chapter1/基本概念.md",
-    "chapter0/引言.md",
     "chapter2/贝尔曼公式 Bellman Equation.md",
     "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
+    "chapter1/基本概念.md",
+    "chapter0/引言.md",
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
     "chapter7/持续差分的方法 Temporal-Difference Learning.md",
     "chapter10/Actor-Critic 方法.md",
