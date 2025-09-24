@@ -53,13 +53,30 @@ $$
 $$
 即当前状态下的最大动作值
 
-令 $f(x) := \max _\pi\left(r_\pi+\gamma P_\pi v\right)$
-则BOE变为 $v = f(v)$
-
->[!info] 先决条件：压缩映射原理
+对于
+$$
+v=\max _\pi\left(r_\pi+\gamma P_\pi v\right)
+$$
+固定$\pi$，将等式右边看作$v$的函数，令 $f(x) := \max _\pi\left(r_\pi+\gamma P_\pi v\right)$
+则BOE变为 $v = f(v)$，需要求解该等式
+>[!info] 前导知识点：压缩映射（Contraction Ma）
+>概念：
 > - 不动点：$x \in X, f:X \rightarrow X$，若$f(x) = x$则$x$为不动点
 > - 压缩映射：若$\|f(x_{1}) - f(x_{2}) \| \leq \gamma \|x_{1} - x_{2} \|, \gamma \in (0,1)$则称$f$为一压缩映射
 > - 推广到向量函数：$x = f(x) = Ax, x \in \mathbb{R}^n, A \in \mathbb{R}^{n \times n}, \|A \| \leq \gamma < 1$则 $f(x) = Ax$为一压缩映射
+> 
+> 压缩映射定理：
+> 对于任意形式为$x = f(x)$的等式，若$f$为一压缩映射，则：
+> - 存在性：存在一个不动点$x^*$满足$x^* = f(x^*)$
+> - 唯一性：$x^*$是唯一的
+> - 算法：考虑序列$\{ x_{k}\}, x_{k+1} = f(x_{k})$，则当$k \longrightarrow \infty$时有$x_{k} \longrightarrow x^*$，且收敛速度是指数级的
+
+应用
+
+
+
+
+
 
 
 ---
