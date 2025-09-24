@@ -1,5 +1,3 @@
-## 示例
----
 ## 最优策略
 
 ### 策略的比较
@@ -16,6 +14,25 @@
 > - 是否唯一？
 > - 是随机还是确定？
 > - 如何求取？
+
+---
+## 贝尔曼最优公式 BOE
+
+### 元素形式
+$$
+\begin{align*}
+v(s) &= \max_\pi \sum_a \pi(a \mid s)\left(\sum_r p(r \mid s, a) r+\gamma \sum_{s^{\prime}} p\left(s^{\prime} \mid s, a\right) v\left(s^{\prime}\right)\right), \quad \forall s \in \mathcal{S} \\
+&= \max_\pi \sum_a \pi(a \mid s) q(s,a)
+\end{align*}
+
+
+$$
+### 向量矩阵形式
+
+$$
+v=\max _\pi\left(r_\pi+\gamma P_\pi v\right)
+$$
+其中
 
 ---
 ## 最优状态值
