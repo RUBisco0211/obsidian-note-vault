@@ -108,8 +108,7 @@ $$
 > 第二项中如何提出policy $\pi(a|s)$ ？
 
 #### 示例1
-
-![PixPin_2025-07-06_16-26-57.png](     
+![PixPin_2025-07-11_10-09-28.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1752199787801_PixPin_2025-07-11_10-09-28.png)
 
 则有方程组
 $$

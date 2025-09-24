@@ -183,9 +183,11 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "4528ce9b797fa6aa",
+  "active": "a7647c4f7e52d880",
   "lastOpenFiles": [
     "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
+    "chapter2/贝尔曼公式 Bellman Equation.md",
+    "chapter1/基本概念.md",
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
     "chapter7/持续差分的方法 Temporal-Difference Learning.md",
     "chapter10/Actor-Critic 方法.md",
@@ -193,9 +195,7 @@
     "chapter9/策略梯度的方法 Policy Gradient Methods.md",
     "chapter5/蒙特卡洛的方法 Monte Carlo.md",
     "chapter4/最优策略的求解方法.md",
-    "chapter1/基本概念.md",
     "chapter0/引言.md",
-    "chapter2/贝尔曼公式 Bellman Equation.md",
     "2025-07-12.md",
     "未命名.canvas",
     "[!help].md",
