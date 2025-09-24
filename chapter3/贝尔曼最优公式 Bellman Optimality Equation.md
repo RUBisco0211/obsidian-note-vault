@@ -69,18 +69,13 @@ $$
 > 	- 存在性：存在一个不动点$x^*$满足$x^* = f(x^*)$
 > 	- 唯一性：$x^*$是唯一的
 > 	- 算法：考虑序列$\{ x_{k}\}, x_{k+1} = f(x_{k})$，则当$k \longrightarrow \infty$时有$x_{k} \longrightarrow x^*$，且收敛速度是指数级的
-
 应用到BOE求解（需要先证明$f$为一压缩映射）：
 BOE存在唯一的解 $v^*$ ，迭代公式为 $v_{k+1} = f(v_{k}) = \max _\pi\left(r_\pi+\gamma P_\pi v_{k}\right)$
 
-假设 $v^*$ 为BOE的解，满足 $v^*  = \max _\pi\left(r_\pi+\gamma P_\pi v^*\right)$，固定 $v^*$来求解$\pi^*$，假设$\pi^* = \arg \max_{\pi}(r_{\pi} + \gamma P_{\pi}v^*)$
-则$v^* = $
+假设 $v^*$ 为BOE的解，满足 $v^*  = \max _\pi\left(r_\pi+\gamma P_\pi v^*\right)$。固定 $v^*$来求解$\pi^*$，假设$\pi^* = \arg \max_{\pi}(r_{\pi} + \gamma P_{\pi}v^*)$
+则 $v^* = r_{\pi^*} = \gamma P_{\pi^*}v^*$
+即为对应策略$\pi^*$的贝尔曼公式，故$v^* = v_{\pi^*}$，最优状态值实际上是最优策略下的对应状态值，**贝尔曼最优公式实际上是特殊的贝尔曼公式**
 
 
-
-
-
----
-## 最优状态值
 
 
