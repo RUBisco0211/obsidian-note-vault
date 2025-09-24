@@ -75,13 +75,28 @@ BOE存在唯一的解 $v^*$ ，迭代公式为 $v_{k+1} = f(v_{k}) = \max _\pi\l
 假设 $v^*$ 为BOE的解，满足 $v^*  = \max _\pi\left(r_\pi+\gamma P_\pi v^*\right)$。固定 $v^*$来求解$\pi^*$，假设$\pi^* = \arg \max_{\pi}(r_{\pi} + \gamma P_{\pi}v^*)$
 则 $v^* = r_{\pi^*} = \gamma P_{\pi^*}v^*$
 即为对应策略$\pi^*$的贝尔曼公式，故$v^* = v_{\pi^*}$，最优状态值实际上是最优策略下的对应状态值，**贝尔曼最优公式实际上是特殊的贝尔曼公式**
-
-最优策略
+对应的最优策略为
 $$
 \pi^*(a|s) = \begin{cases}
-1 \quad a = a^*(s) \\ \\
-0 \quad a \not
+1 \quad a = a^*(s) \\ 
+0 \quad a \not = a^*(s)
 \end{cases}
 $$
+其中 $a^*(s) = \arg \max_{a} q^*(a,s)$ 
 
+---
+## 分析最优策略
 
+BOE:
+$v(s) = \max_\pi \sum_a \pi(a \mid s)\left(\sum_r p(r \mid s, a) r+\gamma \sum_{s^{\prime}} p\left(s' \mid s, a\right)v(s') \right)$
+
+> [!question] 影响最优策略的因素
+> - 奖励函数设计：$r$
+> - 系统模型：$p(s' \mid s,a), p(r \mid s,a)$
+> - 折扣率：$\gamma$
+
+需要求解的量：$v(s), v(s'), \pi(a \mid s)$
+
+### 案例
+
+![Uploading file...t3nha]()
