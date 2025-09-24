@@ -53,8 +53,13 @@ $$
 $$
 即当前状态下的最大动作值
 
-令 $f(x) := \max_\pi \sum_a \pi(a \mid s) q(s,a) = \max_{a \in \mathcal{A}(s)} q(s,a)$
+令 $f(x) := \max _\pi\left(r_\pi+\gamma P_\pi v\right)$
+则BOE变为 $v = f(v)$
 
+>[!info] 先决条件：压缩映射原理
+> - 不动点：$x \in X, f:X \rightarrow X$，若$f(x) = x$则$x$为不动点
+> - 压缩映射：
+	
 ---
 ## 最优状态值
 
