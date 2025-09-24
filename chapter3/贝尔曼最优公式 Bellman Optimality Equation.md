@@ -99,4 +99,17 @@ $v(s) = \max_\pi \sum_a \pi(a \mid s)\left(\sum_r p(r \mid s, a) r+\gamma \sum_{
 
 ### 案例
 
-![Uploading file...t3nha]()
+![PixPin_2025-09-24_22-39-43.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1758724796174_PixPin_2025-09-24_22-39-43.png)
+
+减小折扣率$\gamma$，策略变得更加短视：
+
+![PixPin_2025-09-24_22-41-39.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1758724903836_PixPin_2025-09-24_22-41-39.png)
+
+$\gamma$减小到0，策略变得及其短视，退化为完全贪心策略，只关注即时奖励：
+
+![PixPin_2025-09-24_22-44-33.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1758725084952_PixPin_2025-09-24_22-44-33.png)
+
+对原有的奖励进行线性变换 $r \longrightarrow ar+b, a \not = 0$，不影响最佳策略
+
+![PixPin_2025-09-24_22-49-07.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1758725365849_PixPin_2025-09-24_22-49-07.png)
+
