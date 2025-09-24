@@ -40,6 +40,20 @@ $$
 & {\left[P_\pi\right]_{s, s^{\prime}}=p\left(s^{\prime} \mid s\right) \triangleq \sum_a \pi(a \mid s) \sum_{s^{\prime}} p\left(s^{\prime} \mid s, a\right)}
 \end{aligned}
 $$
+### 求解
+
+BOE中需要注意：$\sum_{a} \pi(a | s) = 1$
+
+则$v(s) = \max_\pi \sum_a \pi(a \mid s) q(s,a) = \max_{a \in \mathcal{A}(s)} q(s,a)$
+$$
+\begin{align*}
+&\pi(a \mid s)= \begin{cases}1 & a=a^* \\ 0 & a \neq a^*\end{cases} \\
+&a^* = \arg \max_{a} q(s,a)
+\end{align*}
+$$
+即当前状态下的最大动作值
+
+令 $f(x) := \max_\pi \sum_a \pi(a \mid s) q(s,a) = \max_{a \in \mathcal{A}(s)} q(s,a)$
 
 ---
 ## 最优状态值
