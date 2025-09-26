@@ -1,4 +1,4 @@
-## 引入：计算Return(Discounted)的方法
+******## 引入：计算Return(Discounted)的方法
 
 ### 法1：根据定义
 
@@ -161,7 +161,7 @@ $$
 > 
 > - $v_\pi = [v_\pi(s_1),...,v_\pi(s_n)]^T$
 > - $r_\pi = [r_\pi(s_1),...,r_\pi(s_n)]^T$
-> - $P_\pi  \in \mathbb{R}^{n \times n}$ 其中$[P_\pi]_{ij} = p_\pi(s_j|s_i)$，为状态转移矩阵
+> - $P_\pi  \in \mathbb{R}^{n \times n}$ 其中$[P_\pi]_{ij} = p_\pi(s_j|s_i)$，为**状态转移矩阵**
 
 #### 示例1
 
@@ -178,7 +178,7 @@ $$
 #### 直接求解
 $$v_\pi = \left(I - \gamma P_\pi\right)^{-1} r_\pi$$
 - 需要求逆，计算量较大
-#### ==迭代法==
+#### 迭代法
 
 通过迭代
 $$
