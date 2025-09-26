@@ -1,4 +1,4 @@
-******## 引入：计算Return(Discounted)的方法
+## 引入：计算Return(Discounted)的方法
 
 ### 法1：根据定义
 

@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter2/贝尔曼公式 Bellman Equation.md",
+                "file": "chapter4/最优策略的求解方法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "贝尔曼公式 Bellman Equation"
+              "title": "最优策略的求解方法"
             }
           }
         ],
@@ -200,8 +200,8 @@
   },
   "active": "c4afe52d4759305b",
   "lastOpenFiles": [
-    "chapter4/最优策略的求解方法.md",
     "chapter2/贝尔曼公式 Bellman Equation.md",
+    "chapter4/最优策略的求解方法.md",
     "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
     "chapter7/持续差分的方法 Temporal-Difference Learning.md",
     "chapter5/蒙特卡洛的方法 Monte Carlo.md",
