@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter5/基于蒙特卡洛的方法 Monte Carlo（model-free）.md",
+                "file": "chapter5/基于蒙特卡洛的方法（model-free）.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "基于蒙特卡洛的方法 Monte Carlo（model-free）"
+              "title": "基于蒙特卡洛的方法（model-free）"
             }
           }
         ]
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter5/基于蒙特卡洛的方法 Monte Carlo（model-free）.md",
+                "file": "chapter5/基于蒙特卡洛的方法（model-free）.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "基于蒙特卡洛的方法 Monte Carlo（model-free） 的大纲"
+              "title": "基于蒙特卡洛的方法（model-free） 的大纲"
             }
           },
           {
@@ -184,10 +184,10 @@
   },
   "active": "4528ce9b797fa6aa",
   "lastOpenFiles": [
+    "chapter4/基于模型的（model-based）BOE求解方法.md",
+    "chapter5/基于蒙特卡洛的方法（model-free）.md",
     "chapter2/贝尔曼公式 Bellman Equation.md",
     "chapter1/基本概念.md",
-    "chapter5/基于蒙特卡洛的方法 Monte Carlo（model-free）.md",
-    "chapter4/基于模型的（model-based）BOE求解方法.md",
     "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
     "chapter0/引言.md",
     "chapter7/持续差分的方法 Temporal-Difference Learning.md",
