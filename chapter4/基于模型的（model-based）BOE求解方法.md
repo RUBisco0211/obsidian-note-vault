@@ -36,7 +36,7 @@
 	- 初始化：给出初始状态$v_{\pi_{k}}^{(0)}$
 	- 迭代循环（第$j$次，当$\|v_{\pi_{k}}^{(k)} - v_{\pi_{k}}^{(k-1)} \| > threshold$时）：
 		- 对于每个$s \in \mathcal{S}$：
-			- 迭代：$v_{\pi_{k}}^{(j+1)}(s) = \sum_{a}\pi_{k}(a|s) \left[ \sum_{r}p(r | s,a)r + \gamma \sum_{r'} p(s' | s,a) v_{\pi_{k}}^{(j)}(s') \right]$
+			- 迭代：$v_{\pi_{k}}^{(j+1)}(s) = \sum_{a}\pi_{k}(a|s) \left[ \sum_{r}p(r | s,a)r + \gamma \sum_{s'} p(s' | s,a) v_{\pi_{k}}^{(j)}(s') \right]$
 	- 策略提升：
 	- 对于每个$s \in \mathcal{S}$:
 		- 对于每个$a \in \mathcal{A}(s)$：

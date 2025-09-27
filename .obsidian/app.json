@@ -5,5 +5,10 @@
   "showLineNumber": true,
   "rightToLeft": false,
   "attachmentFolderPath": "assets",
-  "readableLineLength": false
+  "readableLineLength": false,
+  "propertiesInDocument": "visible",
+  "showIndentGuide": true,
+  "autoPairBrackets": true,
+  "tabSize": 4,
+  "vimMode": false
 }
