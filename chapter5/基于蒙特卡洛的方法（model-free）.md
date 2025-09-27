@@ -24,15 +24,22 @@
 - 依赖模型：$$q_{\pi_{k}}(s, a) = \sum_{r}p(r | s,a)r + \gamma \sum_{s'} p(s' | s,a) v_{\pi_{k}}(s')$$
 - **不依赖模型，动作值的原始定义：**$$q_{\pi_{k}}(s, a) = \mathbb{E}[G_t|S_t = s, A_t = a]$$
 
-### 使用蒙特卡洛方法对动作值$q(s,a)$进行估计
+### 蒙特卡罗估计的基本步骤
 
-- 
+- 从初始的状态-动作组合$(s,a)$出发，按策略 $\pi_{k}$ 得到一个episode
+- 计算该episode的奖励值 $g(s,a)$
+- $g(s,a)$ 即为 $G_{t}$ 的一个采样值 $q_{\pi_{k}}(s, a) = \mathbb{E}[G_t|S_t = s, A_t = a]$
+- 多次采样得到采样集 $\{ g^{(j)}(s,a)\}$，则有 $$q_{\pi_{k}}(s, a) = \mathbb{E}[G_t|S_t = s, A_t = a] \approx \frac{1}{N} \sum_{i=1}^N g^{(i)}(s,a)  $$
+在强化学习领域，这种采样值被称作**经验 experience**
+
+### 具体实现
+
+![Uploading file...dg7mz]()
 
 
-
-
-
+---
 ## MC Exploring Starts
 
+---
 ## MC $\epsilon-$greedy
 
