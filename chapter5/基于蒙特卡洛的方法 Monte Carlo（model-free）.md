@@ -12,6 +12,9 @@
 - 策略评估（policy evaluation）：计算$v_{\pi_{k}} = r_{\pi_{k}} + \gamma P_{\pi_{k}} v_{\pi_{k}}$（贝尔曼公式），用策略计算当前状态值$v_{\pi_{k}}$
 - 策略提升（policy improvement）：计算$\pi_{k+1} = \arg \max_{\pi}(r_{\pi} + \gamma P_{\pi} v_{\pi_{k}})$，用$v_{\pi_{k}}$计算新的更优的策略
 
+策略提升的分量形式：$$ \begin{}
+
+\end{} \pi_{k+1} =  \arg \max_{\pi} \sum_{a} \pi(a \mid s) \left[ \sum_{r}p(r | s,a)r + \gamma \sum_{s'} p(s' | s,a) v_{\pi_{k}}(s') \right]$$
 
 ## MC Exploring Starts
 
