@@ -97,7 +97,7 @@ $v(s) = \max_\pi \sum_a \pi(a \mid s)\left(\sum_r p(r \mid s, a) r+\gamma \sum_{
 
 需要求解的量：$v(s), v(s'), \pi(a \mid s)$
 
-### 案例1
+### 案例
 
 ![PixPin_2025-09-24_22-39-43.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1758724796174_PixPin_2025-09-24_22-39-43.png)
 
