@@ -26,7 +26,7 @@
 
 每次迭代包括两个步骤
 - 策略评估（policy evaluation）：计算$v_{\pi_{k}} = r_{\pi_{k}} + \gamma P_{\pi_{k}} v_{\pi_{k}}$（贝尔曼公式），用策略计算当前状态值$v_{\pi_{k}}$
-- 策略提升（policy improvement）：计算$\pi_{k+1} = \arg \max_{a}(r_{\pi} + \gamma P_{\pi} v_{\pi_{k}})$，用$v_{\pi_{k}}$计算新的更优的策略（可证明）
+- 策略提升（policy improvement）：计算$\pi_{k+1} = \arg \max_{\pi}(r_{\pi} + \gamma P_{\pi} v_{\pi_{k}})$，用$v_{\pi_{k}}$计算新的更优的策略（可证明）
 ### 算法实现（分量形式）
 
 - 初始化：$p(r | s,a), p(s' | s,a)$已知，给出初始策略$\pi_{0}$

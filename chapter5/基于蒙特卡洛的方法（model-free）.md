@@ -4,11 +4,11 @@
 >- 如何在没有模型的情况下进行进行估计？ >> Monte Carlo 模拟
 
 ---
-## MC Basic
+## Monte Carlo Basic
 
 ### 思路
 
-基本思想：将策略迭代中依赖模型的部分进行替换
+基本思想：将**策略迭代**中依赖模型，即计算动作值$q(s,a)$的部分进行替换
 
 > [!info] 策略迭代
 > 策略迭代中的两个步骤
@@ -34,12 +34,20 @@
 
 ### 具体实现
 
-![Uploading file...dg7mz]()
+![PixPin_2025-09-27_21-23-00.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1758979395110_PixPin_2025-09-27_21-23-00.png)
+
+每个迭代中：
+- 策略评估：通过**蒙特卡洛估计**求出所有状态动作组合$(s,a)$对应的状态值$q_{\pi_{k}}(s,a)$
+- 策略提升：$\pi_{k+1} = \arg \max_{\pi}(r_{\pi} + \gamma P_{\pi} v_{\pi_{k}})$
+
+> [!tip] MC Basic的缺点
+> - 非常低效的方法，仅作为理论
+> 
 
 
 ---
-## MC Exploring Starts
+## Monte Carlo Exploring Starts
 
 ---
-## MC $\epsilon-$greedy
+## Monte Carlo $\epsilon-$greedy
 
