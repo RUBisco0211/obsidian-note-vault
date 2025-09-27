@@ -41,9 +41,10 @@
 - 策略提升：$\pi_{k+1} = \arg \max_{\pi}(r_{\pi} + \gamma P_{\pi} v_{\pi_{k}})$
 
 > [!tip] MC Basic的缺点
-> - 非常低效的方法，仅作为理论
-> 
+> - 非常低效的方法，仅作为蒙特卡洛方法核心思想介绍
 
+> [!info] episode的长度设置
+> 
 
 ---
 ## Monte Carlo Exploring Starts
