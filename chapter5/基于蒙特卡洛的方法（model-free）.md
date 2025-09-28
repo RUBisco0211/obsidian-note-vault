@@ -32,7 +32,7 @@
 - 多次采样得到采样集 $\{ g^{(j)}(s,a)\}$，则有 $$q_{\pi_{k}}(s, a) = \mathbb{E}[G_t|S_t = s, A_t = a] \approx \frac{1}{N} \sum_{i=1}^N g^{(i)}(s,a)  $$
 在强化学习领域，这种采样值被称作**经验 experience**
 
-### 具体实现
+### 实现
 
 ![PixPin_2025-09-27_21-23-00.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1758979395110_PixPin_2025-09-27_21-23-00.png)
 
@@ -49,6 +49,7 @@
 ---
 ## Monte Carlo Exploring Starts
 
+### 思路
 考虑网格世界中的一条路径
 $$
 s_1 \xrightarrow{a_2} s_2 \xrightarrow{a_4} s_1 \xrightarrow{a_2} s_2 \xrightarrow{a_3} s_5 \xrightarrow{a_1} \ldots
@@ -66,6 +67,13 @@ MC Basic的做法：对所有状态动作组合进行初始访问，并以此计
 
 更新策略的时机：
 ![PixPin_2025-09-28_10-17-04.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1759025840236_PixPin_2025-09-28_10-17-04.png)
+
+Generalized Policy Iteration（GPI）
+![PixPin_2025-09-28_10-58-39.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1759028337578_PixPin_2025-09-28_10-58-39.png)
+
+### 实现
+
+![PixPin_2025-09-28_10-59-48.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1759028408727_PixPin_2025-09-28_10-59-48.png)
 
 
 ---
