@@ -75,7 +75,8 @@ Generalized Policy Iteration（GPI）
 
 ![PixPin_2025-09-28_11-04-03.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1759028662347_PixPin_2025-09-28_11-04-03.png)
 
-
+>[!info] 算法细节
+>- 计算一个episode中各个子episode的reward $g$ 时，从后往前计算以减少计算量
 
 
 
