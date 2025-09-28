@@ -44,10 +44,12 @@
 > - 非常低效的方法，仅作为蒙特卡洛方法核心思想介绍
 
 > [!info] 蒙特卡洛模拟中episode的长度设置
-> 
+> - 过短：只有离目标较近的状态可以达到最优
 
 ---
 ## Monte Carlo Exploring Starts
+
+
 
 ---
 ## Monte Carlo $\epsilon-$greedy
