@@ -73,7 +73,10 @@ Generalized Policy Iteration（GPI）
 
 ### 实现
 
-![PixPin_2025-09-28_10-59-48.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1759028408727_PixPin_2025-09-28_10-59-48.png)
+![PixPin_2025-09-28_11-04-03.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1759028662347_PixPin_2025-09-28_11-04-03.png)
+
+
+
 
 
 ---

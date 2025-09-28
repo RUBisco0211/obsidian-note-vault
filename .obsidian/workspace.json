@@ -30,8 +30,21 @@
               "icon": "lucide-file",
               "title": "基于蒙特卡洛的方法（model-free）"
             }
+          },
+          {
+            "id": "355ca6050003032b",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "chapter5/Drawing 2025-09-28 11.10.32.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-09-28 11.10.32.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -153,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter5/基于蒙特卡洛的方法（model-free）.md",
+                "file": "chapter5/Drawing 2025-09-28 11.10.32.excalidraw.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "基于蒙特卡洛的方法（model-free） 的大纲"
+              "title": "Drawing 2025-09-28 11.10.32.excalidraw 的大纲"
             }
           },
           {
@@ -189,13 +202,16 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "obsidian-git:Open Git source control": false,
-      "workspaces:管理工作区布局": false
+      "workspaces:管理工作区布局": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "4528ce9b797fa6aa",
+  "active": "355ca6050003032b",
   "lastOpenFiles": [
-    "chapter4/基于模型的（model-based）BOE求解方法.md",
     "chapter5/基于蒙特卡洛的方法（model-free）.md",
+    "chapter5/Drawing 2025-09-28 11.10.32.excalidraw.md",
+    "Excalidraw",
+    "chapter4/基于模型的（model-based）BOE求解方法.md",
     "chapter2/贝尔曼公式 Bellman Equation.md",
     "chapter1/基本概念.md",
     "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
@@ -223,7 +239,6 @@
     "chapter6",
     "chapter5",
     "chapter4",
-    "chapter3",
     "欢迎.md"
   ]
 }
