@@ -49,7 +49,14 @@
 ---
 ## Monte Carlo Exploring Starts
 
-
+考虑网格世界中的一条路径
+$$
+s_1 \xrightarrow{a_2} s_2 \xrightarrow{a_4} s_1 \xrightarrow{a_2} s_2 \xrightarrow{a_3} s_5 \xrightarrow{a_1} \ldots
+$$
+概念：
+- **访问Visit**：一对状态-动作组合每次出现在路径中，称作对这个组合的一次Visit
+MC Basic的做法：对所有状态动作组合进行初始访问，并以此计算动作值$q(s,a)$。没有充分利用路径上的所有数据
+如上，在以$(s_{1},a_{2})$开始的路径中还包括了以$(s_{2},a_{4})$等组合开始的路径，可用于计算$q(s_{2},a_{4})$
 
 ---
 ## Monte Carlo $\epsilon-$greedy
