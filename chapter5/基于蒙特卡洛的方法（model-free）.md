@@ -108,7 +108,7 @@ $\epsilon = 0$时，退化为完全贪心策略；$\epsilon = 1$时，退化为�
 
 ![PixPin_2025-10-10_21-51-45.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1760104311459_PixPin_2025-10-10_21-51-45.png)
 
-### $\epsilon$-greedy 方法的收敛性
+
 
 mc-basic 和mc-exploring-starts 方法中，策略提升步骤在于求解
 $$
@@ -129,3 +129,5 @@ $$
 \pi_{k+1}\left(a \mid s_t\right)= \begin{cases}1-\frac{\left|\mathcal{A}\left(s\right)\right|-1}{\left|\mathcal{A}\left(s\right)\right|} \epsilon, & a=a^*_{k} \\ \frac{1}{\left|\mathcal{A}\left(s\right)\right|} \epsilon, & a \neq a^*_{k}\end{cases}
 $$
 其中$\Pi_{\epsilon}$是所有$\epsilon$-greedy策略的集合
+
+### $\epsilon$
