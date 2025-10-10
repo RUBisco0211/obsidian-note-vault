@@ -90,5 +90,15 @@ MC-exploring-starts方法能找到最优策略，依赖的是访问所有$(s,a)$
 - 状态和动作空间巨大的任务中不可行
 - 不通用
 
-去除
-### Soft Policy 不确定策略
+取代exploring starts的方法：soft policy，即不确定策略
+### $\epsilon$-greedy policy
+
+对于$q_{\pi}(s,a)$最大的$(s,a)$对，给予较大的选择概率，其他动作给予较小的选择概率，即
+$$
+\pi(a \mid s)= \begin{cases}1-\frac{\varepsilon}{|\mathcal{A}(s)|}(|\mathcal{A}(s)|-1), & \text { for the greedy action, } \\ \frac{\varepsilon}{|\mathcal{A}(s)|}, & \text { for the other }|\mathcal{A}(s)|-1 \text { actions. }\end{cases}
+$$
+其中$\epsilon \in [0,1]$，$\mathcal{A}(s)$为状态$s$上的动作集合
+
+> [!info] $\epsilon$-greedy 策略的思路
+> 完全贪心的策略得到的路径reward一定是最好的，但需要遍历所有的状态动作对，计算量巨大
+> 通过s
