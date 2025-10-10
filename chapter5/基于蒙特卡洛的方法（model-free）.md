@@ -99,6 +99,15 @@ $$
 $$
 其中$\epsilon \in [0,1]$，$\mathcal{A}(s)$为状态$s$上的动作集合
 
-> [!info] $\epsilon$-greedy 策略的思路
-> 完全贪心的策略得到的路径reward一定是最好的，但需要遍历所有的状态动作对，计算量巨大
-> 通过s
+> [!info] $\epsilon$-greedy 策略的思路：平衡 exploitation（对路径的充分利用） 和 exploration（路径探索的广度）
+> - 完全贪心的策略得到的路径reward一定是最好的，但需要遍历所有的状态动作对，计算量巨大
+> - soft policy牺牲一定的最优性，但不需要巨量的路径探索就能考虑到最优动作以外的其他选择，从而极大降低计算量
+
+$\epsilon = 0$时，退化为完全贪心策略；$\epsilon = 1$时，退化为随机策略
+### 算法
+
+![PixPin_2025-10-10_21-51-45.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1760104311459_PixPin_2025-10-10_21-51-45.png)
+
+### $\epsilon$-greedy 方法的收敛性
+
+mc-basic 和mc-exploring-starts 方法中，策略提升步骤
