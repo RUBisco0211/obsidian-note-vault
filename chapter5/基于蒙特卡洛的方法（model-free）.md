@@ -83,3 +83,12 @@ Generalized Policy Iteration（GPI）
 ---
 ## Monte Carlo $\epsilon-$greedy
 
+exploring starts：每次trajectory开始时，agent都要从所有可能的$(s,a)$对开始尝试进行模拟
+MC-exploring-starts方法能找到最优策略，依赖的是访问所有$(s,a)$对都会被尝试到
+
+**局限性**：
+- 状态和动作空间巨大的任务中不可行
+- 不通用
+
+去除
+### Soft Policy 不确定策略
