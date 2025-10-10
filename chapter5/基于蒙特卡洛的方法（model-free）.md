@@ -110,4 +110,22 @@ $\epsilon = 0$时，退化为完全贪心策略；$\epsilon = 1$时，退化为�
 
 ### $\epsilon$-greedy 方法的收敛性
 
-mc-basic 和mc-exploring-starts 方法中，策略提升步骤
+mc-basic 和mc-exploring-starts 方法中，策略提升步骤在于求解
+$$
+\pi_{k+1}(s)=\arg \max _{\pi \in \Pi} \sum_a \pi(a \mid s) q_{\pi_k}(s, a)
+$$
+也即完全贪心策略
+$$
+\pi_{k+1}(a \mid s)= \begin{cases}1, & a=a_k^* \\ 0, & a \neq a_k^*\end{cases}
+$$
+其中 $\Pi$ 为所有可能策略的集合，
+
+mc-$\epsilon$-greedy方法中的策略提升为
+$$
+\pi_{k+1}(s)=\arg \max _{\pi \in \Pi_{\epsilon}} \sum_a \pi(a \mid s) q_{\pi_k}(s, a)
+$$
+也即
+$$
+\pi_{k+1}\left(a \mid s_t\right)= \begin{cases}1-\frac{\left|\mathcal{A}\left(s\right)\right|-1}{\left|\mathcal{A}\left(s\right)\right|} \epsilon, & a=a^*_{k} \\ \frac{1}{\left|\mathcal{A}\left(s\right)\right|} \epsilon, & a \neq a^*_{k}\end{cases}
+$$
+其中$\Pi_{\epsilon}$是所有$\epsilon$-greedy策略的集合
