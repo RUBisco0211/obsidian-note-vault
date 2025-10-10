@@ -108,8 +108,6 @@ $\epsilon = 0$时，退化为完全贪心策略；$\epsilon = 1$时，退化为�
 
 ![PixPin_2025-10-10_21-51-45.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1760104311459_PixPin_2025-10-10_21-51-45.png)
 
-
-
 mc-basic 和mc-exploring-starts 方法中，策略提升步骤在于求解
 $$
 \pi_{k+1}(s)=\arg \max _{\pi \in \Pi} \sum_a \pi(a \mid s) q_{\pi_k}(s, a)
@@ -130,4 +128,11 @@ $$
 $$
 其中$\Pi_{\epsilon}$是所有$\epsilon$-greedy策略的集合
 
-### $\epsilon$
+### $\epsilon$参数的意义
+
+$\epsilon$ 参数衡量贪心程度，越小策略越贪心；越大策略越随机，越容易遍历到所有状态动作对
+**故在迭代刚开始时可以让$\epsilon$较大，之后逐渐减小，来加速最优策略的迭代**
+
+### $\epsilon$-greedy策略的最优性
+
+随着$\epsilon$增大，策略的最优性会降低；与最优策略的**一致性consistency**降低
