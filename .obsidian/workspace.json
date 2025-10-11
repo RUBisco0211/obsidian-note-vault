@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter5/基于蒙特卡洛的方法（model-free）.md",
+                "file": "chapter6/随机近似理论 Stochasted Approximation Theory.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "基于蒙特卡洛的方法（model-free）"
+              "title": "随机近似理论 Stochasted Approximation Theory"
             }
           }
         ]
@@ -89,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -196,8 +197,8 @@
   },
   "active": "4528ce9b797fa6aa",
   "lastOpenFiles": [
-    "chapter5/Drawing 2025-09-28 11.10.32.excalidraw.md",
     "chapter5/基于蒙特卡洛的方法（model-free）.md",
+    "chapter5/Drawing 2025-09-28 11.10.32.excalidraw.md",
     "chapter4/基于模型的（model-based）BOE求解方法.md",
     "未命名 1.base",
     "未命名.base",
