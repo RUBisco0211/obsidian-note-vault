@@ -28,7 +28,7 @@ $$
 - $a_{k}$为一正系数
 
  **哲学：没有模型就需要数据**
- 
+  
   ---
 ## 随机梯度下降 Stochastic Gradient Descent (SGD) 
 
