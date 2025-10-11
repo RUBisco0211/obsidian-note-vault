@@ -18,14 +18,18 @@ $$w_{k+1}=w_k-\alpha_k\left(w_k-x_k\right)$$
 ---
 ## Robins-Monro (RM) 算法
 
-针对表达式未知的函数方程 $g(w) = 0$ 使用RM算法进行求解
+针对**表达式未知**的函数方程 $g(w) = 0$ 使用RM算法进行求解
 $$
 w_{k+1} = w_{k} - a_{k} \tilde{g}(w_{k}, \eta_{k}), k=1,2,3,\dots
 $$
+其中
+- $w$为第$k$次迭代的方程根
+- $\tilde{g}(w_{k},\eta_{k}) = g(w_{k}) + \eta_{k}$是第$k$次对$g(w)$的带噪声$\eta$的观测值
+- $a_{k}$为一正系数
 
-
-
+ **哲学：没有模型就需要数据**
  
+  ---
 ## 随机梯度下降 Stochastic Gradient Descent (SGD) 
 
 ## SGD BGD MBGD
