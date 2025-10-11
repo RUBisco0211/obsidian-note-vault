@@ -14,8 +14,18 @@ w_{k+1}=\frac{1}{k} \sum_{i=1}^k x_i=\frac{1}{k}\left(\sum_{i=1}^{k-1} x_i+x_k\r
 $$
 **一般式：**
 $$w_{k+1}=w_k-\alpha_k\left(w_k-x_k\right)$$
+
+---
 ## Robins-Monro (RM) 算法
 
-### 随机梯度下降 Stochastic Gradient Descent (SGD) 
+针对表达式未知的函数方程 $g(w) = 0$ 使用RM算法进行求解
+$$
+w_{k+1} = w_{k} - a_{k} \tilde{g}(w_{k}, \eta_{k}), k=1,2,3,\dots
+$$
 
-### SGD BGD MBGD
+
+
+ 
+## 随机梯度下降 Stochastic Gradient Descent (SGD) 
+
+## SGD BGD MBGD
