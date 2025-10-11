@@ -28,8 +28,17 @@ $$
 - $a_{k}$为一正系数
 
  **哲学：没有模型就需要数据**
-  
-  ---
+### RM算法收敛的条件
+
+若满足
+- $0 < c_{1} \leq \nabla_{w}g(w) \leq c_{2},\forall w$
+- $\sum_{k=1}^{\infty} a_{k} = \infty$ 且 $\sum_{k=1}^{\infty} a_{k}^2 < \infty$
+- $\mathbb{E}[\eta_{k} | \mathcal{H}_{k}] = 0$ 且 $\mathbb{E}[\eta^2_{k} | \mathcal{H}_{k}] < \infty$
+	其中$\mathcal{H}_{k} = \{ w_{k},w_{k-1},\dots\}$
+则$w_{k}$以1的概率收敛到 $w^*$ ，其中$g(w^*) = 0$
+
+
+---
 ## 随机梯度下降 Stochastic Gradient Descent (SGD) 
 
 ## SGD BGD MBGD
