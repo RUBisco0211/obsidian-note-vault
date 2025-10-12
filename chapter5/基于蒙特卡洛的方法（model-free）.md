@@ -1,7 +1,7 @@
 ## 概述
 
 >[!question] 问题
->- 如何在没有模型的情况下进行进行估计？ >> Monte Carlo 模拟
+>- 如何在没有模型的情况下进行进行估计？ > Monte Carlo 模拟
 
 ---
 ## Monte Carlo Basic
@@ -75,13 +75,14 @@ Generalized Policy Iteration（GPI）
 
 ![PixPin_2025-09-28_11-04-03.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1759028662347_PixPin_2025-09-28_11-04-03.png)
 
->[!info] 算法细节
+>[!info] 细节
 >- 计算一个episode中各个子episode的reward $g$ 时，从后往前计算以减少计算量
-
-
 
 ---
 ## Monte Carlo $\epsilon-$greedy
+
+> [!warning] 收敛性
+> $\epsilon$-greedy算法的探索与收敛是矛盾的，很可能无法收敛
 
 exploring starts：每次trajectory开始时，agent都要从所有可能的$(s,a)$对开始尝试进行模拟
 MC-exploring-starts方法能找到最优策略，依赖的是访问所有$(s,a)$对都会被尝试到
@@ -133,6 +134,5 @@ $$
 $\epsilon$ 参数衡量贪心程度，越小策略越贪心；越大策略越随机，越容易遍历到所有状态动作对
 **故在迭代刚开始时可以让$\epsilon$较大，之后逐渐减小，来加速最优策略的迭代**
 
-### $\epsilon$-greedy策略的最优性
-
 随着$\epsilon$增大，策略的最优性会降低；与最优策略的**一致性consistency**降低
+
