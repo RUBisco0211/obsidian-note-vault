@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter7/持续差分的方法 Temporal-Difference Learning.md",
+                "file": "chapter5/基于蒙特卡洛的方法（model-free）.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "持续差分的方法 Temporal-Difference Learning"
+              "title": "基于蒙特卡洛的方法（model-free）"
             }
           }
         ]
@@ -153,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter7/持续差分的方法 Temporal-Difference Learning.md",
+                "file": "chapter5/基于蒙特卡洛的方法（model-free）.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "持续差分的方法 Temporal-Difference Learning 的大纲"
+              "title": "基于蒙特卡洛的方法（model-free） 的大纲"
             }
           },
           {
@@ -197,16 +197,16 @@
   "active": "4528ce9b797fa6aa",
   "lastOpenFiles": [
     "chapter4/基于模型的（model-based）BOE求解方法.md",
-    "chapter5/基于蒙特卡洛的方法（model-free）.md",
-    "chapter6/随机近似理论 Stochasted Approximation Theory.md",
+    "chapter2/贝尔曼公式 Bellman Equation.md",
+    "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
     "chapter7/持续差分的方法 Temporal-Difference Learning.md",
+    "chapter6/随机近似理论 Stochasted Approximation Theory.md",
+    "chapter5/基于蒙特卡洛的方法（model-free）.md",
     "chapter5/Drawing 2025-09-28 11.10.32.excalidraw.md",
     "未命名 1.base",
     "未命名.base",
     "Excalidraw",
-    "chapter2/贝尔曼公式 Bellman Equation.md",
     "chapter1/基本概念.md",
-    "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
     "chapter0/引言.md",
     "().md",
     "chapter10/Actor-Critic 方法.md",

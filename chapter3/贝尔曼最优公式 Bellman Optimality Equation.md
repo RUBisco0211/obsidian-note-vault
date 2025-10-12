@@ -59,6 +59,7 @@ v=\max _\pi\left(r_\pi+\gamma P_\pi v\right)
 $$
 固定$\pi$，将等式右边看作$v$的函数，令 $f(v) := \max _\pi\left(r_\pi+\gamma P_\pi v\right)$
 则BOE变为 $v = f(v)$，需要求解该等式
+
 >[!info] 前导知识点：压缩映射（contraction mapping）
 > - 概念：
 > 	- 不动点：$x \in X, f:X \rightarrow X$，若$f(x) = x$则$x$为不动点
@@ -74,7 +75,7 @@ BOE存在唯一的解 $v^*$ ，迭代公式为 $v_{k+1} = f(v_{k}) = \max _\pi\l
 
 假设 $v^*$ 为BOE的解，满足 $v^*  = \max _\pi\left(r_\pi+\gamma P_\pi v^*\right)$。固定 $v^*$来求解$\pi^*$，假设$\pi^* = \arg \max_{\pi}(r_{\pi} + \gamma P_{\pi}v^*)$
 则 $v^* = r_{\pi^*} = \gamma P_{\pi^*}v^*$
-即为对应策略$\pi^*$的贝尔曼公式，故$v^* = v_{\pi^*}$，最优状态值实际上是最优策略下的对应状态值，**贝尔曼最优公式实际上是特殊的贝尔曼公式**
+即为对应策略$\pi^*$的贝尔曼公式，故$v^* = v_{\pi^*}$，最优状态值实际上是最优策略下的对应状态值，**贝尔曼最优公式实际上是特殊的[[贝尔曼公式 Bellman Equation|贝尔曼公式]]**
 对应的最优策略为
 $$
 \pi^*(a|s) = \begin{cases}
