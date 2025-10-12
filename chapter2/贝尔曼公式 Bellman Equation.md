@@ -62,6 +62,7 @@ v_{\pi}(s) &= \mathbb{E}[G_t | S_t = s] \\
 &= \mathbb{E}[R_{t+1} | S_t = s ] + \gamma \mathbb{E}[G_{t+1} | S_t = s]
 \end{aligned}
 $$
+^bellmanequation
 
 其中$\mathbb{E}[R_{t+1} | S_t = s]$计算如下：
 $$
