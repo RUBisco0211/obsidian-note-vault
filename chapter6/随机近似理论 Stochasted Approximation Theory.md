@@ -54,4 +54,10 @@ $w$是优化参数，$X$为一随机变量
 $$使用数据采样估计梯度期望。每次迭代都需要采样多次，效率低下
 - 方法3：**随机梯度下降SGD**：$${w}_{k + 1} = {w}_{k} - {\alpha }_{k}{\nabla }_{w}f\left( {{w}_{k},{x}_{k}}\right) ,$$直接使用一次采样的梯度值进行更新（BGD中$n=1$时为SGD）
 
-SGD实际上是使用随机梯度$\nabla_{w} f(w_{k},x_{k})$来近似梯度$$
+SGD实际上是使用**随机梯度**$\nabla_{w} f(w_{k},x_{k})$来近似**梯度**$\mathbb{E}[\nabla_{w} f(w_{k},x_{k})]$
+
+>[!info] 收敛性证明
+> 即证SGD是一个特殊的RM算法
+> ![PixPin_2025-10-12_11-03-00.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1760238196633_PixPin_2025-10-12_11-03-00.png)
+
+ SGD的性质：$w_{k}$与$w^*$较远时，行为与GD类似；
