@@ -67,12 +67,19 @@ SGD实际上是使用**随机梯度**$\nabla_{w} f(w_{k},x_{k})$来近似**梯�
 
 ### 确定性形式的SGD
 
-考虑如下优化问题：$$\mathop{\min }\limits_{w}J\left( w\right)  = \frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{n}f\left( {w,{x}_{i}}\right) $$
-其中$\{ x_{i}\}_{i=1}^n$仅为一组数而非随机变量
+在机器学习算法中常见的SGD为一确定形式
 
-求解该问题的GD方法：$${w}_{k + 1} = {w}_{k} - {\alpha }_{k}{\nabla }_{w}J\left( {w}_{k}\right)  = {w}_{k} - {\alpha }_{k}\frac{1}{n}\mathop{\sum }\limits^{n}{\nabla }_{w}f\left( {{w}_{k},{x}_{i}}\right) $$
-实际情况下，数据集合可能较大，每次只能取到其中的一个数据$\nabla_{w}f(w_{k},w_{k})$，则可以使用SGD方法：$$w_{k+1} = w_{k} - \alpha_{k} \nabla_{w}f(w_{k},w_{k})$$
+考虑如下优化问题：$$\mathop{\min }\limits_{w}J\left( w\right)  = \frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{n}f\left( {w,{x}_{i}}\right) $$其中$\{ x_{i}\}_{i=1}^n$仅为一组数而非随机变量
 
+求解该问题的GD方法：$${w}_{k + 1} = {w}_{k} - {\alpha }_{k}{\nabla }_{w}J\left( {w}_{k}\right)  = {w}_{k} - {\alpha }_{k}\frac{1}{n}\mathop{\sum }\limits^{n}{\nabla }_{w}f\left( {{w}_{k},{x}_{i}}\right) $$实际情况下，数据集合可能较大，每次只能取到其中的一个数据$\nabla_{w}f(w_{k},w_{k})$，则可以使用类似SGD的方法：$$w_{k+1} = w_{k} - \alpha_{k} \nabla_{w}f(w_{k},w_{k})$$此外，由于该问题不涉及随机变量，需要手动引入在集合$\{ x_{i}\}_{i=1}^n$上**均匀分布**的随机变量$X$
+，则原问题变为：$$\mathop{\min }\limits_{w}J\left( w\right)  = \frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{n}f\left( {w,{x}_{i}}\right) = \mathbb{E}[f(w,X)]$$则该算法就是SGD算法，且在抽取$x_{k}$时应该随机抽取
 
-
+---
+## SGD、BGD和MBGD
+$$\begin{align*}
+w_{k+1}&=w_{k}-\alpha_{k}\frac{1}{n}\sum_{i=1}^{n}\nabla_{w}f(w_{k},x_{i}),\quad\mathrm{(BGD)} \\
+w_{k+1}&=w_{k}-\alpha_{k}\frac{1}{m}\sum_{j\in\mathcal{I}_{k}}\nabla_{w}f(w_{k},x_{j}),\quad({MBGD}) \\
+w_{k+1}&=w_k-\alpha_k\nabla_wf(w_k,x_k).\quad\mathrm{(SGD)}
+\end{align*}$$
+- BGD:
 
