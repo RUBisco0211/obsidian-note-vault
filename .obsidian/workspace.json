@@ -54,6 +54,30 @@
               "icon": "lucide-file",
               "title": "时序差分方法 Temporal-Difference Learning（TD learning）"
             }
+          },
+          {
+            "id": "434b44e9a91cb27c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "chapter2/贝尔曼公式 Bellman Equation.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "贝尔曼公式 Bellman Equation"
+            }
           }
         ],
         "currentTab": 1
@@ -75,7 +99,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "压缩",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +133,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -221,14 +246,14 @@
   },
   "active": "e041af2d21e35961",
   "lastOpenFiles": [
-    "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
-    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
+    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
+    "chapter2/贝尔曼公式 Bellman Equation.md",
+    "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
     "chapter1/基本概念.md",
     "chapter10/Actor-Critic 方法.md",
     "notes.base",
     "Untitled.md",
-    "chapter2/贝尔曼公式 Bellman Equation.md",
     "未命名 1.base",
     "chapter0/引言.md",
     "chapter8/值函数近似 Value Function Approximation (VFA).md",
