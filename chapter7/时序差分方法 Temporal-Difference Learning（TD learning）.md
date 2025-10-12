@@ -22,8 +22,20 @@ v_{t+1}(s)&=v_{t}(s),\quad\forall s\neq s_{t}. &(2)
 $$
 其中$s$为状态空间中的任意状态，$v_{t}(s)$为 $t$ 时刻对 $v_{\pi}(s)$ 的一个估计值；$s_{t}$代表一个trajectory中 $t$ 时刻访问到的状态
 
+- 在 $t$ 时，仅有被访问的状态 $s_{t}$ 的状态值 $v_{t}(s_{t})$ 被更新，其他未被访问的状态值不变
+- 式(2)中的更新往往被忽略
+
 > [!warning] 注意
-> TD Learning的一个特点就是边走边估计，因此$v$和$s$的下标
+> TD Learning的特点就是**边走边估计**，因此$v$和$s$的下标$t$可以看作同一个变量
+
+![PixPin_2025-10-12_15-50-55.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1760255466942_PixPin_2025-10-12_15-50-55.png)
+
+- 其中 $\bar{v}_{t} = r_{t+1} + \gamma v(s_{t+1})$ 称为TD target，代表 $v_{t}(s_{t})$ 希望被更新的方法
+- $\delta_{t} = v(s_{t}) - [r_{t+1} + \gamma v(s_{t+1})]= v(s_{t}) - \bar{v}_{t}$ 称为 TD error
+
+### TD target
+
+$\bar{v}_{t} = r_{t+1} + \gamma v(s_{t+1})$ 
 
 ---
 ## Sarsa
