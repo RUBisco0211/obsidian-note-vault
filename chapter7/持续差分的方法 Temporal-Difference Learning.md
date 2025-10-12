@@ -1,9 +1,9 @@
-## 算法
 
-### TD方法学习state values
 
-### Sarsa: TD方法学习action values
+## TD basic
 
-### Q-Learning: TD方法学习optimal action values
+## Sarsa
+
+## Q-Learning
 
 ## on-policy和off-policy方法
