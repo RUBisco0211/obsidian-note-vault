@@ -37,10 +37,12 @@ $$
 
 $\bar{v}_{t} = r_{t+1} + \gamma v(s_{t+1})$ 是算法希望 $v_{t}(s_{t})$ 接近的值，算法希望 $v_{t+1}(s_{t})$ 比 $v_{t}(s_{t})$ 更接近 $\bar{v}_{t}$
 
-> [!info] 证明：压缩映射原理
+> [!info] 证明：[[贝尔曼最优公式 Bellman Optimality Equation#^contractionmapping|压缩映射]]
 > ![PixPin_2025-10-12_16-01-44.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1760256125147_PixPin_2025-10-12_16-01-44.png)
 
+### TD error
 
+$\delta_{t} = v(s_{t}) - [r_{t+1} + \gamma v(s_{t+1})]= v(s_{t}) - \bar{v}_{t}$ 是两个时刻之间的时序差分（temporal difference），$v(s_{t})$ 是 $t$ 时刻访问的状态 $s_{t}$ 的状态值，$\bar{v}_{t}$ 是算法
 
 ---
 ## Sarsa
