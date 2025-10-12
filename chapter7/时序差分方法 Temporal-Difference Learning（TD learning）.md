@@ -14,7 +14,16 @@
 **数据**：通过策略$\pi$得到的trajectory $(s_{0},r_{1},s_{1},\dots,s_{t},r_{t+1},s_{t+1},\dots)$或$\{ (s_{t},r_{t+1},s_{t+1}) \}_{t}$
 
 TD-Basic算法：
+$$
+\begin{align*}
+v_{t+1}(s_{t})&=v_{t}(s_{t})-\alpha_{t}(s_{t})\left[v_{t}(s_{t})-[r_{t+1}+\gamma v_{t} (s_{t+1})]\right], &(1) \\
+v_{t+1}(s)&=v_{t}(s),\quad\forall s\neq s_{t}. &(2)
+\end{align*}
+$$
+其中$s$为状态空间中的任意状态，$v_{t}(s)$为 $t$ 时刻对 $v_{\pi}(s)$ 的一个估计值；$s_{t}$代表一个trajectory中 $t$ 时刻访问到的状态
 
+> [!warning] 注意
+> TD Learning的一个特点就是边走边估计，因此$v$和$s$的下标
 
 ---
 ## Sarsa
