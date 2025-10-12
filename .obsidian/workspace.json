@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter5/基于蒙特卡洛的方法（model-free）.md",
+                "file": "chapter6/随机近似理论 Stochasted Approximation Theory.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,21 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "基于蒙特卡洛的方法（model-free）"
+              "title": "随机近似理论 Stochasted Approximation Theory"
+            }
+          },
+          {
+            "id": "e9fabf4b22ab7659",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -153,13 +164,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter5/基于蒙特卡洛的方法（model-free）.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "基于蒙特卡洛的方法（model-free） 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -194,23 +204,23 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "4528ce9b797fa6aa",
+  "active": "e9fabf4b22ab7659",
   "lastOpenFiles": [
-    "chapter4/基于模型的（model-based）BOE求解方法.md",
-    "chapter2/贝尔曼公式 Bellman Equation.md",
-    "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
-    "chapter7/持续差分的方法 Temporal-Difference Learning.md",
+    "chapter0/引言.md",
+    "chapter7/时序差分方法 Temporal-Difference Learning.md",
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
+    "chapter8/值函数近似 Value Function Approximation (VFA).md",
     "chapter5/基于蒙特卡洛的方法（model-free）.md",
+    "chapter2/贝尔曼公式 Bellman Equation.md",
+    "chapter4/基于模型的（model-based）BOE求解方法.md",
+    "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
     "chapter5/Drawing 2025-09-28 11.10.32.excalidraw.md",
     "未命名 1.base",
     "未命名.base",
     "Excalidraw",
     "chapter1/基本概念.md",
-    "chapter0/引言.md",
     "().md",
     "chapter10/Actor-Critic 方法.md",
-    "chapter8/值函数近似 Value Function Approximation (VFA).md",
     "chapter9/策略梯度的方法 Policy Gradient Methods.md",
     "2025-07-12.md",
     "未命名.canvas",

@@ -10,5 +10,6 @@
   "showIndentGuide": true,
   "autoPairBrackets": true,
   "tabSize": 4,
-  "vimMode": false
+  "vimMode": false,
+  "alwaysUpdateLinks": true
 }

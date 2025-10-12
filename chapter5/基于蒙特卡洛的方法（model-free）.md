@@ -8,7 +8,7 @@
 
 ### 思路
 
-基本思想：将[[基于模型的（model-based）BOE求解方法#策略迭代 policy iteration (PI)]]中依赖模型，即计算动作值$q(s,a)$的部分进行替换
+基本思想：将[[基于模型的（model-based）BOE求解方法#策略迭代 policy iteration (PI)|策略迭代]]中依赖模型，即计算动作值$q(s,a)$的部分进行替换
 
 > [!info] 策略迭代
 > 策略迭代中的两个步骤
@@ -22,11 +22,10 @@
 
 计算 $q_{\pi_{k}}(s,a)$ 的方法：
 - 依赖模型：$$q_{\pi_{k}}(s, a) = \sum_{r}p(r | s,a)r + \gamma \sum_{s'} p(s' | s,a) v_{\pi_{k}}(s')$$
-- **不依赖模型，动作值的原始定义：**$$q_{\pi_{k}}(s, a) = \mathbb{E}[G_t|S_t = s, A_t = a]$$
-
+- **不依赖模型：[[贝尔曼公式 Bellman Equation#动作值 Action value#定义|动作值的原始定义]]**$$q_{\pi_{k}}(s, a) = \mathbb{E}[G_t|S_t = s, A_t = a]$$
 ### 蒙特卡罗估计的基本步骤
 
-- 从初始的状态-动作组合$(s,a)$出发，按策略 $\pi_{k}$ 得到一个episode
+- 从初始的**状态-动作组合**$(s,a)$出发，按策略 $\pi_{k}$ 得到一个episode
 - 计算该episode的奖励值 $g(s,a)$
 - $g(s,a)$ 即为 $G_{t}$ 的一个采样值 $q_{\pi_{k}}(s, a) = \mathbb{E}[G_t|S_t = s, A_t = a]$
 - 多次采样得到采样集 $\{ g^{(j)}(s,a)\}$，则有 $$q_{\pi_{k}}(s, a) = \mathbb{E}[G_t|S_t = s, A_t = a] \approx \frac{1}{N} \sum_{i=1}^N g^{(i)}(s,a)  $$
@@ -50,13 +49,15 @@
 ## Monte Carlo Exploring Starts
 
 ### 思路
+
 考虑网格世界中的一条路径
 $$
 s_1 \xrightarrow{a_2} s_2 \xrightarrow{a_4} s_1 \xrightarrow{a_2} s_2 \xrightarrow{a_3} s_5 \xrightarrow{a_1} \ldots
 $$
 概念：
-- **访问Visit**：一对状态-动作组合每次出现在路径中，称作对这个组合的一次Visit
+- **访问 Visit**：一对状态-动作组合每次出现在路径中，称作对这个组合的一次Visit
 MC Basic的做法：对所有状态动作组合进行初始访问，并以此计算动作值$q(s,a)$。没有充分利用路径上的所有数据
+
 > [!info]
 > 如上，在以$(s_{1},a_{2})$开始的路径中还包括了以$(s_{2},a_{4}),(s_{2},a_{3}),(s_{5},a_{1})$等组合开始的路径，可用于估算$q(s_{2},a_{4}),q(s_{2},a_{3}),q(s_{5},a_{1})$等
 >  =>用**动态规划**的思路充分利用一个episode上的所有数据进行估算
@@ -85,7 +86,7 @@ Generalized Policy Iteration（GPI）
 > $\epsilon$-greedy算法的探索与收敛是矛盾的，很可能无法收敛
 
 exploring starts：每次trajectory开始时，agent都要从所有可能的$(s,a)$对开始尝试进行模拟
-MC-exploring-starts方法能找到最优策略，依赖的是访问所有$(s,a)$对都会被尝试到
+MC-exploring-starts方法能找到最优策略，依赖的是所有$(s,a)$对都会被尝试到
 
 **局限性**：
 - 状态和动作空间巨大的任务中不可行
