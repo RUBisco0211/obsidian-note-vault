@@ -37,7 +37,6 @@ $$
 	其中$\mathcal{H}_{k} = \{ w_{k},w_{k-1},\dots\}$ 
 则$w_{k}$以1的概率收敛到 $w^*$ ，其中$g(w^*) = 0$
 
-
 ---
 ## 随机梯度下降 Stochastic Gradient Descent (SGD) 
 
