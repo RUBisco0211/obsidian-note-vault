@@ -1,4 +1,4 @@
-## 引入：从非增量到增量的方法
+## 引入：增量的均值估计问题
 
 假设有一随机变量$X$，目标是通过收集独立同分布的观测值$\{x_{i}\}_{i=1}^N$来估计$\mathbb{E}[X]$，有以下两种方法
 - non-incremental 非增量方法：$\mathbb{E}[X] \approx \bar{x}:=\frac{1}{N} \sum_{i=1}^N x_i$，需要在收集完所有观测值才能计算，效率低
@@ -28,7 +28,7 @@ $$
 - $a_{k}$为一正系数
 
  **哲学：没有模型就需要数据**
-### RM算法收敛的条件
+### 收敛条件
 
 若满足
 - $0 < c_{1} \leq \nabla_{w}g(w) \leq c_{2},\forall w$，即$g(w)$递增且导函数有上界
@@ -40,6 +40,7 @@ $$
 ---
 ## 随机梯度下降 Stochastic Gradient Descent (SGD) 
 
+### 引入
 假设要解决优化问题
 $$
 \min _w J(w)=\mathbb{E}[f(w, X)]
@@ -56,8 +57,22 @@ $$使用数据采样估计梯度期望。每次迭代都需要采样多次，效
 
 SGD实际上是使用**随机梯度**$\nabla_{w} f(w_{k},x_{k})$来近似**梯度**$\mathbb{E}[\nabla_{w} f(w_{k},x_{k})]$
 
+### 收敛性
+
 >[!info] 收敛性证明
 > 即证SGD是一个特殊的RM算法
 > ![PixPin_2025-10-12_11-03-00.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1760238196633_PixPin_2025-10-12_11-03-00.png)
 
- SGD的性质：$w_{k}$与$w^*$较远时，行为与GD类似；
+ SGD的性质：$w_{k}$与$w^*$较远时，行为与GD类似；较近时有一定随机性
+
+### 确定性形式的SGD
+
+考虑如下优化问题：$$\mathop{\min }\limits_{w}J\left( w\right)  = \frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{n}f\left( {w,{x}_{i}}\right) $$
+其中$\{ x_{i}\}_{i=1}^n$仅为一组数而非随机变量
+
+求解该问题的GD方法：$${w}_{k + 1} = {w}_{k} - {\alpha }_{k}{\nabla }_{w}J\left( {w}_{k}\right)  = {w}_{k} - {\alpha }_{k}\frac{1}{n}\mathop{\sum }\limits^{n}{\nabla }_{w}f\left( {{w}_{k},{x}_{i}}\right) $$
+实际情况下，数据集合可能较大，每次只能取到其中的一个数据$\nabla_{w}f(w_{k},w_{k})$，则可以使用SGD方法：$$w_{k+1} = w_{k} - \alpha_{k} \nabla_{w}f(w_{k},w_{k})$$
+
+
+
+

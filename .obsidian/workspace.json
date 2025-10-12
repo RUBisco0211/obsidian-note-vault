@@ -154,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter5/基于蒙特卡洛的方法（model-free）.md",
+                "file": "chapter6/随机近似理论 Stochasted Approximation Theory.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "基于蒙特卡洛的方法（model-free） 的大纲"
+              "title": "随机近似理论 Stochasted Approximation Theory 的大纲"
             }
           },
           {
