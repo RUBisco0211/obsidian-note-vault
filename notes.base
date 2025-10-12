@@ -1,0 +1,21 @@
+views:
+  - type: table
+    name: 表格
+    order:
+      - file.name
+      - file.ctime
+      - file.folder
+      - file.fullname
+      - file.mtime
+      - file.links
+    sort:
+      - property: formula.未命名 2
+        direction: ASC
+    columnSize:
+      file.name: 285
+      file.ctime: 182
+      file.fullname: 259
+    rowHeight: medium
+  - type: table
+    name: 视图
+    cardSize: 470
