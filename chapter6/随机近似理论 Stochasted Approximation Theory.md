@@ -40,4 +40,15 @@ $$
 ---
 ## 随机梯度下降 Stochastic Gradient Descent (SGD) 
 
+解决优化问题
+$$
+\min _w J(w)=\mathbb{E}[f(w, X)]
+$$
+$w$是优化参数，$X$为一随机变量
+
+- 方法1：梯度下降GD：$$w_{k+1}=w_{k}-\alpha_{k}\nabla_{w}\mathbb{E}[f(w_{k},X)]=w_{k}-\alpha_{k}\mathbb{E}[\nabla_{w}f(w_{k},X)]$$在有模型的情况下可用
+- 方法2：批次梯度下降BGD：$$\mathbb{E}\left\lbrack  {{\nabla }_{w}f\left( {{w}_{k},X}\right) }\right\rbrack   \approx  \frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{n}{\nabla }_{w}f\left( {{w}_{k},{x}_{i}}\right) .$$$${w}_{k + 1} = {w}_{k} - {\alpha }_{k}\frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{n}{\nabla }_{w}f\left( {{w}_{k},{x}_{i}}\right) .$$
+	仅有数据采样的情况
+
+---
 ## SGD BGD MBGD
