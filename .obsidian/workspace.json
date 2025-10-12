@@ -35,10 +35,24 @@
             "id": "e9fabf4b22ab7659",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "chapter7/时序差分方法 Temporal-Difference Learning.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "时序差分方法 Temporal-Difference Learning"
             }
           }
         ],
@@ -100,7 +114,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -164,12 +179,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "chapter7/时序差分方法 Temporal-Difference Learning.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "时序差分方法 Temporal-Difference Learning 的大纲"
             }
           },
           {
@@ -206,9 +222,9 @@
   },
   "active": "e9fabf4b22ab7659",
   "lastOpenFiles": [
+    "chapter6/随机近似理论 Stochasted Approximation Theory.md",
     "chapter0/引言.md",
     "chapter7/时序差分方法 Temporal-Difference Learning.md",
-    "chapter6/随机近似理论 Stochasted Approximation Theory.md",
     "chapter8/值函数近似 Value Function Approximation (VFA).md",
     "chapter5/基于蒙特卡洛的方法（model-free）.md",
     "chapter2/贝尔曼公式 Bellman Equation.md",
