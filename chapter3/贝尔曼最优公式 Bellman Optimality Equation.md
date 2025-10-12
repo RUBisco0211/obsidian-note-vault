@@ -60,7 +60,7 @@ $$
 固定$\pi$，将等式右边看作$v$的函数，令 $f(v) := \max _\pi\left(r_\pi+\gamma P_\pi v\right)$
 则BOE变为 $v = f(v)$，需要求解该等式
 
->[!info] 前导知识点：压缩映射（contraction mapping）
+>[!info] 前导知识点：压缩映射（contraction mapping）^contraction-mapping
 > - 概念：
 > 	- 不动点：$x \in X, f:X \rightarrow X$，若$f(x) = x$则$x$为不动点
 > 	- 压缩映射：若$\|f(x_{1}) - f(x_{2}) \| \leq \gamma \|x_{1} - x_{2} \|, \gamma \in (0,1)$则称$f$为一压缩映射
