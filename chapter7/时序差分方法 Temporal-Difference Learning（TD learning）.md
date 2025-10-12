@@ -6,9 +6,14 @@
 
 令其中 $R$ 为[[基本概念#奖励 Reward|奖励]]，$\gamma$ 为[[基本概念#折扣率 Discount Rate|折扣率]]
 
-
 ---
-## TD basic
+## TD Basic
+
+基于数据，学习一个给定策略的状态值State Value
+
+**数据**：通过策略$\pi$得到的trajectory $(s_{0},r_{1},s_{1},\dots,s_{t},r_{t+1},s_{t+1},\dots)$或$\{ (s_{t},r_{t+1},s_{t+1}) \}_{t}$
+
+TD-Basic算法：
 
 
 ---

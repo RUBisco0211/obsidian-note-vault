@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter7/时序差分方法 Temporal-Difference Learning.md",
+                "file": "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -24,11 +24,11 @@
                   "showSearch": false,
                   "searchQuery": "",
                   "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
+                  "unlinkedCollapsed": false
                 }
               },
               "icon": "lucide-file",
-              "title": "时序差分方法 Temporal-Difference Learning"
+              "title": "时序差分方法 Temporal-Difference Learning（TD learning）"
             }
           }
         ]
@@ -153,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter7/时序差分方法 Temporal-Difference Learning.md",
+                "file": "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "时序差分方法 Temporal-Difference Learning 的大纲"
+              "title": "时序差分方法 Temporal-Difference Learning（TD learning） 的大纲"
             }
           },
           {
@@ -196,7 +196,7 @@
   },
   "active": "c94238d9b1605fd9",
   "lastOpenFiles": [
-    "chapter7/时序差分方法 Temporal-Difference Learning.md",
+    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "chapter1/基本概念.md",
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
     "chapter10/Actor-Critic 方法.md",
