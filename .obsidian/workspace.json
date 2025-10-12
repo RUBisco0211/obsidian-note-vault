@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter5/基于蒙特卡洛的方法（model-free）.md",
+                "file": "chapter7/持续差分的方法 Temporal-Difference Learning.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "基于蒙特卡洛的方法（model-free）"
+              "title": "持续差分的方法 Temporal-Difference Learning"
             }
           }
         ]
@@ -153,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter5/基于蒙特卡洛的方法（model-free）.md",
+                "file": "chapter7/持续差分的方法 Temporal-Difference Learning.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "基于蒙特卡洛的方法（model-free） 的大纲"
+              "title": "持续差分的方法 Temporal-Difference Learning 的大纲"
             }
           },
           {
@@ -197,6 +197,7 @@
   "active": "4528ce9b797fa6aa",
   "lastOpenFiles": [
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
+    "chapter7/持续差分的方法 Temporal-Difference Learning.md",
     "chapter5/基于蒙特卡洛的方法（model-free）.md",
     "chapter5/Drawing 2025-09-28 11.10.32.excalidraw.md",
     "chapter4/基于模型的（model-based）BOE求解方法.md",
@@ -207,7 +208,6 @@
     "chapter1/基本概念.md",
     "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
     "chapter0/引言.md",
-    "chapter7/持续差分的方法 Temporal-Difference Learning.md",
     "().md",
     "chapter10/Actor-Critic 方法.md",
     "chapter8/值函数近似 Value Function Approximation (VFA).md",

@@ -37,6 +37,11 @@ $$
 	其中$\mathcal{H}_{k} = \{ w_{k},w_{k-1},\dots\}$ 
 则$w_{k}$以1的概率收敛到 $w^*$ ，其中$g(w^*) = 0$
 
+> [!info] 收敛条件
+> - 梯度需要有上下界
+> - 步长系数$a_{k}$不能减小得太快也不能太慢
+> - 噪声期望为0,方差不为0
+
 ---
 ## 随机梯度下降 Stochastic Gradient Descent (SGD) 
 
@@ -86,4 +91,4 @@ w_{k+1}&=w_k-\alpha_k\nabla_wf(w_k,x_k).\quad\mathrm{(SGD)}
 - SGD：每次使用采样中的一条数据进行迭代
 
 一般来说，MBGD的随机性比SGD更小，比BGD更大，但比BGD更灵活高效
-$m=1$时变为SGD，$m=n$时变为BGD
+$m=1$ 时变为SGD，$m=n$ 时变为BGD
