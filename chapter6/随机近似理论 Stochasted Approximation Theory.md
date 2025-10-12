@@ -31,10 +31,10 @@ $$
 ### RM算法收敛的条件
 
 若满足
-- $0 < c_{1} \leq \nabla_{w}g(w) \leq c_{2},\forall w$
-- $\sum_{k=1}^{\infty} a_{k} = \infty$ 且 $\sum_{k=1}^{\infty} a_{k}^2 < \infty$
-- $\mathbb{E}[\eta_{k} | \mathcal{H}_{k}] = 0$ 且 $\mathbb{E}[\eta^2_{k} | \mathcal{H}_{k}] < \infty$
-	其中$\mathcal{H}_{k} = \{ w_{k},w_{k-1},\dots\}$
+- $0 < c_{1} \leq \nabla_{w}g(w) \leq c_{2},\forall w$，即$g(w)$递增且导函数有上界
+- $\sum_{k=1}^{\infty} a_{k} = \infty$ 且 $\sum_{k=1}^{\infty} a_{k}^2 < \infty$，确保任意选取$w_{1}$都能收敛
+- $\mathbb{E}[\eta_{k} | \mathcal{H}_{k}] = 0$ 且 $\mathbb{E}[\eta^2_{k} | \mathcal{H}_{k}] < \infty$，常见情况为$\{\eta_{k}\}$为独立同分布
+	其中$\mathcal{H}_{k} = \{ w_{k},w_{k-1},\dots\}$ 
 则$w_{k}$以1的概率收敛到 $w^*$ ，其中$g(w^*) = 0$
 
 
