@@ -30,7 +30,7 @@ $$
 
 ![PixPin_2025-10-12_15-50-55.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1760255466942_PixPin_2025-10-12_15-50-55.png)
 
-- 其中 $\bar{v}_{t} = r_{t+1} + \gamma v(s_{t+1})$ 称为TD target，代表 $v(s_{t})$ 希望被更新的方法
+- 其中 $\bar{v}_{t} = r_{t+1} + \gamma v(s_{t+1})$ 称为TD target，代表 $v(s_{t})$ 希望被更新的方向
 - $\delta_{t} = v(s_{t}) - [r_{t+1} + \gamma v(s_{t+1})]= v(s_{t}) - \bar{v}_{t}$ 称为 TD error
 
 ### TD target
