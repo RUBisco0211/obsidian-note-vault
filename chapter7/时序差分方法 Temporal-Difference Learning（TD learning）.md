@@ -13,7 +13,7 @@
 
 **数据**：通过策略$\pi$得到的trajectory $(s_{0},r_{1},s_{1},\dots,s_{t},r_{t+1},s_{t+1},\dots)$或$\{ (s_{t},r_{t+1},s_{t+1}) \}_{t}$
 
-TD-Basic算法：
+TD-Basic算法（**通过一个策略估计状态值，不估计动作值或最佳策略**）：
 $$
 \begin{align*}
 v_{t+1}(s_{t})&=v_{t}(s_{t})-\alpha_{t}(s_{t})\left[v_{t}(s_{t})-[r_{t+1}+\gamma v_{t} (s_{t+1})]\right], &(1) \\
@@ -48,10 +48,6 @@ $\delta_{t} = v(s_{t}) - [r_{t+1} + \gamma v(s_{t+1})]= v(s_{t}) - \bar{v}_{t}$ 
 则 $$\mathbb{E}[\delta_{\pi,t} | S_{t} = s_{t}] = v_{\pi}(s_{t}) - \mathbb{E}[R_{t+1} + \gamma v_{\pi}(S_{t+1}) | S_{t} = s_{t}] = 0$$
 其中 $\mathbb{E}[R_{t+1} + \gamma v_{\pi}(S_{t+1}) | S_{t} = s_{t}] = v_{\pi}(s_{t})$ （[[贝尔曼公式 Bellman Equation#^bellmanequation|贝尔曼公式]]）
 故 $v_{t} = v_{\pi}$ 时 $\delta_{t} = 0$，表征了 $v_{t}$ 和 $v_{\pi}$ 之间的误差
-
-### 性质
-
-
 
 ---
 ## Sarsa
