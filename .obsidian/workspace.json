@@ -30,33 +30,8 @@
               "icon": "lucide-file",
               "title": "时序差分方法 Temporal-Difference Learning（TD learning）"
             }
-          },
-          {
-            "id": "3de18b2a624522d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "未命名.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "未命名"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -219,13 +194,13 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "3de18b2a624522d3",
+  "active": "c94238d9b1605fd9",
   "lastOpenFiles": [
-    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
-    "未命名.md",
     "chapter8/值函数近似 Value Function Approximation (VFA).md",
-    "chapter9/策略梯度的方法 Policy Gradient Methods.md",
+    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "notes.base",
+    "未命名.md",
+    "chapter9/策略梯度的方法 Policy Gradient Methods.md",
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
     "chapter2/贝尔曼公式 Bellman Equation.md",
     "chapter1/基本概念.md",
