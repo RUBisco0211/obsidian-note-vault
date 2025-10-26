@@ -217,11 +217,10 @@ q_{t+1}(s,a) = \left \{
 
 $$
 Q-Learning 中 TD-target 为 $r_{t+1} + \gamma \max_{a \in \mathcal{A}} q_{t}(s_{t+1}, a)$ 
-
+依赖的数据为$s_{t},a_{t},r_{t+1},s_{t+1}$。其中$s_{t}$给定，$a_{t}$由**某种策略**得到，之后$r_{t+1},s_{t+1}$通过与模型的交互得到
 ### Q-Learning 依赖的BOE
 
 $$q(s, a) = \mathbb{E} [ R_{t+1} + \gamma \max_{a} q(S_{t+1}, a) \mid S_t = s, A_t = a ], \quad \forall s, a.$$
-
 ### Q-Learning 的两种实现
 
 #### on-policy 版本
@@ -230,11 +229,14 @@ $$q(s, a) = \mathbb{E} [ R_{t+1} + \gamma \max_{a} q(S_{t+1}, a) \mid S_t = s, A
 
 在由$s_{t}$选择$a_{t}$时，直接使用进行策略提升的策略$\pi_{t}(s_{t})$进行，由与环境交互得到$r_{t+1},s_{t+1}$
 则行为策略和目标策略相同
-
-之后用$\epsilon$-greedy策略进行策略提升
+**之后用$\epsilon$-greedy策略进行策略提升**（目标策略还要作为行为策略进行数据采样，需要满足exploration要求）
 
 #### off-policy版本
 
+![PixPin_2025-10-26_16-25-58.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1761467168203_PixPin_2025-10-26_16-25-58.png)
+
+假设有一**行为策略 $\pi_{b}$** 负责生成trajectory经验数据
+策略提升可以直接使用greedy的**确定性策略$\pi_{T}$**（目标策略不会用于数据采样，故无需满足exploration要求）
 
 ---
 ## on-policy和off-policy方法
