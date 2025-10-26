@@ -159,16 +159,20 @@ $$
 ---
 ## Expected Sarsa
 
+把Sarsa中的$q_{t}(s_{t+1},a_{t+1})$替换为**对该状态上各个不同动作得到的动作值的期望** $\mathbb{E}[q_{t}(s_{t+1},A)])$，即$v_{t}(s_{t+1})$
+
 $$
 \begin{equation}
 q_{t+1}(s,a) = \left \{ 
 \begin{aligned}
-&q_{t}(s,a) - \alpha_{t}(s,a) \big[q_{t}(s,a) - (r_{t+1} + \gamma \mathbb{E}[q_{t}(s_{t+1},A)]) \big], \quad (s,a) = (s_{t},a_{t}) \\ \\
-&q_{t}(s,a), \quad \forall(s,a) \neq (s_{t},a_{t})
+&q_{t}(s,a) - \alpha_{t}(s,a) \big[q_{t}(s,a) - (r_{t+1} + \gamma \mathbb{E}[q_{t}(s_{t+1},A)]) \big], \quad &(s,a) = (s_{t},a_{t}) \\ \\
+&q_{t}(s,a), \quad &\forall(s,a) \neq (s_{t},a_{t})
 \end{aligned}
 \right.
 \end{equation}
 $$
+其中$\mathbb{E}[q_t(s_{t+1},A)]=\sum_{a}\pi_{t}(a|s_{t+1})q_{t}(s_{t+1},a)\doteq v_{t}(s_{t+1})$
+
 
 ---
 ## $n$-step Sarsa
