@@ -222,6 +222,20 @@ Q-Learning 中 TD-target 为 $r_{t+1} + \gamma \max_{a \in \mathcal{A}} q_{t}(s_
 
 $$q(s, a) = \mathbb{E} [ R_{t+1} + \gamma \max_{a} q(S_{t+1}, a) \mid S_t = s, A_t = a ], \quad \forall s, a.$$
 
+### Q-Learning 的两种实现
+
+#### on-policy 版本
+
+![PixPin_2025-10-26_16-20-12.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1761466817981_PixPin_2025-10-26_16-20-12.png)
+
+在由$s_{t}$选择$a_{t}$时，直接使用进行策略提升的策略$\pi_{t}(s_{t})$进行，由与环境交互得到$r_{t+1},s_{t+1}$
+则行为策略和目标策略相同
+
+之后用$\epsilon$-greedy策略进行策略提升
+
+#### off-policy版本
+
+
 ---
 ## on-policy和off-policy方法
 
@@ -232,8 +246,8 @@ $$q(s, a) = \mathbb{E} [ R_{t+1} + \gamma \max_{a} q(S_{t+1}, a) \mid S_t = s, A
 
 ### 两种RL方法
 
-- **on-policy**：行为策略和目标策略相同，即用同一个策略来生成采样数据并进行策略提升（policy improvement）
-- **off-policy**：两个策略分离
+- **on-policy**：行为策略和目标策略不可分离，即只能用同一个策略来生成采样数据并进行策略提升（policy improvement）
+- **off-policy**：两个策略可以分离
 
 ### off-policy方法的优势
 
@@ -255,5 +269,6 @@ $$q(s, a) = \mathbb{E} [ R_{t+1} + \gamma \max_{a} q(S_{t+1}, a) \mid S_t = s, A
 
 > [!example] [[#Q-Learning：直接估计最优动作值 | Q-Learning]]
 > - Q-Learning 要解决的问题是求解一个贝尔曼最优公式，本身不依赖于任何策略$$q(s, a) = \mathbb{E} [ R_{t+1} + \gamma \max_{a} q(S_{t+1}, a) \mid S_t = s, A_t = a ], \quad \forall s, a.$$
-> - 依赖的样本数据为$(s_{t},a_{t},r_{t+1},s_{t+1})$，给定$s_{t}$，则$a_{t}$可由
+> - 依赖的样本数据为$(s_{t},a_{t},r_{t+1},s_{t+1})$。给定$s_{t}$，则$a_{t}$**可由任意策略生成**，且由$(s_{t},a_{t})$得到$(r_{t+1},s_{t+1})$的过程不需要任何策略参与。
 > 
+> 故Q-Learning 的两个策略可以不相同，可以有on-policy和off-policy的两种实现
