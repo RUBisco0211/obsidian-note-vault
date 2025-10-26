@@ -177,10 +177,19 @@ $$
 
 ### Expected Sarsa依赖的贝尔曼公式
 
-$q_{\pi}(s,a) = \mathbb{E}\big[ R_{t+1} + \gamma \mathbb{E}_{A_{t+1}} \big]$
+$$q_{\pi}(s,a) = \mathbb{E}\big[ R_{t+1} + \gamma \mathbb{E}_{A_{t+1} \sim \pi(S_{t+1})} [q_{\pi}(S_{t+1},A_{t+1})] \mid S_{t} = s,A_{t} = a \big] , \quad\forall s,a$$
+
+即
+$$q_{\pi}(s,a)=\mathbb{E}\left[R_{t+1}+\gamma v_{\pi}(S_{t+1})|S_{t}=s,A_{t}=a\right]$$
 
 ---
 ## $n$-step Sarsa
+
+$n$-step Sarsa是Sarsa的一种推广，可以变形为Sarsa和Monte Carlo两种方法
+
+考虑动作值的定义$q_\pi(s,a)=\mathbb{E}[G_t|S_t=s,A_t=a].$
+其中$G_{t}$有多种分解形式
+![PixPin_2025-10-26_13-08-58.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1761455352641_PixPin_2025-10-26_13-08-58.png)
 
 
 ---
