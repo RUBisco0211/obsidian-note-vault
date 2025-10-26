@@ -49,6 +49,13 @@ $\delta_{t} = v(s_{t}) - [r_{t+1} + \gamma v(s_{t+1})]= v(s_{t}) - \bar{v}_{t}$ 
 其中 $\mathbb{E}[R_{t+1} + \gamma v_{\pi}(S_{t+1}) | S_{t} = s_{t}] = v_{\pi}(s_{t})$ （[[贝尔曼公式 Bellman Equation#^bellmanequation|贝尔曼公式]]）
 故 $v_{t} = v_{\pi}$ 时 $\delta_{t} = 0$，表征了 $v_{t}$ 和 $v_{\pi}$ 之间的误差
 
+### TD算法的实质：求解贝尔曼公式
+
+给出[[贝尔曼公式 Bellman Equation#贝尔曼公式 Bellman Equation|贝尔曼公式]]的一个新定义
+$$v_{\pi}(s) = \mathbb{E}[R + \gamma G | S = s], s \in \mathcal{S}$$
+其中$G$为跳到下一个状态的discounted return
+$\mathbb{E}[G | S = s] = \sum_{a} \pi(a | s) \sum_{s'}p(s' | s,a) v_{\pi}(s') = \mathbb{E}()$
+
 ---
 ## Sarsa
 
@@ -56,4 +63,4 @@ $\delta_{t} = v(s_{t}) - [r_{t+1} + \gamma v(s_{t+1})]= v(s_{t}) - \bar{v}_{t}$ 
 ## Q-Learning
 
 ---
-## on-policy和off-policy方法
+## on-policy和off-

@@ -89,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -197,13 +196,13 @@
   },
   "active": "c94238d9b1605fd9",
   "lastOpenFiles": [
-    "chapter8/值函数近似 Value Function Approximation (VFA).md",
+    "chapter2/贝尔曼公式 Bellman Equation.md",
     "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
+    "chapter6/随机近似理论 Stochasted Approximation Theory.md",
+    "chapter8/值函数近似 Value Function Approximation (VFA).md",
     "notes.base",
     "未命名.md",
     "chapter9/策略梯度的方法 Policy Gradient Methods.md",
-    "chapter6/随机近似理论 Stochasted Approximation Theory.md",
-    "chapter2/贝尔曼公式 Bellman Equation.md",
     "chapter1/基本概念.md",
     "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
     "chapter10/Actor-Critic 方法.md",

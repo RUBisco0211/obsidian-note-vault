@@ -58,7 +58,7 @@ $w$是优化参数，$X$为一随机变量
 {w}_{k + 1} = {w}_{k} - {\alpha }_{k}\frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{n}{\nabla }_{w}f\left( {{w}_{k},{x}_{i}}\right) .
 \end{align*}
 $$使用数据采样估计梯度期望。每次迭代都需要采样多次，效率低下
-- 方法3：**随机梯度下降SGD**：$${w}_{k + 1} = {w}_{k} - {\alpha }_{k}{\nabla }_{w}f\left( {{w}_{k},{x}_{k}}\right) ,$$直接使用一次采样的梯度值进行更新（BGD中$n=1$时为SGD）
+- 方法3：**随机梯度下降SGD**：$${w}_{k + 1} = {w}_{k} - {\alpha }_{k}{\nabla }_{w}f\left( {{w}_{k},{x}_{k}}\right) ,$$直接使用**一次采样**的梯度值进行更新（BGD中$n=1$时为SGD）
 
 SGD实际上是使用**随机梯度**$\nabla_{w} f(w_{k},x_{k})$来近似**梯度**$\mathbb{E}[\nabla_{w} f(w_{k},x_{k})]$
 
