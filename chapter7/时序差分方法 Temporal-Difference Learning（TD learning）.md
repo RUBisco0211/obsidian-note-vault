@@ -234,3 +234,16 @@ $$q(s, a) = \mathbb{E} [ R_{t+1} + \gamma \max_{a} q(S_{t+1}, a) \mid S_t = s, A
 
 - **on-policy**：行为策略和目标策略相同，即用同一个策略来生成采样数据并进行策略提升（policy improvement）
 - **off-policy**：两个策略分离
+
+### off-policy方法的优势
+
+可以在其他策略给出的**经验（样本数据）** 的基础上进行最优策略搜索
+一般来说，行为策略可以被设定为更加**exploratory探索性**，以尽可能使用较少的数据来访问所有的state-action pair，而目标策略被设定为更加确定，以求尽快收敛到最优策略
+
+### 如何判断一个方法是on还是off-policy？
+
+- 算法在数学上是在解决什么问题？
+- 算法需要依赖什么来实现？
+
+>[!example] 例子：Sarsa
+> - Sarsa 
