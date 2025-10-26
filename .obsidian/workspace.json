@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
+                "file": "chapter8/值函数近似 Value Function Approximation (VFA).md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "时序差分方法 Temporal-Difference Learning（TD learning）"
+              "title": "值函数近似 Value Function Approximation (VFA)"
             }
           }
         ]
@@ -154,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
+                "file": "chapter8/值函数近似 Value Function Approximation (VFA).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "时序差分方法 Temporal-Difference Learning（TD learning） 的大纲"
+              "title": "值函数近似 Value Function Approximation (VFA) 的大纲"
             }
           },
           {
@@ -178,7 +178,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,12 +197,12 @@
   },
   "active": "c94238d9b1605fd9",
   "lastOpenFiles": [
+    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "chapter8/值函数近似 Value Function Approximation (VFA).md",
     "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
     "chapter4/基于模型的（model-based）BOE求解方法.md",
     "chapter5/基于蒙特卡洛的方法（model-free）.md",
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
-    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "[[.md",
     "chapter2/贝尔曼公式 Bellman Equation.md",
     "notes.base",
