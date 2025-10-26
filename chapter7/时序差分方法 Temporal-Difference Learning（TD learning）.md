@@ -142,7 +142,7 @@ q_{t+1}(s,a) = \left\{
 $$
 依赖的数据为$(s_{t},a_{t},r_{t+1}, s_{t+1}, a_{t+1})$，故称Sarsa
 
-### Sarsa 实质：求解贝尔曼公式
+### Sarsa 依赖的贝尔曼公式
 
 Sarsa依赖的贝尔曼公式形式：
 $$
@@ -173,6 +173,11 @@ q_{t+1}(s,a) = \left \{
 $$
 其中$\mathbb{E}[q_t(s_{t+1},A)]=\sum_{a}\pi_{t}(a|s_{t+1})q_{t}(s_{t+1},a)\doteq v_{t}(s_{t+1})$
 
+相比Sarsa，计算量更大，但不需要依赖数据$a_{t+1}$，涉及的随机变量减少
+
+### Expected Sarsa依赖的贝尔曼公式
+
+$q_{\pi}(s,a) = \mathbb{E}\big[ R_{t+1} + \gamma \mathbb{E}_{A_{t+1}} \big]$
 
 ---
 ## $n$-step Sarsa
