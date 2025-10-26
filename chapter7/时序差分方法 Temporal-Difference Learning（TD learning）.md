@@ -121,10 +121,23 @@ $$
 - **MC 方法** 强调“完整体验后再学”，不依赖估计（non-bootstrapping），理论上无偏但方差大。
 
 ---
-## Sarsa
+## Sarsa：学习动作值
+
+通过估计动作值$q(s,a)$来求解最优策略
+
+
+
+---
+## Expected Sarsa
+
+
+---
+## $n$-step Sarsa
+
 
 ---
 ## Q-Learning
+
 
 ---
 ## on-policy和off-policy方法
