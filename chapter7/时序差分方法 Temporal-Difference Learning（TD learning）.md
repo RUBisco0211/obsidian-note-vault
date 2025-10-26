@@ -49,12 +49,26 @@ $\delta_{t} = v(s_{t}) - [r_{t+1} + \gamma v(s_{t+1})]= v(s_{t}) - \bar{v}_{t}$ 
 其中 $\mathbb{E}[R_{t+1} + \gamma v_{\pi}(S_{t+1}) | S_{t} = s_{t}] = v_{\pi}(s_{t})$ （[[贝尔曼公式 Bellman Equation#^bellmanequation|贝尔曼公式]]）
 故 $v_{t} = v_{\pi}$ 时 $\delta_{t} = 0$，表征了 $v_{t}$ 和 $v_{\pi}$ 之间的误差
 
-### TD算法的实质：求解贝尔曼公式
+### TD算法的实质：用RM算法求解贝尔曼公式
 
 给出[[贝尔曼公式 Bellman Equation#贝尔曼公式 Bellman Equation|贝尔曼公式]]的一个新定义
-$$v_{\pi}(s) = \mathbb{E}[R + \gamma G | S = s], s \in \mathcal{S}$$
+$$v_{\pi}(s) = \mathbb{E}[R + \gamma G | S = s], \quad s \in \mathcal{S}$$
 其中$G$为跳到下一个状态的discounted return
-$\mathbb{E}[G | S = s] = \sum_{a} \pi(a | s) \sum_{s'}p(s' | s,a) v_{\pi}(s') = \mathbb{E}()$
+$\mathbb{E}[G | S = s] = \sum_{a} \pi(a | s) \sum_{s'}p(s' | s,a) v_{\pi}(s') = \mathbb{E}[v_{\pi}(S') | S = s]$
+其中$S'$为下一个状态
+则
+$$
+v_{\pi}(s) = \mathbb{E}[R + \gamma v_{\pi}(S') | S = s], \quad s \in \mathcal{S}
+$$
+也称**Bellman expectation equation 贝尔曼期望公式**
+接下来用RM算法求解：
+定义
+$$\begin{align}
+g(v(s)) &= v(s) - v_{\pi}(s) \\ &= v(s) - \mathbb{E}[R + \gamma v_{\pi}(S') |s]
+\end{align}
+$$
+
+
 
 ---
 ## Sarsa
@@ -63,4 +77,4 @@ $\mathbb{E}[G | S = s] = \sum_{a} \pi(a | s) \sum_{s'}p(s' | s,a) v_{\pi}(s') = 
 ## Q-Learning
 
 ---
-## on-policy和off-
+## on-policy和off-policy方法
