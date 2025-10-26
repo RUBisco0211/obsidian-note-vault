@@ -8,6 +8,6 @@
   "showRibbon": true,
   "nativeMenus": false,
   "showViewHeader": true,
-  "textFontFamily": "",
+  "textFontFamily": "Cambria Math",
   "interfaceFontFamily": ""
 }
