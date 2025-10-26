@@ -67,6 +67,16 @@ $$\begin{align}
 g(v(s)) &= v(s) - v_{\pi}(s) \\ &= v(s) - \mathbb{E}[R + \gamma v_{\pi}(S') |s]
 \end{align}
 $$
+已有对 $R$ 的采样值 $r$，$S'$ 的采样 $s'$ 
+则观测值噪声函数
+$$
+\begin{align}
+\tilde{g}(v(s)) &= v(s) - [r + \gamma v_{\pi}(s')] \\ \\
+&=  v(s) - \mathbb{E}[R + \gamma v_{\pi}(S') | s ]  + \mathbb{E}[R + \gamma v_{\pi}(S') | s] - (r + \gamma v_{\pi}(s')) \\ \\
+&= g(v(s)) + \eta
+\end{align}
+$$
+
 
 
 
