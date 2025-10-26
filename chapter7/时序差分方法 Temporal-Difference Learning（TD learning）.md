@@ -185,12 +185,22 @@ $$q_{\pi}(s,a)=\mathbb{E}\left[R_{t+1}+\gamma v_{\pi}(S_{t+1})|S_{t}=s,A_{t}=a\r
 ---
 ## $n$-step Sarsa
 
-$n$-step Sarsa是Sarsa的一种推广，可以变形为Sarsa和Monte Carlo两种方法
+**$n$-step Sarsa是Sarsa的一种推广，可以变形为Sarsa和Monte Carlo两种方法**
 
 考虑动作值的定义$q_\pi(s,a)=\mathbb{E}[G_t|S_t=s,A_t=a].$
 其中$G_{t}$有多种分解形式
+
 ![PixPin_2025-10-26_13-08-58.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1761455352641_PixPin_2025-10-26_13-08-58.png)
 
+![PixPin_2025-10-26_13-11-17.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1761455487947_PixPin_2025-10-26_13-11-17.png)
+
+则$n$-step Sarsa的迭代公式为：
+
+![PixPin_2025-10-26_13-12-33.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1761455561010_PixPin_2025-10-26_13-12-33.png)
+
+使用$G^{(\infty)}$分解法，再令$\alpha_{t} = 1$，则
+$$q_{t+1}(s,a) = r_{t+1} + \gamma r_{t+2} + \gamma^2 r_{t+3} + \dots$$
+即为Monte Carlo方法
 
 ---
 ## Q-Learning
