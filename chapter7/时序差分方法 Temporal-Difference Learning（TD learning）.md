@@ -88,7 +88,7 @@ v_{t+1}(s) &= v_{t}(s) - \alpha_{t} \tilde{g}(v_{t}(s)) \\ \\
 \end{align}
 $$
 其中$v_{k}(s)$为在第$k$次迭代时对$v_{\pi}(s)$的估计值，$r_{k},s'_{k}$为第$k$次迭代时得到的采样值
->[!info] 从RM算法到TD方法
+>[!important] 从RM算法到TD方法
 > 以上RM迭代公式现有的缺陷：
 > - 这是仅对一个状态$s$的估计，因此采样$\{(s,r,s')\}$为对状态$s$的**重复采样**
 > - $v_{\pi}(s_{t}')$未知，无法计算
@@ -96,6 +96,19 @@ $$
 > 因此作出以下两点修改：
 > - 将对状态$s$的**重复采样**$\{(s,r,s')\}$替换为一个trajectory$\{(s_{t},r_{t+1},s_{t+1})\}$，$t$时仅更新被访问到的状态$s_{t}$的状态值估计$v_{t}(s_{t}) \to v_{t+1}(s_{t})$，对其他$s \not = s_{t}$则令$v_{t+1}(s) = v_{t}(s)$，即不变
 > - 将$v_{\pi}(s_{t}')$替换为估计值$v_{t}(s')$，且由于上述采样trajectory中$s_{t} \xrightarrow{r_{t+1}} s_{t+1}$，故估计值为$v_{t}(s_{t+1})$
+
+修改后即为TD方法
+$$
+\begin{equation}
+v_{t+1}(s) = \left\{
+\begin{aligned}
+&v_{t}(s)-\alpha_{t}(s)v_{t}(s)-[r_{t+1}+\gamma v_{t} (s_{t+1})]\right],\quad &s = s_{t},  \\\\
+& v_{t}(s),\quad &\forall s\neq s_{t}. 
+\end{aligned}
+\right.
+\end{equation}
+$$
+
 
 
 ---
