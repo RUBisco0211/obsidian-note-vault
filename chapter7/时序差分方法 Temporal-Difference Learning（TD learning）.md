@@ -62,21 +62,32 @@ v_{\pi}(s) = \mathbb{E}[R + \gamma v_{\pi}(S') | S = s], \quad s \in \mathcal{S}
 $$
 也称**Bellman expectation equation 贝尔曼期望公式**
 接下来用RM算法求解：
-定义
+定义目标函数
 $$\begin{align}
-g(v(s)) &= v(s) - v_{\pi}(s) \\ &= v(s) - \mathbb{E}[R + \gamma v_{\pi}(S') |s]
+g(v(s)) &= v(s) - v_{\pi}(s) \\ \\  
+&= v(s) - \mathbb{E}[R + \gamma v_{\pi}(S') |s]
 \end{align}
 $$
 已有对 $R$ 的采样值 $r$，$S'$ 的采样 $s'$ 
-则观测值噪声函数
+则带噪声的观测值函数
 $$
 \begin{align}
-\tilde{g}(v(s)) &= v(s) - [r + \gamma v_{\pi}(s')] \\ \\
-&=  v(s) - \mathbb{E}[R + \gamma v_{\pi}(S') | s ]  + \mathbb{E}[R + \gamma v_{\pi}(S') | s] - (r + \gamma v_{\pi}(s')) \\ \\
+\tilde{g}(v(s)) &= v(s) - [r + \gamma v_{\pi}(s')]  \\
+ \\
+&= \Big( v(s) - \mathbb{E}[R + \gamma v_{\pi}(S') | s ]   \Big) + \Big( \mathbb{E}[R + \gamma v_{\pi}(S') | s] - (r + \gamma v_{\pi}(s')) \Big) \\  \\
+
 &= g(v(s)) + \eta
 \end{align}
 $$
 
+则RM算法的迭代公式为：
+$$
+\begin{align}
+v_{k+1}(s) &= v_{k}(s) - \alpha_{k} \tilde{g}(v_{k}(s)) \\ \\
+&= v_{k}(s) - \alpha_{k}\Big( v_{k}(s) - [r_{k} + \gamma v_{\pi}(s_{k}')] \Big) \quad k=1,2,3,\dots
+\end{align}
+$$
+其中$v_{k}(s)$为在第$k$次迭代时对$v_{\pi}(s)$的估计值，$r_{k},s'_{k}$为第$k$次迭代时得到的采样值
 
 
 
