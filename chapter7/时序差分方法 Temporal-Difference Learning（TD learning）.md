@@ -243,7 +243,13 @@ $$q(s, a) = \mathbb{E} [ R_{t+1} + \gamma \max_{a} q(S_{t+1}, a) \mid S_t = s, A
 ### 如何判断一个方法是on还是off-policy？
 
 - 算法在数学上是在解决什么问题？
-- 算法需要依赖什么来实现？
+- 算法需要依赖什么数据来实现？数据的生成依赖于什么策略？
 
->[!example] 例子：Sarsa
-> - Sarsa 
+>[!example] [[#Sarsa：学习动作值|Sarsa]]
+> - Sarsa 要解决的问题是求解一个给定策略的贝尔曼公式
+> $$q_{\pi}(s,a) = \mathbb{E}[R + \gamma q_{\pi}(S',A') | s,a], \quad \forall s \in \mathcal{S},a \in \mathcal{A}(s)$$
+> - 依赖的数据为$(s_{t},a_{t},r_{t+1}, s_{t+1},a_{t+1})$。若$s_{t},a_{t}$给定，则$r_{t+1},s_{t+1}$不依赖于任何策略；但$a_{t+1}$需要依赖于策略$\pi_{t}(s_{t+1})$，这个策略来自Sarsa自身进行的policy improvement
+> ![PixPin_2025-10-26_16-02-21.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1761465750798_PixPin_2025-10-26_16-02-21.png)
+> 
+> 因此$\pi_{t}$既是行为策略，也是目标策略。故Sarsa是一个on-policy方法
+

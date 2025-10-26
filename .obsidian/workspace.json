@@ -89,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -196,8 +197,9 @@
   },
   "active": "c94238d9b1605fd9",
   "lastOpenFiles": [
-    "chapter6/随机近似理论 Stochasted Approximation Theory.md",
+    "[[.md",
     "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
+    "chapter6/随机近似理论 Stochasted Approximation Theory.md",
     "chapter8/值函数近似 Value Function Approximation (VFA).md",
     "chapter5/基于蒙特卡洛的方法（model-free）.md",
     "chapter2/贝尔曼公式 Bellman Equation.md",
