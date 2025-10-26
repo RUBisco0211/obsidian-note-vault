@@ -159,6 +159,16 @@ $$
 ---
 ## Expected Sarsa
 
+$$
+\begin{equation}
+q_{t+1}(s,a) = \left \{ 
+\begin{aligned}
+&q_{t}(s,a) - \alpha_{t}(s,a) \big[q_{t}(s,a) - (r_{t+1} + \gamma \mathbb{E}[q_{t}(s_{t+1},A)]) \big], \quad (s,a) = (s_{t},a_{t}) \\ \\
+&q_{t}(s,a), \quad \forall(s,a) \neq (s_{t},a_{t})
+\end{aligned}
+\right.
+\end{equation}
+$$
 
 ---
 ## $n$-step Sarsa
