@@ -125,7 +125,21 @@ $$
 
 通过估计动作值$q(s,a)$来求解最优策略
 
+目标：估计一个给定策略的动作值
+假设有经验序列$\{ (s_{t},a_{t},r_{t+1}, s_{t+1}, a_{t+1})\}_{t}$
+则Sarsa迭代公式
+$$
+\begin{equation}
+q_{t+1}(s,a) = \left\{ 
+\begin{aligned}
 
+&q_{t}(s,a) - \alpha_{t}(s,a) \big[ q_{t}(s,a) - [r_{t+1} + \gamma q_{t}(s_{t+1},a_{t+1})] \big], \quad &(s,a) = (s_{t},a_{t}), \\ \\
+&q_{t}(s,a), \quad &\forall (s,a) \neq (s_{t},a_{t})
+
+\end{aligned}
+\right.
+\end{equation}
+$$
 
 ---
 ## Expected Sarsa
