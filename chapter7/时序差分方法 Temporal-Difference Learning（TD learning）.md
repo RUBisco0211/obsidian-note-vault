@@ -216,7 +216,21 @@ q_{t+1}(s,a) = \left \{
 \end{equation}
 
 $$
+Q-Learning 中 TD-target 为 $r_{t+1} + \gamma \max_{a \in \mathcal{A}} q_{t}(s_{t+1}, a)$ 
 
+### Q-Learning 依赖的BOE
+
+$$q(s, a) = \mathbb{E} [ R_{t+1} + \gamma \max_{a} q(S_{t+1}, a) \mid S_t = s, A_t = a ], \quad \forall s, a.$$
 
 ---
 ## on-policy和off-policy方法
+
+### RL中的两个策略
+
+- **behavior policy 行为策略**：用于生成对模型的采样数据
+- **target policy 目标策略**：不断更新以接近最优策略
+
+### 两种RL方法
+
+- **on-policy**：行为策略和目标策略相同，即用同一个策略来生成采样数据并进行策略提升（policy improvement）
+- **off-policy**：两个策略分离
