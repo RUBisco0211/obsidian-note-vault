@@ -278,15 +278,23 @@ $$q(s, a) = \mathbb{E} [ R_{t+1} + \gamma \max_{a} q(S_{t+1}, a) \mid S_t = s, A
 ---
 ## TD 算法概览 
 
-TD算法（除TD-Basic）的迭代公式都可以写作统一形式：
+基于动作值 $q(s,a)$ 估计的TD算法（即除TD-Basic外）的迭代公式都可以写作统一形式：
 $$q_{t+1}(s_{t},a_{t})=q_{t}(s_{t},a_{t})-\alpha_{t}(s_{t},a_{t})[q_{t}(s_{t},a_{t})-\bar{q}_{t}],$$
-其中 $\bar{q}_{t}$ 为TD-target，即目标策略 $q_{t}(s,a)$ 要接近的目标
+其中 $\bar{q}_{t}$ 为TD-target，即目标策略 $q_{t}(s,a)$ 要接近的目标，不同算法的TD-target如下：
 
 | TD算法           | TD-target $\bar{q}_t$ 的表达式                                                       |
 | -------------- | -------------------------------------------------------------------------------- |
 | Sarsa          | $\bar{q}_t = r_{t+1} + \gamma q_t(s_{t+1}, a_{t+1})$                             |
-| $n$-step Sarsa | $\bar{q}_t = r_{t+1} + \gamma r_{t+2} + \cdots + \gamma^n q_t(s_{t+n}, a_{t+n})$ |
 | Expected Sarsa | $\bar{q}_t = r_{t+1} + \gamma \sum_a \pi_t(a \mid s_{t+1}) q_t(s_{t+1}, a)$      |
-| Q-learning     | $\bar{q}_t = r_{t+1} + \gamma \max_a q_t(s_{t+1}, a)$                            |
+| $n$-step Sarsa | $\bar{q}_t = r_{t+1} + \gamma r_{t+2} + \cdots + \gamma^n q_t(s_{t+n}, a_{t+n})$ |
 | Monte Carlo    | $\bar{q}_t = r_{t+1} + \gamma r_{t+2} + \cdots$                                  |
+| Q-learning     | $\bar{q}_t = r_{t+1} + \gamma \max_a q_t(s_{t+1}, a)$                            |
+不同算法使用**RM或随机近似方法**进行求解的等式如下：
 
+| **TD算法**       | 求解的等式                                                                                                                          |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Sarsa          | **BE:** $q_\pi(s, a) = \mathbb{E}[R_{t+1} + \gamma q_\pi(S_{t+1}, A_{t+1}) \mid S_t = s, A_t = a]$                             |
+| Expected Sarsa | **BE:** $q_\pi(s, a) = \mathbb{E}[R_{t+1} + \gamma \mathbb{E}_{A_{t+1}}[q_\pi(S_{t+1}, A_{t+1})] \mid S_t = s, A_t = a]$       |
+| $n$-step Sarsa | **BE:** $q_\pi(s, a) = \mathbb{E}[R_{t+1} + \gamma R_{t+2} + \cdots + \gamma^n q_\pi(s_{t+n}, a_{t+n}) \mid S_t = s, A_t = a]$ |
+| Monte Carlo    | **BE:** $q_\pi(s, a) = \mathbb{E}[R_{t+1} + \gamma R_{t+2} + \cdots \mid S_t = s, A_t = a]$                                    |
+| Q-learning     | **BOE:** $q(s, a) = \mathbb{E}[R_{t+1} + \gamma \max_a q(S_{t+1}, a) \mid S_t = s, A_t = a]$                                   |
