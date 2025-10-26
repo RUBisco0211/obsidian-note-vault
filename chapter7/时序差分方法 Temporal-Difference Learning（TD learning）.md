@@ -203,7 +203,19 @@ $$q_{t+1}(s,a) = r_{t+1} + \gamma r_{t+2} + \gamma^2 r_{t+3} + \dots$$
 即为Monte Carlo方法
 
 ---
-## Q-Learning
+## Q-Learning：直接估计最优动作值
+
+$$
+\begin{equation}
+q_{t+1}(s,a) = \left \{ 
+\begin{aligned}
+&q_{t}(s,a) - \alpha_{t}(s,a) \big[ q_{t}(s,a) - [r_{t+1} + \gamma \max_{a \in \mathcal{A}} q_{t}(s_{t+1}, a)] \big], \quad &(s,a) = (s_{t},a_{t}), \\ \\
+&q_{t}(s,a), \quad &\forall(s,a) \neq(s_{t},q_{t}).
+\end{aligned}
+\right.
+\end{equation}
+
+$$
 
 
 ---
