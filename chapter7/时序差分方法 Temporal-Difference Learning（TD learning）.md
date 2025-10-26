@@ -274,3 +274,19 @@ $$q(s, a) = \mathbb{E} [ R_{t+1} + \gamma \max_{a} q(S_{t+1}, a) \mid S_t = s, A
 > - 依赖的样本数据为$(s_{t},a_{t},r_{t+1},s_{t+1})$。给定$s_{t}$，则$a_{t}$**可由任意策略生成**，且由$(s_{t},a_{t})$得到$(r_{t+1},s_{t+1})$的过程不需要任何策略参与。
 > 
 > 故Q-Learning 的两个策略可以不相同，可以有on-policy和off-policy的两种实现
+
+---
+## TD 算法概览 
+
+TD算法（除TD-Basic）的迭代公式都可以写作统一形式：
+$$q_{t+1}(s_{t},a_{t})=q_{t}(s_{t},a_{t})-\alpha_{t}(s_{t},a_{t})[q_{t}(s_{t},a_{t})-\bar{q}_{t}],$$
+其中 $\bar{q}_{t}$ 为TD-target，即目标策略 $q_{t}(s,a)$ 要接近的目标
+
+| TD算法           | TD-target $\bar{q}_t$ 的表达式                                                       |
+| -------------- | -------------------------------------------------------------------------------- |
+| Sarsa          | $\bar{q}_t = r_{t+1} + \gamma q_t(s_{t+1}, a_{t+1})$                             |
+| $n$-step Sarsa | $\bar{q}_t = r_{t+1} + \gamma r_{t+2} + \cdots + \gamma^n q_t(s_{t+n}, a_{t+n})$ |
+| Expected Sarsa | $\bar{q}_t = r_{t+1} + \gamma \sum_a \pi_t(a \mid s_{t+1}) q_t(s_{t+1}, a)$      |
+| Q-learning     | $\bar{q}_t = r_{t+1} + \gamma \max_a q_t(s_{t+1}, a)$                            |
+| Monte Carlo    | $\bar{q}_t = r_{t+1} + \gamma r_{t+2} + \cdots$                                  |
+
