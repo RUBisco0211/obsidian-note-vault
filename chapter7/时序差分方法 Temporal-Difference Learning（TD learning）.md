@@ -108,7 +108,7 @@ v_{t+1}(s) = \left\{
 \right.
 \end{equation}
 $$
-### 与Monte Carlo方法的比较
+### 与 Monte Carlo 方法的比较
 
 | 维度   | TD                                         | MC                                                |
 | ---- | ------------------------------------------ | ------------------------------------------------- |
@@ -142,7 +142,7 @@ q_{t+1}(s,a) = \left\{
 $$
 依赖的数据为$(s_{t},a_{t},r_{t+1}, s_{t+1}, a_{t+1})$，故称Sarsa
 
-### Sarsa实质：求解贝尔曼公式
+### Sarsa 实质：求解贝尔曼公式
 
 Sarsa依赖的贝尔曼公式形式：
 $$
@@ -150,11 +150,11 @@ q_{\pi}(s,a) = \mathbb{E}[R + \gamma q_{\pi}(S',A') | s,a], \quad \forall s \in 
 $$
 接着用RM算法进行迭代求解
 
-### 与policy imporvement结合
+### 与 policy imporvement 结合
 
 ![PixPin_2025-10-26_11-45-47.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1761450359156_PixPin_2025-10-26_11-45-47.png)
 
-使用$\epsilon$-greedy策略进行策略更新
+使用 $\epsilon$-greedy 策略进行策略更新
 
 ---
 ## Expected Sarsa
