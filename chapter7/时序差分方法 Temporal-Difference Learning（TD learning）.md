@@ -248,8 +248,12 @@ $$q(s, a) = \mathbb{E} [ R_{t+1} + \gamma \max_{a} q(S_{t+1}, a) \mid S_t = s, A
 >[!example] [[#Sarsa：学习动作值|Sarsa]]
 > - Sarsa 要解决的问题是求解一个给定策略的贝尔曼公式
 > $$q_{\pi}(s,a) = \mathbb{E}[R + \gamma q_{\pi}(S',A') | s,a], \quad \forall s \in \mathcal{S},a \in \mathcal{A}(s)$$
-> - 依赖的数据为$(s_{t},a_{t},r_{t+1}, s_{t+1},a_{t+1})$。若$s_{t},a_{t}$给定，则$r_{t+1},s_{t+1}$不依赖于任何策略；但$a_{t+1}$需要依赖于策略$\pi_{t}(s_{t+1})$，这个策略来自Sarsa自身进行的policy improvement
+> - 依赖的数据为$(s_{t},a_{t},r_{t+1}, s_{t+1},a_{t+1})$。若$s_{t},a_{t}$给定，则$r_{t+1},s_{t+1}$可由模型直接得到；但$a_{t+1}$需要依赖于策略$\pi_{t}(s_{t+1})$，这个策略来自Sarsa自身进行的policy improvement
 > ![PixPin_2025-10-26_16-02-21.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1761465750798_PixPin_2025-10-26_16-02-21.png)
 > 
 > 因此$\pi_{t}$既是行为策略，也是目标策略。故Sarsa是一个on-policy方法
 
+> [!example] [[#Q-Learning：直接估计最优动作值 | Q-Learning]]
+> - Q-Learning 要解决的问题是求解一个贝尔曼最优公式，本身不依赖于任何策略$$q(s, a) = \mathbb{E} [ R_{t+1} + \gamma \max_{a} q(S_{t+1}, a) \mid S_t = s, A_t = a ], \quad \forall s, a.$$
+> - 依赖的样本数据为$(s_{t},a_{t},r_{t+1},s_{t+1})$，给定$s_{t}$，则$a_{t}$可由
+> 
