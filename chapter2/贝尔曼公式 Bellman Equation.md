@@ -162,7 +162,8 @@ $$
 > 
 > - $v_\pi = [v_\pi(s_1),...,v_\pi(s_n)]^T$
 > - $r_\pi = [r_\pi(s_1),...,r_\pi(s_n)]^T$
-> - $P_\pi  \in \mathbb{R}^{n \times n}$ 其中$[P_\pi]_{ij} = p_\pi(s_j|s_i)$，为**状态转移矩阵**
+> - $P_\pi  \in \mathbb{R}^{n \times n}$ 其中$[P_\pi]_{ij} = p_\pi(s_j|s_i)$，为**状态转移矩阵** 
+^StateTransferMatrix
 
 #### 示例1
 

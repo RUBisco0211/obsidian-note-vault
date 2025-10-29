@@ -37,12 +37,28 @@ $$
 - 给定一个策略（一般为探索性的软策略）并让智能体按照这个策略运行
 - 在由$\pi$生成的一个很长的episode中，记 $n_{\pi}(s)$ 为状态 $s$ 被访问的次数
 - 则$$d_{\pi}(s) \approx\frac{n_{\pi}(s)}{\sum_{s' \in \mathcal{S}  }n_{\pi}(s')}$$
-$d_{\pi}(s)$ 的值也可以由以下等式得到
-
+$d_{\pi}(s)$ 的值也可以由以下等式计算得到
 $$
 d_{\pi}^T = d_{\pi}^T P_{\pi}
 $$
-其中$P_{\pi}$为策略$\pi$下MDP的，$P_{ij} = P\{ S'=j | S=i \}$
+其中$P_{\pi}$为策略$\pi$下MDP的[[贝尔曼公式 Bellman Equation#^StateTransferMatrix|状态转移矩阵]]，$[P_{\pi}]_{ij} = p_{\pi}\{ s'=s_{j} | s=s_{i} \}$
+
+### 优化算法
+
+使用梯度下降法进行优化：
+$$
+w_{k+1} = w_{k} - \alpha_{k} \nabla_{w} J(w_{k})
+$$
+其中梯度为：
+$$
+\begin{align}
+\nabla_{w} J(w) &= \nabla_{w} \mathbb{E}[(v_{\pi}(S) - \hat{v}_{\pi}(S,w))^2] \\ \\ 
+&= \mathbb{E} [ \nabla_{w} ]
+\end{align}
+
+
+$$
+
 
 ---
 ## 使用VFA的Sarsa

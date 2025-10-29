@@ -73,7 +73,7 @@ $$
 应用到BOE求解（需要先证明$f$为一压缩映射）：
 BOE存在唯一的解 $v^*$ ，迭代公式为 $v_{k+1} = f(v_{k}) = \max _\pi\left(r_\pi+\gamma P_\pi v_{k}\right)$ 
 
-^contractionmapping
+^ContractionMapping
 
 假设 $v^*$ 为BOE的解，满足 $v^*  = \max _\pi\left(r_\pi+\gamma P_\pi v^*\right)$。固定 $v^*$来求解$\pi^*$，假设$\pi^* = \arg \max_{\pi}(r_{\pi} + \gamma P_{\pi}v^*)$
 则 $v^* = r_{\pi^*} = \gamma P_{\pi^*}v^*$
