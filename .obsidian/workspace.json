@@ -56,30 +56,6 @@
             }
           },
           {
-            "id": "45d6132a4dd9d45b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "chapter8/值函数近似 Value Function Approximation (VFA).md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "值函数近似 Value Function Approximation (VFA)"
-            }
-          },
-          {
             "id": "1a58d878ae4f72f9",
             "type": "leaf",
             "state": {
@@ -104,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -270,12 +246,12 @@
   },
   "active": "1a58d878ae4f72f9",
   "lastOpenFiles": [
-    "chapter2/贝尔曼公式 Bellman Equation.md",
+    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "chapter8/值函数近似 Value Function Approximation (VFA).md",
+    "chapter2/贝尔曼公式 Bellman Equation.md",
     "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
     "chapter5/基于蒙特卡洛的方法（model-free）.md",
     "chapter4/基于模型的（model-based）BOE求解方法.md",
-    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "chapter1/基本概念.md",
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
     "未命名.md",

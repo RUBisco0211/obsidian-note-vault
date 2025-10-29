@@ -20,7 +20,6 @@
 $$J(w) = \mathbb{E}[(v_{\pi}(S) - \hat{v}(S,w)) ^2]$$
 其中 $S \in \mathcal{S}$ 为一随机变量
 要求解这个优化问题，需要先知道$S$的概率分布
-
 ### 稳态分布 stationary distribution 
 
 对一个马尔科夫链来说，稳态分布是在经过转移后仍然保持不变的概率分布
@@ -61,6 +60,18 @@ $$
 则优化的迭代公式为：
 $${w}_{t + 1} = {w}_{t} + {\alpha }_{t}\left( {{v}_{\pi }\left( {s}_{t}\right)  - \widehat{v}\left( {{s}_{t},{w}_{t}}\right) }\right) {\nabla }_{w}\widehat{v}\left( {{s}_{t},{w}_{t}}\right) $$
 其中 $2\alpha_{k}$ 被合并为 $\alpha_{k}$ 
+这里的 $v_{\pi}(s_{t})$ 是要求的量，用其他需要的量来代替
+两种代替方式：
+#### Monte Carlo方法
+
+用Monte-Carlo方法得到的discounted return $g_{t}$ 作为 $v_{\pi}(s_{t})$ 的估计值
+![PixPin_2025-10-29_21-05-36.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1761743149972_PixPin_2025-10-29_21-05-36.png)
+#### 时序差分（TD）方法
+
+用TD方法中的 $r_{t+1} + \gamma \hat{v}(s_{t+1}, w_{t})$ 作为 $v_{\pi}(s_{t})$ 的估计值
+![PixPin_2025-10-29_21-08-38.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1761743331752_PixPin_2025-10-29_21-08-38.png)
+
+
 
 ---
 ## 使用VFA的Sarsa
