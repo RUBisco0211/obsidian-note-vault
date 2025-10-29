@@ -68,13 +68,14 @@ $${w}_{t + 1} = {w}_{t} + {\alpha }_{t}\left( {{v}_{\pi }\left( {s}_{t}\right)  
 ![PixPin_2025-10-29_21-05-36.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1761743149972_PixPin_2025-10-29_21-05-36.png)
 #### 时序差分（TD）方法
 
-用TD方法中的 $r_{t+1} + \gamma \hat{v}(s_{t+1}, w_{t})$ 作为 $v_{\pi}(s_{t})$ 的估计值
+用TD方法中的 $r_{t+1} + \gamma \hat{v}(s_{t+1}, w_{t})$ ，**即 TD-target** 作为 $v_{\pi}(s_{t})$ 的估计值
 ![PixPin_2025-10-29_21-08-38.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1761743331752_PixPin_2025-10-29_21-08-38.png)
 
-
+![PixPin_2025-10-29_21-13-38.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1761743633191_PixPin_2025-10-29_21-13-38.png)
 
 ---
 ## 使用VFA的Sarsa
+
 
 
 ---
