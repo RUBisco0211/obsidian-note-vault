@@ -73,9 +73,25 @@ $${w}_{t + 1} = {w}_{t} + {\alpha }_{t}\left( {{v}_{\pi }\left( {s}_{t}\right)  
 
 ![PixPin_2025-10-29_21-13-38.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1761743633191_PixPin_2025-10-29_21-13-38.png)
 
-### 估计函数$\hat{v}(s,w)$的选取
+### 估计函数 $\hat{v}(s,w)$ 的选取
 
-- 线性函数$$\hat{v}(s,w) = \phi  $$
+#### 线性函数
+$$\hat{v}(s,w) = \phi^T(s)w$$
+其中 $\phi(s)$ 为**特征向量**，有多种选取方法：基于多项式的、基于傅里叶级数的
+
+则其梯度为
+$$
+\nabla_{w} \hat{v}(s,w) = \phi(s)
+$$
+代入到TD方法的迭代式中，得到
+$${w}_{t + 1} = {w}_{t} + {\alpha }_{t}\left\lbrack  {{r}_{t + 1} + \gamma {\phi }^{T}\left( {s}_{t + 1}\right) {w}_{t} - {\phi }^{T}\left( {s}_{t}\right) {w}_{t}}\right\rbrack  \phi \left( {s}_{t}\right) $$
+称为**TD-Linear**
+
+- 劣势：特征向量选取困难，需要对问题有很好的理解
+- 优势：理论性质易于分析（白盒）；可以统一离散和连续状态空间下的问题（离散）
+#### 神经网络（非线性）
+
+
 
 ---
 ## 使用VFA的Sarsa
