@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter8/值函数近似 Value Function Approximation (VFA).md",
+                "file": "chapter4/基于模型的（model-based）BOE求解方法.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "值函数近似 Value Function Approximation (VFA)"
+              "title": "基于模型的（model-based）BOE求解方法"
             }
           }
         ],
@@ -114,8 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -222,15 +221,15 @@
   },
   "active": "fbbb6ff42f246b4d",
   "lastOpenFiles": [
-    "未命名.md",
-    "chapter8/值函数近似 Value Function Approximation (VFA).md",
-    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
-    "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
-    "chapter4/基于模型的（model-based）BOE求解方法.md",
     "chapter5/基于蒙特卡洛的方法（model-free）.md",
+    "chapter4/基于模型的（model-based）BOE求解方法.md",
+    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
-    "[[.md",
     "chapter2/贝尔曼公式 Bellman Equation.md",
+    "chapter8/值函数近似 Value Function Approximation (VFA).md",
+    "未命名.md",
+    "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
+    "[[.md",
     "notes.base",
     "chapter9/策略梯度的方法 Policy Gradient Methods.md",
     "chapter1/基本概念.md",

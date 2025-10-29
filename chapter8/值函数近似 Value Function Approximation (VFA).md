@@ -31,13 +31,18 @@ $$J(w) = \mathbb{E}[(v_{\pi}(S) - \hat{v}(S,w)) ^2]$$
 $$
 J(w) = \sum_{s\in \mathcal{S}} d_{\pi}(s)(v_{\pi}(s) - \hat{v}(s,w))^2
 $$
-稳态分布可以由如下步骤得到
+稳态分布的近似值可以由如下步骤得到
 ![PixPin_2025-10-29_20-17-20.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1761740333223_PixPin_2025-10-29_20-17-20.png)
 
 - 给定一个策略（一般为探索性的软策略）并让智能体按照这个策略运行
 - 在由$\pi$生成的一个很长的episode中，记 $n_{\pi}(s)$ 为状态 $s$ 被访问的次数
-- 则$$d_{\pi}(s) = \frac{n_{\pi}(s)}{\sum_{}}$$
+- 则$$d_{\pi}(s) \approx\frac{n_{\pi}(s)}{\sum_{s' \in \mathcal{S}  }n_{\pi}(s')}$$
+$d_{\pi}(s)$ 的值也可以由以下等式得到
 
+$$
+d_{\pi}^T = d_{\pi}^T P_{\pi}
+$$
+其中$P_{\pi}$为策略$\pi$下MDP的，$P_{ij} = P\{ S'=j | S=i \}$
 
 ---
 ## 使用VFA的Sarsa
