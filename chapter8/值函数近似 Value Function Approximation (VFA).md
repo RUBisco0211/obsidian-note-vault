@@ -25,14 +25,7 @@ $$J(w) = \mathbb{E}[(v_{\pi}(S) - \hat{v}(S,w)) ^2]$$
 #### 稳态分布 stationary distribution 
 
 对一个马尔科夫链来说，稳态分布是在经过转移后仍然保持不变的概率分布
-设马尔可夫链的状态空间为 $S = \{1, 2, ..., n\}$，  
-转移矩阵为 $P$，其中 $P_{ij} = P(X_{t+1}=j \mid X_t=i)Pij​=P(Xt+1​=j∣Xt​=i)$。
-
-一个概率分布 π=[π1,π2,...,πn]\pi = [\pi_1, \pi_2, ..., \pi_n]π=[π1​,π2​,...,πn​] 若满足：
-
-π=πP,且∑iπi=1,πi≥0\pi = \pi P, \quad \text{且} \quad \sum_i \pi_i = 1, \quad \pi_i \ge 0π=πP,且i∑​πi​=1,πi​≥0
-
-则称 π\piπ 为该马尔可夫链的 **stationary distribution**。
+令 $\{ d_{\pi}(s) \}_{s \in \mathcal{S}}$ 为策略$\pi$下的Markov process的稳态分布，
 
 ---
 ## 使用VFA的Sarsa
