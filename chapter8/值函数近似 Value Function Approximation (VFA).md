@@ -73,6 +73,10 @@ $${w}_{t + 1} = {w}_{t} + {\alpha }_{t}\left( {{v}_{\pi }\left( {s}_{t}\right)  
 
 ![PixPin_2025-10-29_21-13-38.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1761743633191_PixPin_2025-10-29_21-13-38.png)
 
+### 估计函数$\hat{v}(s,w)$的选取
+
+- 线性函数$$\hat{v}(s,w) = \phi  $$
+
 ---
 ## 使用VFA的Sarsa
 
