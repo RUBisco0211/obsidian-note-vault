@@ -14,9 +14,8 @@
 ---
 ## 使用VFA的状态值估计
 
-$v_{\pi}(s), \hat{v}(s,w)$是**真状态值函数**及其的一个估计，$w$是估计函数的参数
+令$v_{\pi}(s), \hat{v}(s,w)$是**真状态值函数**及其的一个估计，$w$是估计函数的参数
 目标：找到最优的参数$w$让$\hat{v}(s,w)$能尽可能地接近$v_{\pi}(s)$
-
 ### 目标函数定义
 $$J(w) = \mathbb{E}[(v_{\pi}(S) - \hat{v}(S,w)) ^2]$$
 其中 $S \in \mathcal{S}$ 为一随机变量
@@ -43,22 +42,25 @@ d_{\pi}^T = d_{\pi}^T P_{\pi}
 $$
 其中$P_{\pi}$为策略$\pi$下MDP的[[贝尔曼公式 Bellman Equation#^StateTransferMatrix|状态转移矩阵]]，$[P_{\pi}]_{ij} = p_{\pi}\{ s'=s_{j} | s=s_{i} \}$
 
-### 优化算法
+### 优化目标函数的方法
 
-使用梯度下降法进行优化：
+使用**梯度下降法**进行优化：
 $$
 w_{k+1} = w_{k} - \alpha_{k} \nabla_{w} J(w_{k})
 $$
 其中梯度为：
 $$
 \begin{align}
-\nabla_{w} J(w) &= \nabla_{w} \mathbb{E}[(v_{\pi}(S) - \hat{v}_{\pi}(S,w))^2] \\ \\ 
-&= \mathbb{E} [ \nabla_{w} ]
+\nabla_{w} J(w) &= \nabla_{w} \mathbb{E}[(v_{\pi}(S) - \hat{v}_{\pi}(S,w))^2] \\ \\
+&= \mathbb{E} [ \nabla_{w} (v_{\pi}(S) - \hat{v}_{\pi}(S,w))^2 ] \\ \\
+&= -2\mathbb{E} [\nabla_{w} \hat{v}(S,w)(v_{\pi}(S) - \hat{v}_{\pi}(S,w))] \\  \\
 \end{align}
-
-
 $$
-
+真实梯度中需要计算期望，可以使用**随机梯度下降**
+即用 $\nabla_{w} \hat{v}(s_{t},w_{t}) (v_{\pi}(s_{t}) - \hat{v}(s_{t},w_{t}))$ 代替 $\mathbb{E} [\nabla_{w} \hat{v}(S,w)(v_{\pi}(S) - \hat{v}_{\pi}(S,w))]$
+则优化的迭代公式为：
+$${w}_{t + 1} = {w}_{t} + {\alpha }_{t}\left( {{v}_{\pi }\left( {s}_{t}\right)  - \widehat{v}\left( {{s}_{t},{w}_{t}}\right) }\right) {\nabla }_{w}\widehat{v}\left( {{s}_{t},{w}_{t}}\right) $$
+其中 $2\alpha_{k}$ 被合并为 $\alpha_{k}$ 
 
 ---
 ## 使用VFA的Sarsa
