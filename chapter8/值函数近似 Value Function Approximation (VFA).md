@@ -88,8 +88,18 @@ $${w}_{t + 1} = {w}_{t} + {\alpha }_{t}\left\lbrack  {{r}_{t + 1} + \gamma {\phi
 称为**TD-Linear**
 
 - 劣势：特征向量选取困难，需要对问题有很好的理解
-- 优势：理论性质易于分析（白盒）；可以统一离散和连续状态空间下的问题（离散）
+- 优势：理论性质易于分析（白盒）；可以统一离散和连续状态空间下的问题（离散表示为线性函数近似的一个特殊情况）
+
+> [!info] 离散表示是线性函数近似的一个特殊情况
+> 考虑一个特殊的特征向量$\phi(s) = e_{s} \in \mathbb{R}^{|\mathcal{S}|}$，其中 $e_{s}$ 的$s$对应分量为1，其他都为0
+> 则 $\hat{v}(s,w) = w(s)$，其中$w(s)$为$w$对应$s$的分量，此时$\hat{v}(s,w)$为一个向量，即为离散表示
+> 把$e_{s}$代入**TD-Linear**，即为[[时序差分方法 Temporal-Difference Learning（TD learning）#TD Basic：学习状态值|TD Basic方法]]（仅更新$s_{t}$的状态值，其他不变）
+> 
+> ![PixPin_2025-10-29_21-48-52.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1761745743674_PixPin_2025-10-29_21-48-52.png)
+> 
+
 #### 神经网络（非线性）
+
 
 
 
