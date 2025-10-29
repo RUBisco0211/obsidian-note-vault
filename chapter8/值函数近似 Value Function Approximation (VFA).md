@@ -22,10 +22,20 @@ $$J(w) = \mathbb{E}[(v_{\pi}(S) - \hat{v}(S,w)) ^2]$$
 其中 $S \in \mathcal{S}$ 为一随机变量
 要求解这个优化问题，需要先知道$S$的概率分布
 
-#### 稳态分布 stationary distribution 
+### 稳态分布 stationary distribution 
 
 对一个马尔科夫链来说，稳态分布是在经过转移后仍然保持不变的概率分布
-令 $\{ d_{\pi}(s) \}_{s \in \mathcal{S}}$ 为策略$\pi$下的Markov process的稳态分布，
+直观上讲，在平稳状态下，$d_{\pi}(s)$是agent处于状态$s$的概率
+
+令 $\{ d_{\pi}(s) \}_{s \in \mathcal{S}}$ 为策略$\pi$下的Markov process的**稳态分布**，$d_{\pi}(s) \ge 0$且$\sum_{s \in \mathcal{S}} d_{\pi}(s) = 1$，则
+$$
+J(w) = \sum_{s\in \mathcal{S}} d_{\pi}(s)(v_{\pi}(s) - \hat{v}(s,w))^2
+$$
+![PixPin_2025-10-29_20-17-20.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1761740333223_PixPin_2025-10-29_20-17-20.png)
+
+
+
+
 
 ---
 ## 使用VFA的Sarsa
