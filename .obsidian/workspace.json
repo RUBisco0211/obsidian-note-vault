@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter8/值函数近似 Value Function Approximation (VFA).md",
+                "file": "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "值函数近似 Value Function Approximation (VFA)"
+              "title": "时序差分方法 Temporal-Difference Learning（TD learning）"
             }
           }
         ],
@@ -114,8 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -179,13 +178,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter8/值函数近似 Value Function Approximation (VFA).md",
+                "file": "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "值函数近似 Value Function Approximation (VFA) 的大纲"
+              "title": "时序差分方法 Temporal-Difference Learning（TD learning） 的大纲"
             }
           },
           {
@@ -203,7 +202,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -221,8 +221,9 @@
   },
   "active": "1a58d878ae4f72f9",
   "lastOpenFiles": [
-    "chapter9/策略梯度方法 Policy Gradient Methods.md",
+    "chapter6/随机近似理论 Stochasted Approximation Theory.md",
     "chapter8/值函数近似 Value Function Approximation (VFA).md",
+    "chapter9/策略梯度方法 Policy Gradient Methods.md",
     "未命名.md",
     "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "notes.base",
@@ -232,7 +233,6 @@
     "chapter3/贝尔曼最优公式 Bellman Optimality Equation（BOE）.md",
     "chapter4/基于模型的（model-based）BOE求解方法.md",
     "chapter5/基于蒙特卡洛的方法 Monte-Carlo Methods（model-free）.md",
-    "chapter6/随机近似理论 Stochasted Approximation Theory.md",
     "chapter10",
     "[[.md",
     "Untitled.md",
