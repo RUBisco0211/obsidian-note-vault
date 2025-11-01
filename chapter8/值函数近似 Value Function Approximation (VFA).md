@@ -141,10 +141,17 @@ $$J\left( w\right)  = \mathbb{E}\left\lbrack  {\left( R + \gamma \mathop{\max }\
 
 当$w_{T}$被视作固定时，目标函数的梯度为
 $${\nabla }_{w}J = \mathbb{E}\left\lbrack  {\left( {R + \gamma \mathop{\max }\limits_{{a \in  \mathcal{A}\left( {S}^{\prime }\right) }}\widehat{q}\left( {{S}^{\prime },a,{w}_{T}}\right)  - \widehat{q}\left( {S,A,w}\right) }\right) {\nabla }_{w}\widehat{q}\left( {S,A,w}\right) }\right\rbrack$$
-**实现细节：**
+**技巧：双网络**
 - 令$w$和$w_{T}$分别为main network和target network的参数
 - 每个迭代周期从**replay buffer**中取一个mini-batch的样本$\{(s,a,r,s')\}$进行训练
-- tar
+- main network接受$s,a$输入，输出$\hat{q}(s,a,w)$
+- target network接受$s,a$输入，输出$y_{T} = r + \gamma  \max_{a \in \mathcal{A}(S')} \hat{q}(s',a,w_{T})$，之后在mini-batch$\{(s,a,y_T)\}$上最小化$(y_{T} - \hat{q}(s,a,w))^2$
+
+**技巧：经验回放experience replay**
+- 收集到的经验$(s,a,r,s')$会被打乱，不会按照收集的顺序进行训练
+- 将经验放在replay buffer $\mathcal{B} = \{(s,a,r,s') \}$ 中，每次抽取一个mini-batch进行训练
+- 抽取数据时应该服从均匀分布，且放回抽样
+> [!info] 
 
 
 ---
