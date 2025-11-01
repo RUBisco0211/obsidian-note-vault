@@ -111,6 +111,8 @@ $${w}_{t + 1} = {w}_{t} + {\alpha }_{t}\left\lbrack  {{r}_{t + 1} + \gamma {\phi
 ---
 ## 使用VFA的Sarsa
 
+VFASarsa的迭代公式
+$${w}_{t + 1} = {w}_{t} + {\alpha }_{t}\left\lbrack  {{r}_{t + 1} + \gamma \widehat{q}\left( {{s}_{t + 1},{a}_{t + 1},{w}_{t}}\right)  - \widehat{q}\left( {{s}_{t},{a}_{t},{w}_{t}}\right) }\right\rbrack  {\nabla }_{w}\widehat{q}\left( {{s}_{t},{a}_{t},{w}_{t}}\right) $$
 
 
 ---
