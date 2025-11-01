@@ -135,9 +135,16 @@ $$J\left( w\right)  = \mathbb{E}\left\lbrack  {\left( R + \gamma \mathop{\max }\
 在目标函数中 $\hat{q}(S,A,w)$ 和 $y = R + \gamma \max_{\alpha \in \mathcal{A(S')}} \hat{q}(S',a,w)$都存在网络参数$w$
 假设$y$中$w$为一常数，求梯度时仅对$\hat{q}(S,A,w)$中参数进行求解
 
-实现：使用两个网络
+**实现：使用两个网络**
 - main network：不断更新，代表$\hat{q}(s,a,w)$，参数为$w$
 - target network：几个周期更新一次，代表$\hat{q}(s,a,w_{T})$，参数为$w_{T}$
+
+当$w_{T}$被视作固定时，目标函数的梯度为
+$${\nabla }_{w}J = \mathbb{E}\left\lbrack  {\left( {R + \gamma \mathop{\max }\limits_{{a \in  \mathcal{A}\left( {S}^{\prime }\right) }}\widehat{q}\left( {{S}^{\prime },a,{w}_{T}}\right)  - \widehat{q}\left( {S,A,w}\right) }\right) {\nabla }_{w}\widehat{q}\left( {S,A,w}\right) }\right\rbrack$$
+**实现细节：**
+- 令$w$和$w_{T}$分别为main network和target network的参数
+- 每个迭代周期从**replay buffer**中取一个mini-batch的样本$\{(s,a,r,s')\}$进行训练
+- tar
 
 
 ---
