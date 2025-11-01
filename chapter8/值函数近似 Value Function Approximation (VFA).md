@@ -150,8 +150,12 @@ $${\nabla }_{w}J = \mathbb{E}\left\lbrack  {\left( {R + \gamma \mathop{\max }\li
 **技巧：经验回放experience replay**
 - 收集到的经验$(s,a,r,s')$会被打乱，不会按照收集的顺序进行训练
 - 将经验放在replay buffer $\mathcal{B} = \{(s,a,r,s') \}$ 中，每次抽取一个mini-batch进行训练
-- 抽取数据时应该服从均匀分布，且放回抽样
-> [!info] 
+- 抽取数据时应该让$(s,a)$服从均匀分布，且放回抽样
+
+> [!info] 均匀分布的理由
+> ![PixPin_2025-11-01_22-49-42.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1762008596837_PixPin_2025-11-01_22-49-42.png)
+> ![PixPin_2025-11-01_22-51-34.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1762008709786_PixPin_2025-11-01_22-51-34.png)
+
 
 
 ---
