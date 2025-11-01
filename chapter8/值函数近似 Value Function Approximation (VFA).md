@@ -111,15 +111,23 @@ $${w}_{t + 1} = {w}_{t} + {\alpha }_{t}\left\lbrack  {{r}_{t + 1} + \gamma {\phi
 ---
 ## 使用VFA的Sarsa
 
-VFASarsa的迭代公式
+VFA Sarsa的迭代公式
 $${w}_{t + 1} = {w}_{t} + {\alpha }_{t}\left\lbrack  {{r}_{t + 1} + \gamma \widehat{q}\left( {{s}_{t + 1},{a}_{t + 1},{w}_{t}}\right)  - \widehat{q}\left( {{s}_{t},{a}_{t},{w}_{t}}\right) }\right\rbrack  {\nabla }_{w}\widehat{q}\left( {{s}_{t},{a}_{t},{w}_{t}}\right) $$
 
+![PixPin_2025-11-01_22-09-08.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1762006168332_PixPin_2025-11-01_22-09-08.png)
 
 ---
 ## 使用VFA的Q-Learning
 
+VFA Q-Learning的迭代公式
+$${w}_{t + 1} = {w}_{t} + {\alpha }_{t}\left\lbrack  {{r}_{t + 1} + \gamma \mathop{\max }\limits_{{a \in  \mathcal{A}\left( {s}_{t + 1}\right) }}\widehat{q}\left( {{s}_{t + 1},a,{w}_{t}}\right)  - \widehat{q}\left( {{s}_{t},{a}_{t},{w}_{t}}\right) }\right\rbrack  {\nabla }_{w}\widehat{q}\left( {{s}_{t},{a}_{t},{w}_{t}}\right) $$
+相应的on-policy算法
+![PixPin_2025-11-01_22-13-05.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1762006401246_PixPin_2025-11-01_22-13-05.png)
+
 ---
 ## Deep Q-Learning (DQN)
+
+DQN
 
 ---
 ## 在强化学习中引入神经网络
