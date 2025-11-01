@@ -127,7 +127,18 @@ $${w}_{t + 1} = {w}_{t} + {\alpha }_{t}\left\lbrack  {{r}_{t + 1} + \gamma \math
 ---
 ## Deep Q-Learning (DQN)
 
-DQN
+DQN要优化的目标函数为
+$$J\left( w\right)  = \mathbb{E}\left\lbrack  {\left( R + \gamma \mathop{\max }\limits_{{a \in  \mathcal{A}\left( {S}^{\prime }\right) }}\widehat{q}\left( {S}^{\prime },a,w\right)  - \widehat{q}\left( S,A,w\right) \right) }^{2}\right\rbrack  $$
+其中$(S,A,R,S')$都为随机变量
+优化的方法：梯度下降，但求梯度的方法比较tricky
+
+在目标函数中 $\hat{q}(S,A,w)$ 和 $y = R + \gamma \max_{\alpha \in \mathcal{A(S')}} \hat{q}(S',a,w)$都存在网络参数$w$
+假设$y$中$w$为一常数，求梯度时仅对$\hat{q}(S,A,w)$中参数进行求解
+
+实现：使用两个网络
+- main network：不断更新，代表$\hat{q}(s,a,w)$，参数为$w$
+- target network：几个周期更新一次，代表$\hat{q}(s,a,w_{T})$，参数为$w_{T}$
+
 
 ---
 ## 在强化学习中引入神经网络
