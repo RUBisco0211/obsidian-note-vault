@@ -59,13 +59,24 @@
             "id": "1a58d878ae4f72f9",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "notes.base",
-                "viewName": "表格"
+                "file": "chapter8/值函数近似 Value Function Approximation (VFA).md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-table",
-              "title": "notes"
+              "icon": "lucide-file",
+              "title": "值函数近似 Value Function Approximation (VFA)"
             }
           }
         ],
@@ -234,6 +245,7 @@
   },
   "active": "1a58d878ae4f72f9",
   "lastOpenFiles": [
+    "notes.base",
     "chapter10/演员-评论家方法 Actor-Critic Methods.md",
     "chapter1/基本概念.md",
     "chapter2/贝尔曼公式 Bellman Equation.md",
@@ -247,7 +259,6 @@
     "chapter10",
     "未命名.md",
     "[[.md",
-    "notes.base",
     "Untitled.md",
     "未命名 1.base",
     "chapter0/引言.md",
