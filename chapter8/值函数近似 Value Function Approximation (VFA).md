@@ -108,10 +108,6 @@ $${w}_{t + 1} = {w}_{t} + {\alpha }_{t}\left\lbrack  {{r}_{t + 1} + \gamma {\phi
 
 **数据**：500 个 episode，每个 500 步，出发时的$(s,a)$随机选择，服从均匀分布
 
-
-
-
-
 ---
 ## 使用VFA的Sarsa
 
