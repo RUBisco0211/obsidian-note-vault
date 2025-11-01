@@ -179,13 +179,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes.base",
+                "file": "chapter8/值函数近似 Value Function Approximation (VFA).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "notes 的大纲"
+              "title": "值函数近似 Value Function Approximation (VFA) 的大纲"
             }
           },
           {
@@ -203,8 +203,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
