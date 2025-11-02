@@ -156,6 +156,8 @@ $${\nabla }_{w}J = \mathbb{E}\left\lbrack  {\left( {R + \gamma \mathop{\max }\li
 > ![PixPin_2025-11-01_22-49-42.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1762008596837_PixPin_2025-11-01_22-49-42.png)
 > ![PixPin_2025-11-01_22-51-34.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1762008709786_PixPin_2025-11-01_22-51-34.png)
 
+算法（off-policy）：
+![PixPin_2025-11-02_09-40-13.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1762047643084_PixPin_2025-11-02_09-40-13.png)
 
 
 ---
