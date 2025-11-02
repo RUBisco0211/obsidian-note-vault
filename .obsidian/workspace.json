@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
+                "file": "chapter8/值函数近似 Value Function Approximation (VFA).md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "时序差分方法 Temporal-Difference Learning（TD learning）"
+              "title": "值函数近似 Value Function Approximation (VFA)"
             }
           }
         ],
@@ -221,11 +221,11 @@
   },
   "active": "1a58d878ae4f72f9",
   "lastOpenFiles": [
+    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
     "chapter8/值函数近似 Value Function Approximation (VFA).md",
     "chapter9/策略梯度方法 Policy Gradient Methods.md",
     "未命名.md",
-    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "notes.base",
     "chapter10/演员-评论家方法 Actor-Critic Methods.md",
     "chapter1/基本概念.md",
