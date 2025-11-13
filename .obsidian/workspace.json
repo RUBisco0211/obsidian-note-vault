@@ -114,7 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 298.5
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -221,23 +221,23 @@
   },
   "active": "1a58d878ae4f72f9",
   "lastOpenFiles": [
+    "chapter9/策略梯度方法 Policy Gradient Methods.md",
+    "chapter5/基于蒙特卡洛的方法 Monte-Carlo Methods（model-free）.md",
+    "chapter1/基本概念.md",
+    "chapter0/引言.md",
+    "chapter8/值函数近似 Value Function Approximation (VFA).md",
     "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
-    "chapter8/值函数近似 Value Function Approximation (VFA).md",
-    "chapter9/策略梯度方法 Policy Gradient Methods.md",
     "未命名.md",
     "notes.base",
     "chapter10/演员-评论家方法 Actor-Critic Methods.md",
-    "chapter1/基本概念.md",
     "chapter2/贝尔曼公式 Bellman Equation.md",
     "chapter3/贝尔曼最优公式 Bellman Optimality Equation（BOE）.md",
     "chapter4/基于模型的（model-based）BOE求解方法.md",
-    "chapter5/基于蒙特卡洛的方法 Monte-Carlo Methods（model-free）.md",
     "chapter10",
     "[[.md",
     "Untitled.md",
     "未命名 1.base",
-    "chapter0/引言.md",
     "chapter5/Drawing 2025-09-28 11.10.32.excalidraw.md",
     "Excalidraw",
     "().md",
