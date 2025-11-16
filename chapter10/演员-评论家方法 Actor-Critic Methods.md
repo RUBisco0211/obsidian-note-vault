@@ -57,7 +57,7 @@ $$
 > 	- $\text{var}(X)$ 即$X$的方差对$b(S)$不是不变量
 > 		- 为什么？$\text{tr}[\text{var}(X)] = \mathbb{E}[X^T X] - \bar{x}^T \bar{x}$即$X$方差矩阵的迹
 
-
+]
 
 ---
 ## Off-policy的Actor-Critic方法
