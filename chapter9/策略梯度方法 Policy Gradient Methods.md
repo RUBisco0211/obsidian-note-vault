@@ -47,6 +47,18 @@ $$\pi(a | s, \theta), \quad \text{或} \quad \pi_{\theta}(a | s)$$
 
 ### 平均状态值 average state value
 
+$$
+\bar{v}_{\pi} = \sum_{s \in \mathcal{S}} d(s) v_{\pi}(s) = \mathbb{E}[v_{\pi}(S)]
+$$
+其中$S \sim d$，也可写作矩阵向量形式
+$$
+\bar{v}_{\pi} = d^T v_{\pi}
+$$
+#### 如何选择状态分布$d(s)$
+
+- 第一种情况：$d$与$\pi$相互独立，记$d_{0} = d$，$\bar{v}_{\pi}^0 = \bar{v}_{\pi}$（对策略求梯度时，由于$d$不依赖$\pi$，$\nabla  \bar{v}_{\pi} = d^T \nabla v_{\pi}$）
+
+
 
 ---
 ## 求解策略梯度
