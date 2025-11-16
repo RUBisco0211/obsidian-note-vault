@@ -137,8 +137,18 @@ $$
 > [!question] $p_{0}(x_{i})$已知但不能直接用于求$\mathbb{E}_{X \sim p_{0}}[X]$的原因
 > 对于连续情况，需要使用积分求期望。但$p_{0}$可能表达式复杂，或$p_{0}(x_{i})$由神经网络给出，难以求积
 
+### 实现off-policy学习
 
-考虑使用在behavior policy下采集的数据来估计target policy
+使用在behavior policy $\beta$下采集的数据计算梯度来更新target policy $\pi$的参数
+目标函数：
+$$
+J(\theta) = \sum_{s \in \mathcal{S}} d_{\beta}(s) v_{\pi}(s) = \mathbb{E}_{S \sim d_{\beta}} [v_{\pi}(S)]
+$$
+其中$d_{\beta}$为$\beta$下的稳态分布
+在discounted case情况下，$\gamma \in (0,1)$，有
+$$
+\nabla_{\theta} J(\theta) 
+$$
 
 ---
 ## Deterministic Actor-Critic
