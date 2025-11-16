@@ -192,8 +192,8 @@ $$
 \theta_{t+1} = \theta_{t} + \alpha \nabla_{\theta} \ln \pi(a_{t} | s_{t}, \theta_{t}) q_{\pi}(s_{t}, a_{t})
 $$
 且其中$q_{\pi}(s_{t},a_{t})$也无法求得，故用$q_{t}(s_{t}, a_{t})$进行近似
-- Monte-Carlo 方法：从$(s,a)$出发得到一个trajectory的数据来估计动作值，这种方法即为**REINFORCE**
-- TD方法：此种方法为**Actor-Critic**
+- [[基于蒙特卡洛的方法 Monte-Carlo Methods（model-free）|Monte-Carlo]] 方法：从$(s,a)$出发得到一个trajectory的数据来估计动作值，这种方法即为**REINFORCE**
+- [[时序差分方法 Temporal-Difference Learning（TD learning）|TD]]方法：此种方法为[[演员-评论家方法 Actor-Critic Methods|Actor-Critic]]
 
 ### 如何采样
 
