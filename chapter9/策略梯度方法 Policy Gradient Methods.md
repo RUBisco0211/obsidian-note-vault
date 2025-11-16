@@ -56,8 +56,18 @@ $$
 $$
 **另一种定义方法：**
 $$
-\bar{v}_{\pi} = \mathbb{E} \big[  \sum_{t=0}^\infty \big]
+
+\bar{v}_{\pi} = \mathbb{E} \Big[   \sum_{t=0}^\infty \gamma^t R_{t+1} \Big ]
 $$
+证明：****
+$$
+\begin{align*}
+\bar{v}_{\pi} &= \mathbb{E} \Big[   \sum_{t=0}^\infty \gamma^t R_{t+1} \Big ] \\
+&= \sum_{s \in \mathcal{S}} d(s) \mathbb{E}\Big[ \sum_{t=0}^\infty \gamma^t R_{t+1} | S_{0} = s \Big] \\
+&= \sum_{s \in \mathcal{S}} d(s) v_{\pi}(s)
+\end{align*}
+$$
+
 #### 如何选择状态分布$d(s)$
 
 **第一种情况：**$d$与$\pi$相互独立，记$d_{0} = d$，$\bar{v}_{\pi}^0 = \bar{v}_{\pi}$
@@ -102,10 +112,12 @@ $$
 > [!important] 说明
 > - $\text{metrics} \to \pi \to \theta$ 故可以通过优化metrics函数来得到最优的参数$\theta$
 > - 难点：metrics可以在discounted case和undiscounted case种定义，即$\gamma \in [0,1)$或者$\gamma = 1$的两种情况
-> - 直观上看，$\bar{r}_{\pi}$似乎比$\bar{v}_{\pi}$更短视。但实际上二者等价，解出的最优策略是一致的。在discounted case的情况下，可以证明$$\bar{r}_{\pi} = (1-\gamma)\bar{v}_{\pi}$$
+> - 直观上看，$\bar{r}_{\pi}$似乎比$\bar{v}_{\pi}$更短视。**但实际上二者等价，解出的最优策略是一致的。** 在discounted case的情况下，可以证明$$\bar{r}_{\pi} = (1-\gamma)\bar{v}_{\pi}$$
 
 ---
 ## 求解策略梯度
+
+
 
 
 ---
