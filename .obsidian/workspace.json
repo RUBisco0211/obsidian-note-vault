@@ -114,7 +114,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5
+    "width": 298.5,
+    "collapsed": true
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -222,8 +223,8 @@
   "active": "1a58d878ae4f72f9",
   "lastOpenFiles": [
     "chapter9/策略梯度方法 Policy Gradient Methods.md",
-    "chapter10/演员-评论家方法 Actor-Critic Methods.md",
     "chapter8/值函数近似 Value Function Approximation (VFA).md",
+    "chapter10/演员-评论家方法 Actor-Critic Methods.md",
     "chapter5/基于蒙特卡洛的方法 Monte-Carlo Methods（model-free）.md",
     "chapter1/基本概念.md",
     "chapter0/引言.md",

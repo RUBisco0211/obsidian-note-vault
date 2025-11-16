@@ -60,7 +60,7 @@ $$
 则优化的迭代公式为：
 $${w}_{t + 1} = {w}_{t} + {\alpha }_{t}\left( {{v}_{\pi }\left( {s}_{t}\right)  - \widehat{v}\left( {{s}_{t},{w}_{t}}\right) }\right) {\nabla }_{w}\widehat{v}\left( {{s}_{t},{w}_{t}}\right) $$
 其中 $2\alpha_{k}$ 被合并为 $\alpha_{k}$ 
-这里的 $v_{\pi}(s_{t})$ 是要求的量，用其他需要的量来代替
+这里的 $v_{\pi}(s_{t})$ 是要求解的量，用其他需要的量来代替
 两种代替方式：
 #### Monte Carlo方法
 
@@ -149,7 +149,7 @@ $${\nabla }_{w}J = \mathbb{E}\left\lbrack  {\left( {R + \gamma \mathop{\max }\li
 
 **技巧：经验回放experience replay**
 - 收集到的经验$(s,a,r,s')$会被打乱，不会按照收集的顺序进行训练
-- 将经验放在replay buffer $\mathcal{B} = \{(s,a,r,s') \}$ 中，每次抽取一个mini-batch进行训练
+- 将经验放在**replay buffer** $\mathcal{B} = \{(s,a,r,s') \}$ 中，每次抽取一个mini-batch进行训练
 - 抽取数据时应该让$(s,a)$服从均匀分布，且放回抽样
 
 > [!info] 均匀分布的理由
