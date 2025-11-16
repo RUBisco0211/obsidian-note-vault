@@ -124,9 +124,8 @@ $$
 \nabla_{\theta} J(\theta) = \sum_{s \in \mathcal{S}} \eta(s) \sum_{a \in \mathcal{A}} \underbrace{\nabla_{\theta} \pi(a | s, \theta)}_{\pi对\theta的梯度}  
 \underbrace{q_{\pi}(s,a)}_{动作值} 
 $$
-
-
-
+$J(\theta)$可以为$\bar{v}_{\pi}, \bar{r}_{\pi}, \bar{v}_{\pi}^0$，分别与右式呈$=, \approx, \propto$关系
+$\eta(x)$为状态的分布，不同目标函数中状态遵循不同的分布
 
 
 ---
