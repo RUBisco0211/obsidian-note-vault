@@ -213,3 +213,7 @@ $$
 **当$\alpha \beta_{\theta}$很小时，把$\alpha \beta_{\theta}$看作一个新的步长，则上式可以看作在固定$a_{t},s_{t}$时，对$\pi(a_{t} | s_{t}, \theta)$进行优化**
 - $\beta_{t} > 0$，则为梯度上升
 - $\beta_{t} < 0$，则为梯度下降
+
+> [!info] 通过$\beta_{t}$平衡exploration和exploitation
+> 当$q_{t}(s_{t},a_{t})$较大时，$\beta_{t}$也较大，则一步迭代后$\pi(a_{t} | s_{t}, \theta)$会有较大增幅，即动作值越大，就给予该动作越大的选择概率。exploitation
+>  
