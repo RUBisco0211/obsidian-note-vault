@@ -74,11 +74,12 @@ $$
 重新组织随机梯度下的迭代公式：
 $$
 \begin{align*}
-\theta_{t+1} &= \theta_{t} + \alpha \nabla_{\theta} \ln \pi(A | S, \theta_{t}) \delta_{\pi}(S,A) \\ \\
-&= \theta_{t} + \alpha \frac{\nabla_{\theta}\pi(a_{t} | s_{t}, \theta_{t})}{\pi(a_{t} | s_{t}, \theta_{t})} \delta_{\pi}(S,A) \\ \\
-
+\theta_{t+1} &= \theta_{t} + \alpha \nabla_{\theta} \ln \pi(a_{t} | s_{t}, \theta_{t}) \delta_{\pi}(s_{t},a_{t}) \\ \\
+&= \theta_{t} + \alpha \frac{\nabla_{\theta}\pi(a_{t} | s_{t}, \theta_{t})}{\pi(a_{t} | s_{t}, \theta_{t})} \delta_{\pi}(s_{t},a_{t}) \\ \\
+&= \theta_{t} + \underbrace{ \alpha \Big( \frac{\delta_{\pi}(s_{t},a_{t})}{\pi(a_{t} | s_{t}, \theta_{t})} \Big)}_{步长} \nabla_{\theta} \pi(a_{t} | s_{t}, \theta_{t}) \\ \\
 \end{align*}
 $$
+步长系数$\delta_{\pi}(s_{t},a_{t}) / \pi(a_{t} | s_{t}, \theta_{t})$也是一个可以平衡exploitation和exploration的量，参考
 
 ---
 ## Off-policy的Actor-Critic方法

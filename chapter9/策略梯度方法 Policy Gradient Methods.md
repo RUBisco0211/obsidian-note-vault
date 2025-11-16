@@ -215,9 +215,9 @@ $$
 
 > [!info] 通过$\beta_{t}$平衡exploration和exploitation
 > - $\beta_{t}$与$q_{t}(s_{t},a_{t})$成正比：当$q_{t}(s_{t},a_{t})$较大时，$\beta_{t}$也较大，则一步迭代后$\pi(a_{t} | s_{t}, \theta)$会有较大增幅。即动作值越大，就给予该动作越大的选择概率。**exploitation**
-> - $\beta_{t}$与$\pi(a_{t} | s_{t}, \theta_{t})$成反比：当$\pi(a_{t} | s_{t}, \theta_{t})$较小时，$\beta_{t}$较大，则一步迭代后$\pi(a_{t} | s_{t}, \theta)$增大。即若选择该动作的概率较小，就在下个时刻给予其更大的选择概率。**exploration**
->  
+> - $\beta_{t}$与$\pi(a_{t} | s_{t}, \theta_{t})$成反比：当$\pi(a_{t} | s_{t}, \theta_{t})$较小时，$\beta_{t}$较大，则一步迭代后$\pi(a_{t} | s_{t}, \theta)$增大。即若选择该动作的概率较小，就在下个时刻给予其更大的选择概率。**exploration**  
 
+^NewStepSize
 ### 算法流程
 
 ![image.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1763287005042_20251116175638481.png)

@@ -32,18 +32,31 @@
             }
           },
           {
-            "id": "dbc19c0e093d3ea0",
+            "id": "2296538d3de94a6f",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "chapter10/Actor-Critic.excalidraw.md"
+                "file": "chapter9/策略梯度方法 Policy Gradient Methods.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "excalidraw-icon",
-              "title": "Actor-Critic.excalidraw"
+              "icon": "lucide-file",
+              "title": "策略梯度方法 Policy Gradient Methods"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -101,8 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -166,13 +178,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter10/演员-评论家方法 Actor-Critic Methods.md",
+                "file": "chapter9/策略梯度方法 Policy Gradient Methods.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "演员-评论家方法 Actor-Critic Methods 的大纲"
+              "title": "策略梯度方法 Policy Gradient Methods 的大纲"
             }
           },
           {
@@ -207,11 +219,12 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "1a58d878ae4f72f9",
+  "active": "2296538d3de94a6f",
   "lastOpenFiles": [
-    "chapter10/Actor-Critic.excalidraw.md",
     "chapter10/演员-评论家方法 Actor-Critic Methods.md",
     "chapter9/策略梯度方法 Policy Gradient Methods.md",
+    "chapter3/贝尔曼最优公式 Bellman Optimality Equation（BOE）.md",
+    "chapter10/Actor-Critic.excalidraw.md",
     "chapter8/值函数近似 Value Function Approximation (VFA).md",
     "Excalidraw",
     "chapter8/DQN.excalidraw.md",
@@ -223,7 +236,6 @@
     "chapter0/引言.md",
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
     "未命名.md",
-    "chapter3/贝尔曼最优公式 Bellman Optimality Equation（BOE）.md",
     "chapter4/基于模型的（model-based）BOE求解方法.md",
     "chapter10",
     "[[.md",
