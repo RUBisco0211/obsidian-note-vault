@@ -206,6 +206,10 @@ $$
 \begin{align*}
 \theta_{t+1} &= \theta_{t} + \alpha \nabla_{\theta} J(\theta) \\ \\
 &= \theta_{t} + \alpha \nabla_{\theta} \ln \pi(a_{t} | s_{t}, \theta_{t}) q_{t}(s_{t},a_{t})  \\ \\
-&= \theta_{t} + \alpha \underbrace  \nabla_{\theta} \pi(s_{t} | s_{t, \theta_{t}})
+&= \theta_{t} + \alpha \underbrace{\Bigg( \frac{q_{t}(s_{t},a_{t})}{\pi(a_{t} | s_{t}, \theta_{t})} \Bigg)}_{\beta_{t}}  \nabla_{\theta} \pi(s_{t} | s_{t, \theta_{t}}) \\ \\
+&= \theta_{t} + \underbrace{\alpha \beta_{t}}_{\alpha'}  \nabla_{\theta} \pi(a_{t} | s_{t}, \theta_{t}) 
 \end{align*}
 $$
+**当$\alpha \beta_{\theta}$很小时，把$\alpha \beta_{\theta}$看作一个新的步长，则上式可以看作在固定$a_{t},s_{t}$时，对$\pi(a_{t} | s_{t}, \theta)$进行优化**
+- $\beta_{t} > 0$，则为梯度上升
+- $\beta_{t} < 0$，则为梯度下降
