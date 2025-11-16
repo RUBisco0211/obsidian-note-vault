@@ -56,8 +56,15 @@ $$
 $$
 #### 如何选择状态分布$d(s)$
 
-- 第一种情况：$d$与$\pi$相互独立，记$d_{0} = d$，$\bar{v}_{\pi}^0 = \bar{v}_{\pi}$（对策略求梯度时，由于$d$不依赖$\pi$，$\nabla  \bar{v}_{\pi} = d^T \nabla v_{\pi}$）
+**第一种情况：**$d$与$\pi$相互独立，记$d_{0} = d$，$\bar{v}_{\pi}^0 = \bar{v}_{\pi}$
+（对策略求梯度时，由于$d$不依赖$\pi$，$\nabla  \bar{v}_{\pi} = d^T \nabla v_{\pi}$）
+$d_{0}$的选择：
+- 均匀分布，$d_{0} = 1 / |\mathcal{S}|$
+- 仅关心某个状态如$s_{0}$，则$d_{0}(s_{0}) = 1, \quad d_{0}(s \neq s_{0}) = 0$
 
+**第二种情况：** $d$依赖于$\pi$
+- [[值函数近似 Value Function Approximation (VFA)#稳态分布 stationary distribution | 稳态分布 stationary distribution]]：$d = d_{\pi}$
+	- 性质：$d_{\pi}^T P_{\pi} = d^T_{\pi}$，其中$P_{\pi}$为状态转移矩阵
 
 
 ---
