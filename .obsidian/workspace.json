@@ -43,8 +43,7 @@
               "title": "Actor-Critic.excalidraw"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,7 +101,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter10/Actor-Critic.excalidraw.md",
+                "file": "chapter10/演员-评论家方法 Actor-Critic Methods.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Actor-Critic.excalidraw 的大纲"
+              "title": "演员-评论家方法 Actor-Critic Methods 的大纲"
             }
           },
           {
@@ -207,10 +207,10 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "dbc19c0e093d3ea0",
+  "active": "1a58d878ae4f72f9",
   "lastOpenFiles": [
-    "chapter10/演员-评论家方法 Actor-Critic Methods.md",
     "chapter10/Actor-Critic.excalidraw.md",
+    "chapter10/演员-评论家方法 Actor-Critic Methods.md",
     "chapter9/策略梯度方法 Policy Gradient Methods.md",
     "chapter8/值函数近似 Value Function Approximation (VFA).md",
     "Excalidraw",
