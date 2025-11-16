@@ -32,27 +32,15 @@
             }
           },
           {
-            "id": "058402e28108aaf8",
+            "id": "dbc19c0e093d3ea0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "chapter8/值函数近似 Value Function Approximation (VFA).md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "chapter10/Actor-Critic.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "值函数近似 Value Function Approximation (VFA)"
+              "icon": "excalidraw-icon",
+              "title": "Actor-Critic.excalidraw"
             }
           }
         ],
@@ -114,8 +102,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -179,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter8/值函数近似 Value Function Approximation (VFA).md",
+                "file": "chapter10/Actor-Critic.excalidraw.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "值函数近似 Value Function Approximation (VFA) 的大纲"
+              "title": "Actor-Critic.excalidraw 的大纲"
             }
           },
           {
@@ -220,16 +207,17 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "058402e28108aaf8",
+  "active": "dbc19c0e093d3ea0",
   "lastOpenFiles": [
     "chapter10/演员-评论家方法 Actor-Critic Methods.md",
+    "chapter10/Actor-Critic.excalidraw.md",
+    "chapter9/策略梯度方法 Policy Gradient Methods.md",
     "chapter8/值函数近似 Value Function Approximation (VFA).md",
+    "Excalidraw",
     "chapter8/DQN.excalidraw.md",
     "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
-    "chapter9/策略梯度方法 Policy Gradient Methods.md",
     "notes.base",
     "chapter2/贝尔曼公式 Bellman Equation.md",
-    "Excalidraw",
     "chapter5/基于蒙特卡洛的方法 Monte-Carlo Methods（model-free）.md",
     "chapter1/基本概念.md",
     "chapter0/引言.md",
