@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fbbb6ff42f246b4d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "时序差分方法 Temporal-Difference Learning（TD learning）"
-            }
-          },
-          {
             "id": "1a58d878ae4f72f9",
             "type": "leaf",
             "state": {
@@ -53,6 +29,18 @@
               },
               "icon": "lucide-file",
               "title": "值函数近似 Value Function Approximation (VFA)"
+            }
+          },
+          {
+            "id": "c1f1abde4d2d84f1",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "chapter8/Drawing 2025-11-16 10.21.09.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-11-16 10.21.09.excalidraw"
             }
           }
         ],
@@ -220,15 +208,17 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "1a58d878ae4f72f9",
+  "active": "c1f1abde4d2d84f1",
   "lastOpenFiles": [
-    "chapter9/策略梯度方法 Policy Gradient Methods.md",
     "chapter8/值函数近似 Value Function Approximation (VFA).md",
+    "chapter8/Drawing 2025-11-16 10.21.09.excalidraw.md",
+    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
+    "Excalidraw",
+    "chapter9/策略梯度方法 Policy Gradient Methods.md",
     "chapter10/演员-评论家方法 Actor-Critic Methods.md",
     "chapter5/基于蒙特卡洛的方法 Monte-Carlo Methods（model-free）.md",
     "chapter1/基本概念.md",
     "chapter0/引言.md",
-    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
     "未命名.md",
     "notes.base",
@@ -240,7 +230,6 @@
     "Untitled.md",
     "未命名 1.base",
     "chapter5/Drawing 2025-09-28 11.10.32.excalidraw.md",
-    "Excalidraw",
     "().md",
     "2025-07-12.md",
     "未命名.canvas",
