@@ -54,6 +54,10 @@ $$
 $$
 \bar{v}_{\pi} = d^T v_{\pi}
 $$
+**另一种定义方法：**
+$$
+\bar{v}_{\pi} = \mathbb{E} \big[  \sum_{t=0}^\infty \big]
+$$
 #### 如何选择状态分布$d(s)$
 
 **第一种情况：**$d$与$\pi$相互独立，记$d_{0} = d$，$\bar{v}_{\pi}^0 = \bar{v}_{\pi}$
@@ -95,12 +99,14 @@ $$
 $$
 当步数接近无穷时，起始状态$s_{0}$不重要
 
-### 
-
-$\text{metrics} \to \pi \to \theta$ 故可以通过优化
+> [!important] 说明
+> - $\text{metrics} \to \pi \to \theta$ 故可以通过优化metrics函数来得到最优的参数$\theta$
+> - 难点：metrics可以在discounted case和undiscounted case种定义，即$\gamma \in [0,1)$或者$\gamma = 1$的两种情况
+> - 直观上看，$\bar{r}_{\pi}$似乎比$\bar{v}_{\pi}$更短视。但实际上二者等价，解出的最优策略是一致的。在discounted case的情况下，可以证明$$\bar{r}_{\pi} = (1-\gamma)\bar{v}_{\pi}$$
 
 ---
 ## 求解策略梯度
+
 
 ---
 ## 梯度上升方法 (REINFORCE)
