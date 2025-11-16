@@ -117,6 +117,15 @@ $$
 ---
 ## 求解策略梯度
 
+求解策略梯度最为复杂，需要考虑不同的目标函数以及discounted 和 undiscounted case 两种情况
+
+一言以蔽之
+$$
+\nabla_{\theta} J(\theta) = \sum_{s \in \mathcal{S}} \eta(s) \sum_{a \in \mathcal{A}} \underbrace{\nabla_{\theta} \pi(a | s, \theta)}_{\pi对\theta的梯度}  
+\underbrace{q_{\pi}(s,a)}_{动作值} 
+$$
+
+
 
 
 
