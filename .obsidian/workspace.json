@@ -197,8 +197,9 @@
   },
   "active": "1a58d878ae4f72f9",
   "lastOpenFiles": [
-    "chapter8/值函数近似 Value Function Approximation (VFA).md",
+    "chapter2/贝尔曼公式 Bellman Equation.md",
     "chapter9/策略梯度方法 Policy Gradient Methods.md",
+    "chapter8/值函数近似 Value Function Approximation (VFA).md",
     "chapter8/DQN.excalidraw.md",
     "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "Excalidraw",
@@ -209,7 +210,6 @@
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
     "未命名.md",
     "notes.base",
-    "chapter2/贝尔曼公式 Bellman Equation.md",
     "chapter3/贝尔曼最优公式 Bellman Optimality Equation（BOE）.md",
     "chapter4/基于模型的（model-based）BOE求解方法.md",
     "chapter10",
