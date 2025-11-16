@@ -128,14 +128,34 @@ $J(\theta)$可以为$\bar{v}_{\pi}, \bar{r}_{\pi}, \bar{v}_{\pi}^0$，分别与�
 $\eta(x)$为状态的分布，不同目标函数中状态遵循不同的分布
 
 例：
+- $J(\theta) = \bar{r}_{\pi}$
 $$
 \nabla_{\theta} \bar{r}_{\pi} \simeq \sum_{s} d_{\pi}(s) \sum_{a} \nabla_{\theta} \pi(a | s,\theta) q_{\pi}(s,a)
 $$
+其中 discounted case 为约等于；undiscounted case 为严格等于
+- $J(\theta) = \bar{v}_{\pi}$
 $$
 \nabla_{\theta} \bar{v}_{\pi} = \frac{1}{1-\gamma} \nabla_{\theta} \bar{r}_{\pi}
 $$
+discounted case下，如上公式
+- $J(\theta) = \bar{v}_{\pi}^0$
 $$
-\nabla_{\theta} \bar{v}_{\pi}^0 = \sum_{s \in \mathcal{S}} \rho)\pi
+\nabla_{\theta} \bar{v}_{\pi}^0 = \sum_{s \in \mathcal{S}} \rho_\pi(s) \sum_{a \in \mathcal{A}} \nabla_{\theta} \pi(a | s,\theta) q_{\pi}(s,a)
+$$
+
+**期望形式：**
+$$
+\begin{align*}
+
+\nabla_{\theta} J(\theta) &= \sum_{s \in \mathcal{S}} \eta(s) \sum_{a \in \mathcal{A}} \nabla_{\theta} \pi(a | s, \theta) q_{\pi}(s,a) \\ \\
+&= \mathbb{E}[\nabla_{\theta} \ln \pi(A | S, \theta)q_{\pi}(S,A)]
+
+\end{align*}
+$$
+其中$S \sim \eta, A \sim \pi(A | S, \theta)$
+在期望形式下，可以非常轻松地用采样值来估计梯度
+$$
+\nabla_{\theta} J \approx \nabla_{\theta} \ln \pi(a | s, \theta)
 $$
 
 ---
