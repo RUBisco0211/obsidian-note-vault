@@ -41,7 +41,20 @@ $$
  \mathbb { E } _ { S \sim \eta, A \sim \pi } \Big [ \nabla _ { \theta } \ln \pi ( A | S, \theta _ { t } ) b ( S ) \Big ] = 0
 > $$
 > 
-> 由$$\mathbb { E } _ { S \sim \eta, A \sim \pi } \left [ \nabla _ { \theta } \ln \pi \big ( A \big | S, \theta _ { t } \big ) b ( S ) \right ] = \sum _ { \kappa \in S } \eta ( s ) \sum _ { n \in A } \pi \big ( a \big | s, \theta _ { t } \big ) \nabla _ { \theta } \ln \pi \big ( a \big | s, \theta _ { t } \big ) b ( \kappa )$$
+> 如下：
+> $$\begin{align*}
+\mathbb { E } _ { S \sim \eta, A \sim \pi } \left [ \nabla _ { \theta } \ln \pi \big ( A \big | S, \theta _ { t } \big ) b ( S ) \right ] &= \sum _ { s \in \mathcal{S} } \eta ( s ) \sum _ { a \in \mathcal{A} } \pi \big ( a \big | s, \theta _ { t } \big ) \nabla _ { \theta } \ln \pi \big ( a \big | s, \theta _ { t } \big ) b ( s) \\ \\
+&= \sum_{s \in \mathcal{S}} \eta(s) \sum_{a \in \mathcal{A}} \nabla_{\theta} \pi(a | s, \theta_{t}) b(s) \\ \\
+&= \sum_{s \in \mathcal{S}} \eta(s) b(s) \sum_{a \in \mathcal{A}} \nabla_{\theta} \pi(a | s, \theta_{t}) \\ \\
+&= \sum_{s \in \mathcal{S}} \eta(s) b(s) \nabla_{\theta} \underbrace{\sum_{a \in \mathcal{A}}  \pi(a | s, \theta_{t})}_{1} \\ \\
+&= 0
+>\end{align*}$$
+> - 添加偏置的优势
+> 目标函数的梯度$\nabla_{\theta}J(\theta) = \mathbb{E}[X]$，其中
+> $$X(S,A) = \nabla_{\theta} \ln \pi(A|S,\theta_{t}) [q(S,A) - b(S)]$$
+> 已知
+> 	- $\mathbb{E}[]$
+
 
 
 ---
