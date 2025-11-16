@@ -108,7 +108,7 @@ $$
 将on-policy的方法转换为off-policy的方法：重要性采样
 ### 重要性采样 Importance Sampling
 
-考虑已有服从$p_{0}$分布的$X$的数据，希望使用这些数据来构造服从$p_{1}$分布的数据
+考虑已有服从$p_{1}$分布的$X$的数据，希望使用这些数据来构造服从$p_{0}$分布的数据，以此估计$p_{0}$
 $$
 \begin{align*}
 \mathbb{E}_{X \sim p_{0}} [X] &= \sum_{x} p_{0}(x)x \\ 
@@ -116,7 +116,23 @@ $$
 &= \mathbb{E}_{X \sim p_{1}} [f(X)]
 \end{align*} 
 $$
+令 $\bar{f} = \frac{1}{n} \sum_{i=1}^n f(x_{i})$，其中$x_{i} \sim p_{1}$
+则
+$$
+\mathbb{E}_{X \sim p_{1}} [\bar{f}] = \mathbb{E}_{X \sim p_{1}} [f(X)]
+$$
+$$
+\text{var}_{X \sim p_{1}} [\bar{f}] = \frac{1}{n} \text{var}_{X \sim p_{1}} [f(X)]
+$$
 
+则可以用$\bar{f}$估计$\mathbb{E}_{X \sim p_{1}}[f(X)] = \mathbb{E}_{X \sim p_{0}}[X]$
+$$
+\mathbb { E } _ { X \sim p _ { 0 } } [ X ] \approx { \bar { f } } = { \frac { 1 } { n } } \sum _ { i = 1 } ^ { n } f ( x _ { i } ) { = } { \frac { 1 } { n } } \sum _ { i = 1 } ^ { n } { \frac { p _ { 0 } ( x _ { i } ) } { p _ { 1 } ( x _ { i } ) } } x _ { i }
+$$
+其中$p_{0}(x_{i}) / p_{1}(x_{i})$称为**重要性权重importance weight**
+
+> [!info] 直观理解重要性权重
+> 假设$p_{0}(x_{i}) \geq p_{1}(x_{i})$，即
 
 
 
