@@ -55,7 +55,7 @@ $$
 > 已知
 > 	- $\mathbb{E}[X]$对$b(S)$是不变量
 > 	- $\text{var}(X)$ 即$X$的方差对$b(S)$不是不变量
-> 		- 为什么？$\text{tr}[\text{var}(X)] = \mathbb{E}[X^T X] - \bar{x}^T \bar{x}$即$X$方差矩阵的迹
+> 		- 为什么？$\text{tr}[\text{var}(X)] = \mathbb{E}[X^T X] - \bar{x}^T \bar{x}$即$X$自方差矩阵的迹
 
 ]
 
