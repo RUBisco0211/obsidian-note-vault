@@ -80,14 +80,20 @@ r_{s,a} = \mathbb{E}[R | s,a] = \sum_{r} rp(r | s,a)
 $$
 即$r_{\pi}(s)$为在状态$s$下按照策略$\pi$选择动作$a$得到的平均单步奖励
 
-**另一种定义形式：**
+**另一种定义方法：**
 假设智能体按照给定的策略$\pi$生成一条trajectory $(R_{t+1}, R_{t + 2}, \dots)$
 定义
 $$
 \begin{align*}
 
+\bar{r}_{\pi} &= \lim_{ n \to \infty } \frac{1}{n} \mathbb{E}\big[ R_{t+1} + R_{t+2} + \dots + R_{t+n} \mid S_{t} = s_{0}\big] \\ 
+&= \lim_{ n \to \infty } \frac{1}{n} \mathbb{E} \Big[  \sum_{k=1}^n R_{t+k} \mid S_{t} = s_{0} \Big] \\
+&= \lim_{ n \to \infty } \frac{1}{n} \mathbb{E} \Big[  \sum_{k=1}^n R_{t+k} \Big] \\ 
+&= \sum_{s} d_{\pi}(s)r_{\pi}(s)
+
 \end{align*}
 $$
+当步数接近无穷时，起始状态$s_{0}$不重要
 
 ---
 ## 求解策略梯度
