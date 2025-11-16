@@ -145,10 +145,20 @@ $$
 J(\theta) = \sum_{s \in \mathcal{S}} d_{\beta}(s) v_{\pi}(s) = \mathbb{E}_{S \sim d_{\beta}} [v_{\pi}(S)]
 $$
 其中$d_{\beta}$为$\beta$下的稳态分布
-在discounted case情况下，$\gamma \in (0,1)$，有
+在discounted case情况下，$\gamma \in (0,1)$
+令$X = \nabla_{\theta} \ln \pi(A | S, \theta) q_{\pi}(S,A)$，$p_{0} = \pi(A | S, \theta)$，$p_{1} = \beta(A | S)$，代入重要性分布表达式，可得
 $$
-\nabla_{\theta} J(\theta) 
+\nabla_{\theta} J(\theta) = \mathbb{E}_{S \sim \rho, A \sim \beta} \Bigg[ \frac{\pi(A | S, \theta)}{\beta(A | S)} \nabla_{\theta} \ln \pi(A | S, \theta) q_{\pi}(S,A) \Bigg]
 $$
+添加偏置$b(S) = v_{\pi}(S)$后
+$$
+\nabla_{\theta} J(\theta) = \mathbb{E}_{S \sim \rho, A \sim \beta} \Bigg[ \frac{\pi(A | S, \theta)}{\beta(A | S)} \nabla_{\theta} \ln \pi(A | S, \theta) \big[q_{\pi}(S,A) - v_{\pi}(S) \big] \Bigg]
+$$
+使用随机梯度代替期望
+$$
+\theta _ { t + 1 } = \theta _ { t } + \alpha _ { \theta } \frac { \pi \big ( a _ { t } \big | s _ { t }, \theta _ { t } \big ) } { \beta ( a _ { t } | s _ { t } ) } \nabla _ { \theta } \ln \pi \big ( a _ { t } | s _ { t }, \theta _ { t } \big ) \big ( q _ { t } ( s _ { t }, a _ { t } ) - v _ { t } ( s _ { t } ) \big )
+$$
+
 
 ---
 ## Deterministic Actor-Critic
