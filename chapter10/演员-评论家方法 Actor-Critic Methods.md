@@ -15,7 +15,7 @@ $$
 - Actor：负责策略更新policy update
 - Critic：负责策略评估policy evaluation
 ---
-## Q-value Actor-Critic
+## Q-value Actor-Critic (QAC)
 
 ![image.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1763294404371_20251116195952461.png)
 
@@ -26,6 +26,23 @@ $$
 
 ---
 ## Advantage Actor-Critic (A2C)
+
+策略梯度方法的一个性质：对$q_{\pi}(S,A)$偏置量的不变性
+$$
+\begin{align*}
+\nabla_{\theta}J(\theta) &= \mathbb{E}_{S \sim \eta, A \sim \pi} \big[ \nabla_{\theta} \ln \pi(A | S,\theta_{t}) q_{\pi}(S,A) \big] \\ \\
+&= \mathbb{E}_{S \sim \eta, A \sim \pi} \big[ \nabla_{\theta} \ln \pi(A | S,\theta_{t}) (q_{\pi}(S,A) - \underbrace{b(S)}_{偏置量b}) \big] 
+\end{align*}
+$$
+加上一个偏置量后结果不受影响
+
+> [!question] 为什么能添加偏置？为什么要添加偏置？
+> - 要证明添加偏置不影响结果，即证$$
+ \mathbb { E } _ { S \sim \eta, A \sim \pi } \Big [ \nabla _ { \theta } \ln \pi ( A | S, \theta _ { t } ) b ( S ) \Big ] = 0
+> $$
+> 
+> 由$$\mathbb { E } _ { S \sim \eta, A \sim \pi } \left [ \nabla _ { \theta } \ln \pi \big ( A \big | S, \theta _ { t } \big ) b ( S ) \right ] = \sum _ { \kappa \in S } \eta ( s ) \sum _ { n \in A } \pi \big ( a \big | s, \theta _ { t } \big ) \nabla _ { \theta } \ln \pi \big ( a \big | s, \theta _ { t } \big ) b ( \kappa )$$
+
 
 ---
 ## Off-policy的Actor-Critic方法
