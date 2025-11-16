@@ -138,10 +138,10 @@ $$J\left( w\right)  = \mathbb{E}\left\lbrack  {\left( R + \gamma \mathop{\max }\
 **技巧1：双网络提高训练稳定性**
 - 令$w$和$w_{T}$分别为main network和target network的参数。**初始化相同，每隔一段时间将main network的参数赋给target network的参数，即main network的参数一直更新，target network的参数每隔一段时间更新**
 - 对于main network，每个迭代周期从**replay buffer**中取一个mini-batch的样本$\{(s,a,r,s')\}$进行训练
-- target network接受$s,a$输入，输出$y_{T} = r + \gamma  \max_{a \in \mathcal{A}(S')} \hat{q}(s',a,w_{T})$，即TD-target
-- main network接受$s,a$输入，在mini-batch$\{(s,a,y_T)\}$上最小化 TD-error $(y_{T} - \hat{q}(s,a,w))^2$，输出$\hat{q}(s,a,w)$
+- target network输出$y_{T} = r + \gamma  \max_{a \in \mathcal{A}(S')} \hat{q}(s',a,w_{T})$，即TD-target
+- main network接受$s,a,y_{T}$输入，在mini-batch$\{(s,a,y_T)\}$上最小化 TD-error $(y_{T} - \hat{q}(s,a,w))^2$，输出$\hat{q}(s,a,w)$
 
-==故在仅有main network参数$w$更新的几个周期内，可将$w_{T}$视作定值==，目标函数的梯度为
+==故在仅有main network参数$w$更新的几个周期内，可将$w_{T}$视作定值==，的梯度为
 $${\nabla }_{w}J = (-2) \mathbb{E}\left\lbrack  {\left( {R + \gamma \mathop{\max }\limits_{{a \in  \mathcal{A}\left( {S}^{\prime }\right) }}\widehat{q}\left( {{S}^{\prime },a,{w}_{T}}\right)  - \widehat{q}\left( {S,A,w}\right) }\right) {\nabla }_{w}\widehat{q}\left( {S,A,w}\right) }\right\rbrack$$
 
 **技巧2：经验回放experience replay**
