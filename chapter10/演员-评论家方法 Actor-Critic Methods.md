@@ -19,7 +19,9 @@ $$
 
 ![image.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1763294404371_20251116195952461.png)
 
-
+在第$t$步，通过采样和与环境交互，得到五元组$(s_{t},a_{t},r_{t+1},s_{t+1},a_{t+1})$
+- Critic：通过[[值函数近似 Value Function Approximation (VFA)#使用VFA的Sarsa|Sarsa]]方法结合值函数近似，进行值更新
+- Actor：
 
 ---
 ## Advantage Actor-Critic (A2C)
