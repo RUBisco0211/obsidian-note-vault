@@ -27,6 +27,8 @@ $$
 ---
 ## Advantage Actor-Critic (A2C)
 
+### 理论基础
+
 策略梯度方法的一个性质：对$q_{\pi}(S,A)$偏置量的不变性
 $$
 \begin{align*}
@@ -62,6 +64,8 @@ $$
 > ![image.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1763300322621_20251116213833954.png)
 > 但太复杂，常常将系数项去掉，选择次优偏置$$b(s) = \mathbb{E}_{A \sim \pi}[q(s,A)] = v_{\pi}(s)$$
 
+### 迭代公式
+
 添加偏置后的迭代公式：
 $$
 \begin{align*}
@@ -90,10 +94,23 @@ $$
 
 估计的优势：仅需要一个神经网络来估计$v_{\pi}(s)$，而不是两个网络分布估计$q_{\pi}(s,a)$和$v_{\pi}(s)$
 
+### 算法流程
+
+![image.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1763303131584_20251116222522383.png)
+
+依旧on-policy，但由于网络输出$\pi(a|s, \theta)$时使用了softmax，已经是stochastic策略
+
 ---
 ## Off-policy的Actor-Critic方法
 
+策略梯度方法为on-policy，由于目标函数的梯度为期望形式，且动作依赖的behavior policy与更新的target policy相同
+
+将on-policy的方法转换为off-policy的方法：重要性采样
+
+
 ### 重要性采样 Importance Sampling
+
+
 
 ---
 ## Deterministic Actor-Critic
