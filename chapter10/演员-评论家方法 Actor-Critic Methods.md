@@ -171,10 +171,18 @@ $$
 $$
 > [!important] 注意
 > - 与[[#迭代公式|off-policy的A2C]]中使用步长系数平衡exploitation和exploration不同，此处$\beta(a_{t} | s_{t})$不随策略变化，步长系数仅能也仅需要利于exploitation即可
-> - 即$$
+> - 即$\delta_{t}(s_{t},a_{t})$越大，就分配给该$(s_{t},a_{t})$较大的选择概率
 
+### 算法流程
+
+![image.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1763309297993_20251117000811020.png)
 
 
 ---
 ## Deterministic Actor-Critic
 
+本章前面提到的算法，其求得的最佳策略都为stochastic策略，即必须满足$\pi(a | s, \theta) > 0$
+本节为Actor-Critic引入Deterministic Policy
+
+> [!question] 为什么要使用确定性策略？
+> 
