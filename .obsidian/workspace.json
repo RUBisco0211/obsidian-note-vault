@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter8/值函数近似 Value Function Approximation (VFA).md",
+                "file": "chapter9/策略梯度方法 Policy Gradient Methods.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,23 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "值函数近似 Value Function Approximation (VFA)"
-            }
-          },
-          {
-            "id": "c1f1abde4d2d84f1",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "chapter8/DQN.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "DQN.excalidraw"
+              "title": "策略梯度方法 Policy Gradient Methods"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5,
-    "collapsed": true
+    "width": 298.5
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -167,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
+                "file": "chapter9/策略梯度方法 Policy Gradient Methods.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "时序差分方法 Temporal-Difference Learning（TD learning） 的大纲"
+              "title": "策略梯度方法 Policy Gradient Methods 的大纲"
             }
           },
           {
@@ -208,13 +194,13 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "c1f1abde4d2d84f1",
+  "active": "1a58d878ae4f72f9",
   "lastOpenFiles": [
     "chapter8/值函数近似 Value Function Approximation (VFA).md",
+    "chapter9/策略梯度方法 Policy Gradient Methods.md",
     "chapter8/DQN.excalidraw.md",
     "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "Excalidraw",
-    "chapter9/策略梯度方法 Policy Gradient Methods.md",
     "chapter10/演员-评论家方法 Actor-Critic Methods.md",
     "chapter5/基于蒙特卡洛的方法 Monte-Carlo Methods（model-free）.md",
     "chapter1/基本概念.md",

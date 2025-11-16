@@ -158,7 +158,7 @@ $${\nabla }_{w}J = (-2) \mathbb{E}\left\lbrack  {\left( {R + \gamma \mathop{\max
 [[DQN.excalidraw]]
 ![PixPin_2025-11-02_09-40-13.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1762047643084_PixPin_2025-11-02_09-40-13.png)
 
-
 ---
 ## 在强化学习中引入神经网络
 
+例：仅需要少量数据（一个极致exploratory的行为策略进行一个1000步的episode收集数据）即可完成训练并使模型收敛：用神经网络进行值函数近似的泛化能力强
