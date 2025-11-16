@@ -143,7 +143,7 @@ $$
 \nabla_{\theta} \bar{v}_{\pi}^0 = \sum_{s \in \mathcal{S}} \rho_\pi(s) \sum_{a \in \mathcal{A}} \nabla_{\theta} \pi(a | s,\theta) q_{\pi}(s,a)
 $$
 
-**期望形式：**
+### 期望形式
 $$
 \begin{align*}
 
@@ -158,20 +158,27 @@ $$
 \nabla_{\theta} J \approx \nabla_{\theta} \ln \pi(a | s, \theta) q_{\pi}(s,a)
 $$
 > [!important] 期望形式推导
+> 由
 > $$\nabla_{\theta} \ln \pi(a | s, \theta) = \frac{\nabla_{\theta}\pi(a | s, \theta)}{\pi(a | s, \theta)}$$
 > 故
-> 
-
-
-
-$$
+> $$
  \begin{align*}
  {\nabla }_{\theta }J &= \mathop{\sum }\limits_{s}d\left( s\right) \mathop{\sum }\limits_{a}{\nabla }_{\theta }\pi \left( {a \mid  s,\theta }\right) {q}_{\pi }\left( {s,a}\right) \\
  &= \mathop{\sum }\limits_{s}d\left( s\right) \mathop{\sum }\limits_{a}\pi \left( {a|s,\theta }\right) {\nabla }_{\theta }\ln \pi \left( {a|s,\theta }\right) {q}_{\pi }\left( {s,a}\right) \\
-  &= \mathbb{E}_{S \sim d} \Big [ \sum_{a} \pi(a | S, \theta) \nabla_{\theta}  \Big]
- \end{align*}
+  &= \mathbb{E}_{S \sim d} \Big [ \sum_{a} \pi(a | S, \theta) \nabla_{\theta} \ln \pi(a | S, \theta) q_{\pi}(S,a) \Big] \\
+   &= \mathbb{E}_{S \sim d, A \sim \pi} \Big[ \nabla_{\theta} \ln \pi(A | S, \theta) q_{\pi}(S,A) \Big]
+ \end{align*} 
+> $$
+ >
+ > 注意：考虑到$\ln \pi(a | s, \theta)$的存在性，需要保证$\pi(a | s, \theta) > 0$
+ > 可以使用softmax函数来确保
+ > $\text{softmax}(x) = [z_{1}, \dots ,z_{n}]^T, \quad z_{i} = \frac{e^{ x_{i} }}{\sum_{j=1}^n e^{ x_{j} }}$
 
- $$
+ 
+
+
+
+
  
 ---
 ## 梯度上升方法 (REINFORCE)
