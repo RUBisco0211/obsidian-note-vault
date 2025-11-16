@@ -103,14 +103,25 @@ $$
 ---
 ## Off-policy的Actor-Critic方法
 
-策略梯度方法为on-policy，由于目标函数的梯度为期望形式，且动作依赖的behavior policy与更新的target policy相同
+策略梯度方法为on-policy：由于目标函数的梯度为期望形式，且动作依赖的behavior policy与更新的target policy相同
 
 将on-policy的方法转换为off-policy的方法：重要性采样
-
-
 ### 重要性采样 Importance Sampling
 
+考虑已有服从$p_{0}$分布的$X$的数据，希望使用这些数据来构造服从$p_{1}$分布的数据
+$$
+\begin{align*}
+\mathbb{E}_{X \sim p_{0}} [X] &= \sum_{x} p_{0}(x)x \\ 
+&= \sum_{x} p_{1}(x) \underbrace{\frac{p_{0}(x)}{p_{1}(x)} x}_{f(x)} \\ 
+&= \mathbb{E}_{X \sim p_{1}} [f(X)]
+\end{align*} 
+$$
 
+
+
+
+
+考虑使用在behavior policy下采集的数据来估计target policy
 
 ---
 ## Deterministic Actor-Critic
