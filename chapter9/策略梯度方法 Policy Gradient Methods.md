@@ -196,3 +196,16 @@ $$
 - TD方法：此种方法为**Actor-Critic**
 
 ### 如何采样
+
+- 对于$S$进行采样：由于$S \sim d$且$d$分布需要策略$\pi$下的长期数据，故一般不考虑遵循$d$分布
+- 对于$A$进行采样：$a_{t}$的采样应该遵循$\pi(s_{t}, \theta)$，故这是一种**on-policy方法**
+### 如何实现
+
+重写迭代公式
+$$
+\begin{align*}
+\theta_{t+1} &= \theta_{t} + \alpha \nabla_{\theta} J(\theta) \\ \\
+&= \theta_{t} + \alpha \nabla_{\theta} \ln \pi(a_{t} | s_{t}, \theta_{t}) q_{t}(s_{t},a_{t})  \\ \\
+&= \theta_{t} + \alpha \underbrace  \nabla_{\theta} \pi(s_{t} | s_{t, \theta_{t}})
+\end{align*}
+$$
