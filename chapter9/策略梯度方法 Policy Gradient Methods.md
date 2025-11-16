@@ -172,13 +172,12 @@ $$
  >
  > 注意：考虑到$\ln \pi(a | s, \theta)$的存在性，需要保证$\pi(a | s, \theta) > 0$
  > 可以使用softmax函数来确保
- > $\text{softmax}(x) = [z_{1}, \dots ,z_{n}]^T, \quad z_{i} = \frac{e^{ x_{i} }}{\sum_{j=1}^n e^{ x_{j} }}$
-
- 
-
-
-
-
+ > $$\text{softmax}(x) = [z_{1}, \dots ,z_{n}]^T, \quad z_{i} = \frac{e^{ x_{i} }}{\sum_{j=1}^n e^{ x_{j} }}$$
+ > 则策略函数改写为$$\pi \left( {a \mid  s,\theta }\right)  = \frac{{e}^{h\left( {s,a,\theta }\right) }}{\mathop{\sum }\limits_{{{a}^{\prime } \in  \mathcal{A}}}{e}^{h\left( {s,{a}^{\prime },\theta }\right) }}$$
+ > 其中$h(s,a,\theta)$可以为一特征函数（神经网络的最后一层用softmax归一化）
  
 ---
 ## 梯度上升方法 (REINFORCE)
+
+基本思路
+
