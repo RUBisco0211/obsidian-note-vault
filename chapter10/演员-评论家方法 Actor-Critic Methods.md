@@ -158,6 +158,21 @@ $$
 $$
 \theta _ { t + 1 } = \theta _ { t } + \alpha _ { \theta } \frac { \pi \big ( a _ { t } \big | s _ { t }, \theta _ { t } \big ) } { \beta ( a _ { t } | s _ { t } ) } \nabla _ { \theta } \ln \pi \big ( a _ { t } | s _ { t }, \theta _ { t } \big ) \big ( q _ { t } ( s _ { t }, a _ { t } ) - v _ { t } ( s _ { t } ) \big )
 $$
+参考A2C，用TD-error估计$\delta_{t}(s_{t},a_{t})$
+$$
+\theta _ { t + 1 } = \theta _ { t } + \alpha _ { \theta } \frac { \pi ( a _ { t } | s _ { t }, \theta _ { t } ) } { \beta ( a _ { t } | s _ { t } ) } \nabla _ { \theta } \ln \pi ( a _ { t } | s _ { t }, \theta _ { t } ) \delta _ { t } ( s _ { t }, a _ { t } )
+$$
+$$
+q _ { t } ( s _ { t }, a _ { t } ) - v _ { t } ( s _ { t } ) \approx r _ { t + 1 } + \gamma v _ { t } ( s _ { t + 1 } ) - v _ { t } ( s _ { t } ) \doteq \delta _ { t } ( s _ { t }, a _ { t } )
+$$
+将迭代公式继续变形
+$$
+\theta _ { t + 1 } = \theta _ { t } + \alpha _ { \theta } \left ( \frac { \delta _ { t } ( s _ { t }, a _ { t } ) } { \beta ( a _ { t } | s _ { t } ) } \right ) \nabla _ { \theta } \pi ( a _ { t } | s _ { t }, \theta _ { t } )
+$$
+> [!important] 注意
+> - 与[[#迭代公式|off-policy的A2C]]中使用步长系数平衡exploitation和exploration不同，此处$\beta(a_{t} | s_{t})$不随策略变化，步长系数仅能也仅需要利于exploitation即可
+> - 即$$
+
 
 
 ---
