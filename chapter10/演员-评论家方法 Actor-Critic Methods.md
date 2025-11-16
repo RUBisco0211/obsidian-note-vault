@@ -1,7 +1,7 @@
 回顾策略梯度方法
 1. 目标函数$J(\theta)$
 2. 迭代公式
-$$\begin{array} { l } { \theta _ { t + 1 } = \theta _ { t } + \alpha \nabla _ { \theta } J ( \theta _ { t } ) } \\ { \qquad = \theta _ { t } + \alpha \mathbb { E } _ { S \sim \eta, A \sim \pi } \Big [ \nabla _ { \theta } \ln \pi ( A | S, \theta _ { t } ) q _ { \pi } ( S, A ) \Big ) } \end{array}
+$$\begin{array} { l } { \theta _ { t + 1 } = \theta _ { t } + \alpha \nabla _ { \theta } J ( \theta _ { t } ) } \\ { \qquad = \theta _ { t } + \alpha \mathbb { E } _ { S \sim \eta, A \sim \pi } \Big [ \nabla _ { \theta } \ln \pi ( A | S, \theta _ { t } ) q _ { \pi } ( S, A ) \Big ] } \end{array}
 $$
 3. 随机梯度上升
 $$
@@ -62,15 +62,23 @@ $$
 > ![image.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1763300322621_20251116213833954.png)
 > 但太复杂，常常将系数项去掉，选择次优偏置$$b(s) = \mathbb{E}_{A \sim \pi}[q(s,A)] = v_{\pi}(s)$$
 
-添加偏置后的迭代算法：
+添加偏置后的迭代公式：
 $$
 \begin{align*}
-\theta_{t+1} &= 
+\theta_{t+1} &= \theta _ { t } + \alpha \mathbb { E }  \Big [ \nabla _ { \theta } \ln \pi ( A | S, \theta _ { t } ) \big [q _ { \pi } ( S, A ) - v_{\pi}(S) \big] \Big ] \\ \\
+&= \theta_{t} + \alpha \mathbb{E} \Big[ \nabla_{\theta} \ln \pi(A | S, \theta_{t}) \underbrace{\delta_{\pi}(S,A)}_{\text{优势函数}} \Big]
 \end{align*}
 $$
+- **优势函数advantage function**：$\delta_{\pi}(S,A) = q_{\pi}(S,A) - v_{\pi}(S)$
 
+重新组织随机梯度下的迭代公式：
+$$
+\begin{align*}
+\theta_{t+1} &= \theta_{t} + \alpha \nabla_{\theta} \ln \pi(A | S, \theta_{t}) \delta_{\pi}(S,A) \\ \\
+&= \theta_{t} + \alpha \frac{\nabla_{\theta}\pi(a_{t} | s_{t}, \theta_{t})}{\pi(a_{t} | s_{t}, \theta_{t})} \delta_{\pi}(S,A) \\ \\
 
-
+\end{align*}
+$$
 
 ---
 ## Off-policy的Actor-Critic方法
