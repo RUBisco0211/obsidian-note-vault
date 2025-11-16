@@ -135,19 +135,16 @@ $$J\left( w\right)  = \mathbb{E}\left\lbrack  {\left( R + \gamma \mathop{\max }\
 在目标函数中 $\hat{q}(S,A,w)$ 和 $y = R + \gamma \max_{\alpha \in \mathcal{A(S')}} \hat{q}(S',a,w)$都存在网络参数$w$
 假设$y$中$w$为一常数，求梯度时仅对$\hat{q}(S,A,w)$中参数进行求解
 
-**实现：使用两个网络**
-- main network：不断更新，代表$\hat{q}(s,a,w)$，参数为$w$
-- target network：几个周期更新一次，代表$\hat{q}(s,a,w_{T})$，参数为$w_{T}$
+**技巧1：双网络提高训练稳定性**
+- 令$w$和$w_{T}$分别为main network和target network的参数。**初始化相同，每隔一段时间将main network的参数赋给target network的参数，即main**
+- 对于main network，每个迭代周期从**replay buffer**中取一个mini-batch的样本$\{(s,a,r,s')\}$进行训练
+- target network接受$s,a$输入，输出$y_{T} = r + \gamma  \max_{a \in \mathcal{A}(S')} \hat{q}(s',a,w_{T})$，即TD-target
+- main network接受$s,a$输入，在mini-batch$\{(s,a,y_T)\}$上最小化 TD-error $(y_{T} - \hat{q}(s,a,w))^2$，输出$\hat{q}(s,a,w)$
 
 ==故在仅有main network参数$w$更新的几个周期内，可将$w_{T}$视作定值==，目标函数的梯度为
 $${\nabla }_{w}J = (-2) \mathbb{E}\left\lbrack  {\left( {R + \gamma \mathop{\max }\limits_{{a \in  \mathcal{A}\left( {S}^{\prime }\right) }}\widehat{q}\left( {{S}^{\prime },a,{w}_{T}}\right)  - \widehat{q}\left( {S,A,w}\right) }\right) {\nabla }_{w}\widehat{q}\left( {S,A,w}\right) }\right\rbrack$$
-**技巧：双网络**
-- 令$w$和$w_{T}$分别为main network和target network的参数
-- 每个迭代周期从**replay buffer**中取一个mini-batch的样本$\{(s,a,r,s')\}$进行训练
-- main network接受$s,a$输入，输出$\hat{q}(s,a,w)$
-- target network接受$s,a$输入，输出$y_{T} = r + \gamma  \max_{a \in \mathcal{A}(S')} \hat{q}(s',a,w_{T})$，之后在mini-batch$\{(s,a,y_T)\}$上最小化$(y_{T} - \hat{q}(s,a,w))^2$
 
-**技巧：经验回放experience replay**
+**技巧2：经验回放experience replay**
 - 收集到的经验$(s,a,r,s')$会被打乱，不会按照收集的顺序进行训练
 - 将经验放在**replay buffer** $\mathcal{B} = \{(s,a,r,s') \}$ 中，每次抽取一个mini-batch进行训练
 - 抽取数据时应该让$(s,a)$服从均匀分布，且放回抽样
