@@ -12,6 +12,8 @@ Actor-Critc方法也为一种策略梯度方法，但在使用随机采样进行
 ---
 ## Off-policy的Actor-Critic方法
 
+### 重要性采样 Importance Sampling
+
 ---
 ## Deterministic Actor-Critic
 
