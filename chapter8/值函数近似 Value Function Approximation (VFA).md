@@ -139,8 +139,8 @@ $$J\left( w\right)  = \mathbb{E}\left\lbrack  {\left( R + \gamma \mathop{\max }\
 - main network：不断更新，代表$\hat{q}(s,a,w)$，参数为$w$
 - target network：几个周期更新一次，代表$\hat{q}(s,a,w_{T})$，参数为$w_{T}$
 
-当$w_{T}$被视作固定时，目标函数的梯度为
-$${\nabla }_{w}J = \mathbb{E}\left\lbrack  {\left( {R + \gamma \mathop{\max }\limits_{{a \in  \mathcal{A}\left( {S}^{\prime }\right) }}\widehat{q}\left( {{S}^{\prime },a,{w}_{T}}\right)  - \widehat{q}\left( {S,A,w}\right) }\right) {\nabla }_{w}\widehat{q}\left( {S,A,w}\right) }\right\rbrack$$
+==故在仅有main network参数$w$更新的几个周期内，可将$w_{T}$视作定值==，目标函数的梯度为
+$${\nabla }_{w}J = (-2) \mathbb{E}\left\lbrack  {\left( {R + \gamma \mathop{\max }\limits_{{a \in  \mathcal{A}\left( {S}^{\prime }\right) }}\widehat{q}\left( {{S}^{\prime },a,{w}_{T}}\right)  - \widehat{q}\left( {S,A,w}\right) }\right) {\nabla }_{w}\widehat{q}\left( {S,A,w}\right) }\right\rbrack$$
 **技巧：双网络**
 - 令$w$和$w_{T}$分别为main network和target network的参数
 - 每个迭代周期从**replay buffer**中取一个mini-batch的样本$\{(s,a,r,s')\}$进行训练
