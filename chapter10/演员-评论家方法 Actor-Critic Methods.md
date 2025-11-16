@@ -53,7 +53,9 @@ $$
 > 目标函数的梯度$\nabla_{\theta}J(\theta) = \mathbb{E}[X]$，其中
 > $$X(S,A) = \nabla_{\theta} \ln \pi(A|S,\theta_{t}) [q(S,A) - b(S)]$$
 > 已知
-> 	- $\mathbb{E}[]$
+> 	- $\mathbb{E}[X]$对$b(S)$是不变量
+> 	- $\text{var}(X)$ 即$X$的方差对$b(S)$不是不变量
+> 		- 为什么？$\text{tr}[\text{var}(X)] = \mathbb{E}[X^T X] - \bar{x}^T \bar{x}$即$X$方差矩阵的迹
 
 
 
