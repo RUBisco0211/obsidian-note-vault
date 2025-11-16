@@ -76,10 +76,19 @@ $$
 \begin{align*}
 \theta_{t+1} &= \theta_{t} + \alpha \nabla_{\theta} \ln \pi(a_{t} | s_{t}, \theta_{t}) \delta_{\pi}(s_{t},a_{t}) \\ \\
 &= \theta_{t} + \alpha \frac{\nabla_{\theta}\pi(a_{t} | s_{t}, \theta_{t})}{\pi(a_{t} | s_{t}, \theta_{t})} \delta_{\pi}(s_{t},a_{t}) \\ \\
-&= \theta_{t} + \underbrace{ \alpha \Big( \frac{\delta_{\pi}(s_{t},a_{t})}{\pi(a_{t} | s_{t}, \theta_{t})} \Big)}_{步长} \nabla_{\theta} \pi(a_{t} | s_{t}, \theta_{t}) \\ \\
+&= \theta_{t} + \underbrace{ \alpha \Big( \frac{\delta_{\pi}(s_{t},a_{t})}{\pi(a_{t} | s_{t}, \theta_{t})} \Big)}_{步长} \nabla_{\theta} \pi(a_{t} | s_{t}, \theta_{t}) \\ 
 \end{align*}
 $$
-步长系数$\delta_{\pi}(s_{t},a_{t}) / \pi(a_{t} | s_{t}, \theta_{t})$也是一个可以平衡exploitation和exploration的量，参考[[策略梯度方法 Policy Gradient Methods#^]]
+步长系数$\delta_{\pi}(s_{t},a_{t}) / \pi(a_{t} | s_{t}, \theta_{t})$也是一个可以平衡exploitation和exploration的量，参考[[策略梯度方法 Policy Gradient Methods#^NewStepSize]]
+
+进一步，$\delta_{t}(s_{t},a_{t}) = q_{t}(s_{t},a_{t}) - v_{t}(s_{t})$可以由TD-error $r_{t+1} + \gamma v_{t}(s_{t+1}) - v_{t}(s_{t})$ 估计
+
+> [!info] 估计的可行性
+> $$
+\mathbb{E}[q_{\pi}(S,A) - v_{\pi}(S) \mid S = s_{t}, A = a_{t}] = \mathbb{E}[R + \gamma v_{\pi}(S') - v_{\pi}(S) \mid S = s_{t}, A = a_{t}]
+$$
+
+估计的优势：仅需要一个神经网络来估计$v_{\pi}(s)$，而不是两个网络分布估计$q_{\pi}(s,a)$和$v_{\pi}(s)$
 
 ---
 ## Off-policy的Actor-Critic方法

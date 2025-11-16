@@ -32,12 +32,12 @@
             }
           },
           {
-            "id": "a5697cc72b0db50e",
+            "id": "6335c968c2abd3dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter10/演员-评论家方法 Actor-Critic Methods.md",
+                "file": "chapter9/策略梯度方法 Policy Gradient Methods.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,11 +52,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "演员-评论家方法 Actor-Critic Methods"
+              "title": "策略梯度方法 Policy Gradient Methods"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -114,7 +113,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -219,7 +219,7 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "a5697cc72b0db50e",
+  "active": "2296538d3de94a6f",
   "lastOpenFiles": [
     "chapter9/策略梯度方法 Policy Gradient Methods.md",
     "chapter10/演员-评论家方法 Actor-Critic Methods.md",
