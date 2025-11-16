@@ -127,6 +127,16 @@ $$
 $J(\theta)$可以为$\bar{v}_{\pi}, \bar{r}_{\pi}, \bar{v}_{\pi}^0$，分别与右式呈$=, \approx, \propto$关系
 $\eta(x)$为状态的分布，不同目标函数中状态遵循不同的分布
 
+例：
+$$
+\nabla_{\theta} \bar{r}_{\pi} \simeq \sum_{s} d_{\pi}(s) \sum_{a} \nabla_{\theta} \pi(a | s,\theta) q_{\pi}(s,a)
+$$
+$$
+\nabla_{\theta} \bar{v}_{\pi} = \frac{1}{1-\gamma} \nabla_{\theta} \bar{r}_{\pi}
+$$
+$$
+\nabla_{\theta} \bar{v}_{\pi}^0 = \sum_{s \in \mathcal{S}} \rho)\pi
+$$
 
 ---
 ## 梯度上升方法 (REINFORCE)
