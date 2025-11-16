@@ -148,15 +148,30 @@ $$
 \begin{align*}
 
 \nabla_{\theta} J(\theta) &= \sum_{s \in \mathcal{S}} \eta(s) \sum_{a \in \mathcal{A}} \nabla_{\theta} \pi(a | s, \theta) q_{\pi}(s,a) \\ \\
-&= \mathbb{E}[\nabla_{\theta} \ln \pi(A | S, \theta)q_{\pi}(S,A)]
+&= \mathbb{E}[\nabla_{\theta} \ln \pi(A | S, \theta) q_{\pi}(S,A)]
 
 \end{align*}
 $$
 其中$S \sim \eta, A \sim \pi(A | S, \theta)$
-在期望形式下，可以非常轻松地用采样值来估计梯度
+在期望形式下，可以非常轻松地用**采样值**来近似估计梯度（随机梯度下降/上升）
 $$
-\nabla_{\theta} J \approx \nabla_{\theta} \ln \pi(a | s, \theta)
+\nabla_{\theta} J \approx \nabla_{\theta} \ln \pi(a | s, \theta) q_{\pi}(s,a)
 $$
+> [!important] 期望形式推导
+> $$\nabla_{\theta} \ln \pi(a | s, \theta) = \frac{\nabla_{\theta}\pi(a | s, \theta)}{\pi(a | s, \theta)}$$
+> 故
+> 
 
+
+
+$$
+ \begin{align*}
+ {\nabla }_{\theta }J &= \mathop{\sum }\limits_{s}d\left( s\right) \mathop{\sum }\limits_{a}{\nabla }_{\theta }\pi \left( {a \mid  s,\theta }\right) {q}_{\pi }\left( {s,a}\right) \\
+ &= \mathop{\sum }\limits_{s}d\left( s\right) \mathop{\sum }\limits_{a}\pi \left( {a|s,\theta }\right) {\nabla }_{\theta }\ln \pi \left( {a|s,\theta }\right) {q}_{\pi }\left( {s,a}\right) \\
+  &= \mathbb{E}_{S \sim d} \Big [ \sum_{a} \pi(a | S, \theta) \nabla_{\theta}  \Big]
+ \end{align*}
+
+ $$
+ 
 ---
 ## 梯度上升方法 (REINFORCE)
