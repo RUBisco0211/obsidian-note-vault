@@ -144,6 +144,7 @@ $$J\left( w\right)  = \mathbb{E}\left\lbrack  {\left( R + \gamma \mathop{\max }\
 ==故在仅有main network参数$w$更新的几个周期内，可将$w_{T}$视作定值==，的梯度为
 $${\nabla }_{w}J = (-2) \mathbb{E}\left\lbrack  {\left( {R + \gamma \mathop{\max }\limits_{{a \in  \mathcal{A}\left( {S}^{\prime }\right) }}\widehat{q}\left( {{S}^{\prime },a,{w}_{T}}\right)  - \widehat{q}\left( {S,A,w}\right) }\right) {\nabla }_{w}\widehat{q}\left( {S,A,w}\right) }\right\rbrack$$
 
+
 **技巧2：经验回放experience replay**
 - 收集到的经验$(s,a,r,s')$会被打乱，不会按照收集的顺序进行训练
 - 将经验放在**replay buffer** $\mathcal{B} = \{(s,a,r,s') \}$ 中，每次抽取一个mini-batch进行训练
@@ -154,6 +155,7 @@ $${\nabla }_{w}J = (-2) \mathbb{E}\left\lbrack  {\left( {R + \gamma \mathop{\max
 > ![PixPin_2025-11-01_22-51-34.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1762008709786_PixPin_2025-11-01_22-51-34.png)
 
 算法（off-policy）：
+[[DQN.excalidraw]]
 ![PixPin_2025-11-02_09-40-13.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1762047643084_PixPin_2025-11-02_09-40-13.png)
 
 

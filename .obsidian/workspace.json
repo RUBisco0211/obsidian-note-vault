@@ -37,13 +37,14 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "chapter8/Drawing 2025-11-16 10.21.09.excalidraw.md"
+                "file": "chapter8/DQN.excalidraw.md"
               },
               "icon": "excalidraw-icon",
-              "title": "Drawing 2025-11-16 10.21.09.excalidraw"
+              "title": "DQN.excalidraw"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -207,10 +208,10 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "1a58d878ae4f72f9",
+  "active": "c1f1abde4d2d84f1",
   "lastOpenFiles": [
-    "chapter8/Drawing 2025-11-16 10.21.09.excalidraw.md",
     "chapter8/值函数近似 Value Function Approximation (VFA).md",
+    "chapter8/DQN.excalidraw.md",
     "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "Excalidraw",
     "chapter9/策略梯度方法 Policy Gradient Methods.md",
