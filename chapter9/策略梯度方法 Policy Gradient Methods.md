@@ -43,9 +43,9 @@ $$\pi(a | s, \theta), \quad \text{或} \quad \pi_{\theta}(a | s)$$
 ---
 ## 定义最优策略的指标
 
-主要有两类指标
+主要有两种指标
 
-### 平均状态值 average state value
+### 1.平均状态值 average state value
 
 $$
 \bar{v}_{\pi} = \sum_{s \in \mathcal{S}} d(s) v_{\pi}(s) = \mathbb{E}[v_{\pi}(S)]
@@ -66,6 +66,28 @@ $d_{0}$的选择：
 - [[值函数近似 Value Function Approximation (VFA)#稳态分布 stationary distribution | 稳态分布 stationary distribution]]：$d = d_{\pi}$
 	- 性质：$d_{\pi}^T P_{\pi} = d^T_{\pi}$，其中$P_{\pi}$为状态转移矩阵
 
+### 2.平均奖励 average one-step reward
+
+$$
+\bar{r}_{\pi} = \sum_{s \in \mathcal{S}} d_{\pi}(s) r_{\pi}(s) = \mathbb{E}[r_{\pi}(S)]
+$$
+其中$S \sim d_{\pi}$，$d_{\pi}$为[[值函数近似 Value Function Approximation (VFA)#稳态分布 stationary distribution | 稳态分布]]，依赖于策略$\pi$。且其中
+$$
+r_{\pi}(s) = \sum_{a \in \mathcal{A}} \pi(a | s)r(s,a)
+$$
+$$
+r_{s,a} = \mathbb{E}[R | s,a] = \sum_{r} rp(r | s,a)
+$$
+即$r_{\pi}(s)$为在状态$s$下按照策略$\pi$选择动作$a$得到的平均单步奖励
+
+**另一种定义形式：**
+假设智能体按照给定的策略$\pi$生成一条trajectory $(R_{t+1}, R_{t + 2}, \dots)$
+定义
+$$
+\begin{align*}
+
+\end{align*}
+$$
 
 ---
 ## 求解策略梯度
