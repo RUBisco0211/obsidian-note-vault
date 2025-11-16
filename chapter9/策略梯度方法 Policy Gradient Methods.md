@@ -179,5 +179,20 @@ $$
 ---
 ## 梯度上升方法 (REINFORCE)
 
-基本思路
+### 基本思路
+$$
+\begin{align*}
+\theta_{t+1} &= \theta_{t} + \alpha \nabla_{\theta} J(\theta) \\ \\
+&= \theta_{t} + \alpha \mathbb{E}\Big[ \nabla_{\theta} \ln \pi(A | S, \theta_{t}) q_{\pi}(S,A) \Big]
+\end{align*}
+$$
+期望涉及到状态与动作的分布，无法直接求得
+故用随机采样$(s_{t}, a_{t})$对应梯度代替真实梯度，有
+$$
+\theta_{t+1} = \theta_{t} + \alpha \nabla_{\theta} \ln \pi(a_{t} | s_{t}, \theta_{t}) q_{\pi}(s_{t}, a_{t})
+$$
+且其中$q_{\pi}(s_{t},a_{t})$也无法求得，故用$q_{t}(s_{t}, a_{t})$进行近似
+- Monte-Carlo 方法：从$(s,a)$出发得到一个trajectory的数据来估计动作值，这种方法即为**REINFORCE**
+- TD方法：此种方法为**Actor-Critic**
 
+### 如何采样
