@@ -79,7 +79,7 @@ $$
 &= \theta_{t} + \underbrace{ \alpha \Big( \frac{\delta_{\pi}(s_{t},a_{t})}{\pi(a_{t} | s_{t}, \theta_{t})} \Big)}_{步长} \nabla_{\theta} \pi(a_{t} | s_{t}, \theta_{t}) \\ \\
 \end{align*}
 $$
-步长系数$\delta_{\pi}(s_{t},a_{t}) / \pi(a_{t} | s_{t}, \theta_{t})$也是一个可以平衡exploitation和exploration的量，参考
+步长系数$\delta_{\pi}(s_{t},a_{t}) / \pi(a_{t} | s_{t}, \theta_{t})$也是一个可以平衡exploitation和exploration的量，参考[[策略梯度方法 Policy Gradient Methods#^]]
 
 ---
 ## Off-policy的Actor-Critic方法
