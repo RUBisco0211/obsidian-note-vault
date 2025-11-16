@@ -52,12 +52,25 @@ $$
 > - 添加偏置的优势
 > 目标函数的梯度$\nabla_{\theta}J(\theta) = \mathbb{E}[X]$，其中
 > $$X(S,A) = \nabla_{\theta} \ln \pi(A|S,\theta_{t}) [q(S,A) - b(S)]$$
-> 已知
-> 	- $\mathbb{E}[X]$对$b(S)$是不变量
-> 	- $\text{var}(X)$ 即$X$的方差对$b(S)$不是不变量
-> 		- 为什么？$\text{tr}[\text{var}(X)] = \mathbb{E}[X^T X] - \bar{x}^T \bar{x}$即$X$自方差矩阵的迹
+> 
+> 	- 已知：
+> 		- $\mathbb{E}[X]$对$b(S)$是不变量
+> 		- $\text{var}(X)$ 即$X$的方差对$b(S)$不是不变量
+> ![image.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1763300119648_20251116213512042.png)
+> 	- 目标：选择一个最优的偏置$b$让$var(X)$最小
+> 	- 最优偏置$b^*(s)$如下
+> ![image.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1763300322621_20251116213833954.png)
+> 但太复杂，常常将系数项去掉，选择次优偏置$$b(s) = \mathbb{E}_{A \sim \pi}[q(s,A)] = v_{\pi}(s)$$
 
-]
+添加偏置后的迭代算法：
+$$
+\begin{align*}
+\theta_{t+1} &= 
+\end{align*}
+$$
+
+
+
 
 ---
 ## Off-policy的Actor-Critic方法
