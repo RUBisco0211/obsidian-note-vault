@@ -182,7 +182,15 @@ $$
 ## Deterministic Actor-Critic
 
 本章前面提到的算法，其求得的最佳策略都为stochastic策略，即必须满足$\pi(a | s, \theta) > 0$
-本节为Actor-Critic引入Deterministic Policy
+本节为Actor-Critic引入确定性策略
 
 > [!question] 为什么要使用确定性策略？
-> 
+ stochastic策略的输出为$\| \mathcal{A}(S) \|$长度的策略向量，无法表示**连续动作空间**下的选择概率
+
+一种表示连续性动作空间下的确定性策略的方法：
+令
+$$
+a = \mu(s,\theta) = \mu(s)
+$$
+- $\mu$为从$\mathcal{S}$到$\mathcal{A}$的映射
+- 例：$\mu$为一神经网络，输入为$s$，输出$a$，网络参数为$\theta$
