@@ -209,3 +209,23 @@ discounted case 下，梯度如下
 
 - 梯度中不显含$A$，被替换为$\mu(S)$了
 - 天然的off-policy方法
+
+### 迭代公式
+$$\theta _ { t + 1 } = \theta _ { t } + \alpha _ { \theta } \mathbb { E } _ { S \sim \rho _ { \mu } } \left [ \nabla _ { \theta } \mu ( S ) \big ( \nabla _ { a } q _ { \mu } ( S, a ) \big )  | _ { a = \mu ( S ) } \right]$$
+用采样的随机梯度替换期望
+$$\theta _ { t + 1 } = \theta _ { t } + \alpha _ { \theta } \nabla _ { \theta } \mu ( s _ { t } ) \big ( \nabla _ { a } q _ { \mu } ( s _ { t }, a ) \big ) | _ { a = \mu ( s _ { t } ) }$$
+### 算法流程
+
+behavior policy $\beta(a | s)$
+Actor网络使用确定性的target policy $\mu(s, \theta)$
+Critic网络 $v(s,w)$
+
+![image.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1763342191089_20251117091628843.png)
+
+补充说明：
+- off-policy
+- $\beta$也可以由 $\mu + noise$来替换，即为on-policy实现
+
+计算$q(s,a,w)$的方法
+- DPG：使用线性函数$q(s,a,w) = \phi^T(s,a) w$
+- DDPG(Deep Deterministic Policy Gradient)：使用神经网络
