@@ -187,10 +187,25 @@ $$
 > [!question] 为什么要使用确定性策略？
  stochastic策略的输出为$\| \mathcal{A}(S) \|$长度的策略向量，无法表示**连续动作空间**下的选择概率
 
-一种表示连续性动作空间下的确定性策略的方法：
-令
+一种表示连续性动作空间下的确定性策略的方法，令：
 $$
 a = \mu(s,\theta) = \mu(s)
 $$
 - $\mu$为从$\mathcal{S}$到$\mathcal{A}$的映射
 - 例：$\mu$为一神经网络，输入为$s$，输出$a$，网络参数为$\theta$
+
+### 确定性策略下的策略梯度
+
+$$
+J ( \theta ) = \mathbb { E } [ v _ { \mu } ( s ) ] = \sum _ { s \in \mathcal { S } } d _ { 0 } ( s ) v _ { \mu } ( s )
+$$
+其中$d_{0}$分布与策略$\mu$无关
+$d_{0}$的选择：
+- $d_{0}(s_{0}) = 1,\quad d_{0}(s \neq s_{0}) = 0$，其中$s_{0}$为需要关注的起始状态
+- $d_{0}$为behavior policy $\beta$ 下的**稳态分布**
+
+discounted case 下，梯度如下
+![image.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1763341790633_20251117090945361.png)
+
+- 梯度中不显含$A$，被替换为$\mu(S)$了
+- 天然的off-policy方法
