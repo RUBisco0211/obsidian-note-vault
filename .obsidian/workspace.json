@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2296538d3de94a6f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "chapter10/演员-评论家方法 Actor-Critic Methods.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "演员-评论家方法 Actor-Critic Methods"
-            }
-          },
-          {
             "id": "6335c968c2abd3dc",
             "type": "leaf",
             "state": {
@@ -177,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter10/演员-评论家方法 Actor-Critic Methods.md",
+                "file": "chapter9/策略梯度方法 Policy Gradient Methods.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "演员-评论家方法 Actor-Critic Methods 的大纲"
+              "title": "策略梯度方法 Policy Gradient Methods 的大纲"
             }
           },
           {
@@ -201,8 +177,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,18 +193,18 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "2296538d3de94a6f",
+  "active": "6335c968c2abd3dc",
   "lastOpenFiles": [
+    "notes.base",
     "chapter9/策略梯度方法 Policy Gradient Methods.md",
     "chapter10/演员-评论家方法 Actor-Critic Methods.md",
+    "chapter10/Actor-Critic.excalidraw.md",
     "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "chapter3/贝尔曼最优公式 Bellman Optimality Equation（BOE）.md",
     "chapter2/贝尔曼公式 Bellman Equation.md",
-    "chapter10/Actor-Critic.excalidraw.md",
     "chapter8/值函数近似 Value Function Approximation (VFA).md",
     "Excalidraw",
     "chapter8/DQN.excalidraw.md",
-    "notes.base",
     "chapter5/基于蒙特卡洛的方法 Monte-Carlo Methods（model-free）.md",
     "chapter1/基本概念.md",
     "chapter0/引言.md",

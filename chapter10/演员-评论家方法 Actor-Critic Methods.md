@@ -90,7 +90,7 @@ $$
 > [!info] 估计的可行性
 > $$
 \mathbb{E}[q_{\pi}(S,A) - v_{\pi}(S) \mid S = s_{t}, A = a_{t}] = \mathbb{E}[R + \gamma v_{\pi}(S') - v_{\pi}(S) \mid S = s_{t}, A = a_{t}]
-$$
+>$$
 
 估计的优势：仅需要一个神经网络来估计$v_{\pi}(s)$，而不是两个网络分布估计$q_{\pi}(s,a)$和$v_{\pi}(s)$
 
@@ -102,6 +102,7 @@ $$
 
 ---
 ## Off-policy的Actor-Critic方法
+
 
 策略梯度方法为on-policy：由于目标函数的梯度为期望形式，且动作依赖的behavior policy与更新的target policy相同
 
