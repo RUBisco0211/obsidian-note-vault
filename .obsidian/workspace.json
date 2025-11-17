@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter9/策略梯度方法 Policy Gradient Methods.md",
+                "file": "chapter10/演员-评论家方法 Actor-Critic Methods.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "策略梯度方法 Policy Gradient Methods"
+              "title": "演员-评论家方法 Actor-Critic Methods"
             }
           }
         ]
@@ -89,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -153,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter9/策略梯度方法 Policy Gradient Methods.md",
+                "file": "chapter10/演员-评论家方法 Actor-Critic Methods.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "策略梯度方法 Policy Gradient Methods 的大纲"
+              "title": "演员-评论家方法 Actor-Critic Methods 的大纲"
             }
           },
           {
@@ -177,7 +178,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -195,8 +197,8 @@
   },
   "active": "6335c968c2abd3dc",
   "lastOpenFiles": [
-    "notes.base",
     "chapter9/策略梯度方法 Policy Gradient Methods.md",
+    "notes.base",
     "chapter10/演员-评论家方法 Actor-Critic Methods.md",
     "chapter10/Actor-Critic.excalidraw.md",
     "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
