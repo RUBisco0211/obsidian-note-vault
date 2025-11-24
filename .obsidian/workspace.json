@@ -194,16 +194,16 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "6e519bcf3cb975b6",
+  "active": "a7647c4f7e52d880",
   "lastOpenFiles": [
+    "chapter10/Actor-Critic.excalidraw.md",
     "chapter10/演员-评论家方法 Actor-Critic Methods.md",
+    "chapter9/策略梯度方法 Policy Gradient Methods.md",
     "chapter5/基于蒙特卡洛的方法 Monte-Carlo Methods（model-free）.md",
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
     "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "chapter8/值函数近似 Value Function Approximation (VFA).md",
     "chapter8/DQN.excalidraw.md",
-    "chapter9/策略梯度方法 Policy Gradient Methods.md",
-    "chapter10/Actor-Critic.excalidraw.md",
     "chapter4/基于模型的（model-based）BOE求解方法.md",
     "chapter3/贝尔曼最优公式 Bellman Optimality Equation（BOE）.md",
     "chapter2/贝尔曼公式 Bellman Equation.md",
