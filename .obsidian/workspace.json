@@ -89,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -194,7 +195,7 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "a7647c4f7e52d880",
+  "active": "6e519bcf3cb975b6",
   "lastOpenFiles": [
     "chapter10/Actor-Critic.excalidraw.md",
     "chapter10/演员-评论家方法 Actor-Critic Methods.md",
