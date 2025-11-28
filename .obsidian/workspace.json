@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter9/策略梯度方法 Policy Gradient Methods.md",
+                "file": "chapter3/贝尔曼最优公式 Bellman Optimality Equation（BOE）.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "策略梯度方法 Policy Gradient Methods"
+              "title": "贝尔曼最优公式 Bellman Optimality Equation（BOE）"
             }
           }
         ]
@@ -196,9 +196,9 @@
   },
   "active": "6e519bcf3cb975b6",
   "lastOpenFiles": [
-    "chapter8/值函数近似 Value Function Approximation (VFA).md",
-    "chapter9/策略梯度方法 Policy Gradient Methods.md",
     "chapter10/演员-评论家方法 Actor-Critic Methods.md",
+    "chapter9/策略梯度方法 Policy Gradient Methods.md",
+    "chapter8/值函数近似 Value Function Approximation (VFA).md",
     "chapter10/Actor-Critic.excalidraw.md",
     "chapter5/基于蒙特卡洛的方法 Monte-Carlo Methods（model-free）.md",
     "chapter6/随机近似理论 Stochasted Approximation Theory.md",
