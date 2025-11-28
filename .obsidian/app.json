@@ -11,5 +11,7 @@
   "autoPairBrackets": true,
   "tabSize": 4,
   "vimMode": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": true
 }
