@@ -280,8 +280,13 @@
   "filesToIgnore": [
     {
       "label": "",
-      "match": "*.excalidraw",
+      "match": ".*\\.excalidraw.md$",
       "flags": "i"
+    },
+    {
+      "match": "^强化学习的数学原理/10\\.演员-评论家方法 Actor-Critic Methods\\.md$",
+      "flags": "",
+      "label": ""
     }
   ],
   "linterLocale": "system-default",

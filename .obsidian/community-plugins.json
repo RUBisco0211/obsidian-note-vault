@@ -11,6 +11,6 @@
   "obsidian-excalidraw-plugin",
   "replace-all",
   "templater-obsidian",
-  "obsidian-linter",
-  "global-proxy"
+  "global-proxy",
+  "obsidian-linter"
 ]

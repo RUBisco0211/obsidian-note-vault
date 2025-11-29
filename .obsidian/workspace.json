@@ -30,8 +30,33 @@
               "icon": "lucide-file",
               "title": "Actor-Critic.excalidraw"
             }
+          },
+          {
+            "id": "4805f85fa6308bc2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "计算机视觉/目标检测/基本概念/损失函数.graph.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "损失函数.graph"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -195,10 +220,16 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "06e703117fe2f891",
+  "active": "4805f85fa6308bc2",
   "lastOpenFiles": [
+    "强化学习的数学原理/Actor-Critic.excalidraw.md",
+    "计算机视觉/目标检测/基本概念/损失函数.graph.md",
+    "强化学习的数学原理/DQN.excalidraw.md",
     "强化学习的数学原理/10.演员-评论家方法 Actor-Critic Methods.md",
     "强化学习的数学原理/9.策略梯度方法 Policy Gradient Methods.md",
+    "Excalidraw/Drawing 2025-11-29 10.37.14.excalidraw.md",
+    "Excalidraw/Drawing 2025-11-29 10.37.07.excalidraw.md",
+    "Excalidraw",
     "强化学习的数学原理/8.值函数近似 Value Function Approximation (VFA).md",
     "强化学习的数学原理/7.时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "强化学习的数学原理/6.随机近似理论 Stochasted Approximation Theory.md",
@@ -208,7 +239,6 @@
     "强化学习的数学原理/2.贝尔曼公式 Bellman Equation.md",
     "强化学习的数学原理/1.基本概念.md",
     "强化学习的数学原理/0.引言.md",
-    "计算机视觉/目标检测/基本概念/损失函数.graph.md",
     "计算机视觉/目标检测/基本概念/损失函数.md",
     "计算机视觉/目标检测/基本概念/评估指标.md",
     "计算机视觉/特征处理/图像特征提取.md",
@@ -220,19 +250,14 @@
     "工具链/c+cpp/cpp/左右值.md",
     "工具链",
     "工具链/c+cpp/cmake/make与cmake.md",
-    "工具链/linux/常用bash指令.md",
     "notes.base",
-    "工具链/c+cpp/cpp/gcc及g++.md",
     "工具链/c+cpp/cpp",
     "工具链/c+cpp/cmake",
     "工具链/linux",
     "工具链/c+cpp",
-    "工具链/python/库/pytorch/torch.util.data/Dataset.md",
-    "工具链/python/库/pytorch/torch.util.data/DataLoader.md",
     "工具链/python",
     "计算机视觉/网络",
     "计算机视觉/目标检测/基本概念",
-    "计算机视觉/目标检测/yolo",
     "未命名.canvas",
     "PixPin_2025-07-05_10-18-37.png",
     "src/PixPin_2025-07-05_10-02-03.png",
