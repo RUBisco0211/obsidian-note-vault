@@ -1,10 +1,10 @@
 {
-  "promptDelete": false,
+  "promptDelete": true,
   "showInlineTitle": true,
   "foldHeading": true,
   "showLineNumber": false,
   "rightToLeft": false,
-  "attachmentFolderPath": "assets",
+  "attachmentFolderPath": "./",
   "readableLineLength": false,
   "propertiesInDocument": "visible",
   "showIndentGuide": true,
@@ -12,6 +12,7 @@
   "tabSize": 4,
   "vimMode": false,
   "alwaysUpdateLinks": true,
-  "newLinkFormat": "shortest",
-  "useMarkdownLinks": true
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "showUnsupportedFiles": true
 }
