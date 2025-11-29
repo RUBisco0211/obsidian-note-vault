@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
+                "file": "chapter9/策略梯度方法 Policy Gradient Methods.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "时序差分方法 Temporal-Difference Learning（TD learning）"
+              "title": "策略梯度方法 Policy Gradient Methods"
             }
           }
         ]
@@ -153,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
+                "file": "chapter9/策略梯度方法 Policy Gradient Methods.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "时序差分方法 Temporal-Difference Learning（TD learning） 的大纲"
+              "title": "策略梯度方法 Policy Gradient Methods 的大纲"
             }
           },
           {
@@ -191,26 +191,27 @@
       "command-palette:打开命令面板": false,
       "obsidian-git:Open Git source control": false,
       "workspaces:管理工作区布局": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "6e519bcf3cb975b6",
   "lastOpenFiles": [
-    "chapter6/随机近似理论 Stochasted Approximation Theory.md",
-    "chapter5/基于蒙特卡洛的方法 Monte-Carlo Methods（model-free）.md",
-    "chapter0/引言.md",
-    "未命名.base",
-    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
-    "chapter4/基于模型的（model-based）BOE求解方法.md",
-    "chapter2/贝尔曼公式 Bellman Equation.md",
-    "chapter3/贝尔曼最优公式 Bellman Optimality Equation（BOE）.md",
-    "chapter1/基本概念.md",
-    "chapter10/演员-评论家方法 Actor-Critic Methods.md",
-    "chapter9/策略梯度方法 Policy Gradient Methods.md",
-    "chapter8/值函数近似 Value Function Approximation (VFA).md",
     "chapter10/Actor-Critic.excalidraw.md",
     "chapter8/DQN.excalidraw.md",
+    "chapter9/策略梯度方法 Policy Gradient Methods.md",
     "notes.base",
+    "未命名.base",
+    "chapter10/演员-评论家方法 Actor-Critic Methods.md",
+    "chapter8/值函数近似 Value Function Approximation (VFA).md",
+    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
+    "chapter6/随机近似理论 Stochasted Approximation Theory.md",
+    "chapter5/基于蒙特卡洛的方法 Monte-Carlo Methods（model-free）.md",
+    "chapter2/贝尔曼公式 Bellman Equation.md",
+    "chapter3/贝尔曼最优公式 Bellman Optimality Equation（BOE）.md",
+    "chapter0/引言.md",
+    "chapter4/基于模型的（model-based）BOE求解方法.md",
+    "chapter1/基本概念.md",
     "Excalidraw",
     "未命名.md",
     "chapter10",

@@ -58,19 +58,19 @@
       "yaml-sort-order-for-other-keys": "None"
     },
     "yaml-timestamp": {
-      "enabled": false,
+      "enabled": true,
       "date-created": true,
-      "date-created-key": "date created",
+      "date-created-key": "created",
       "date-created-source-of-truth": "file system",
       "date-modified": true,
-      "date-modified-key": "date modified",
+      "date-modified-key": "updated",
       "date-modified-source-of-truth": "file system",
-      "format": "dddd, MMMM Do YYYY, h:mm:ss a",
+      "format": "YYYY-MM-DD HH:mm:ss",
       "convert-to-utc": false,
-      "update-on-file-contents-updated": "never"
+      "update-on-file-contents-updated": "after 5 seconds"
     },
     "yaml-title": {
-      "enabled": false,
+      "enabled": true,
       "title-key": "title",
       "mode": "first-h1-or-filename-if-h1-missing"
     },
@@ -196,7 +196,7 @@
       "enabled": false
     },
     "empty-line-around-math-blocks": {
-      "enabled": false
+      "enabled": true
     },
     "empty-line-around-tables": {
       "enabled": false
@@ -270,14 +270,20 @@
       "enabled": false
     }
   },
-  "lintOnSave": false,
+  "lintOnSave": true,
   "recordLintOnSaveLogs": false,
   "displayChanged": true,
-  "lintOnFileChange": false,
-  "displayLintOnFileChangeNotice": false,
+  "lintOnFileChange": true,
+  "displayLintOnFileChangeNotice": true,
   "settingsConvertedToConfigKeyValues": true,
   "foldersToIgnore": [],
-  "filesToIgnore": [],
+  "filesToIgnore": [
+    {
+      "label": "",
+      "match": "*.excalidraw",
+      "flags": "i"
+    }
+  ],
   "linterLocale": "system-default",
   "logLevel": "ERROR",
   "lintCommands": [],

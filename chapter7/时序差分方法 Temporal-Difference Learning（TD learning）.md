@@ -1,3 +1,8 @@
+---
+title: 时序差分方法 Temporal-Difference Learning（TD learning）
+created: 2025-07-05 09:15:27
+updated: 2025-11-29 10:09:14
+---
 ## 引入
 
 考虑更复杂的问题：$w = \mathbb{E}[R + \gamma v(X)]$，其中$R, X$为随机变量，$\{ x \},\{ r \}$为对应的采样值，$\gamma$为常数

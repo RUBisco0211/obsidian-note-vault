@@ -1,3 +1,8 @@
+---
+title: 随机近似理论 Stochasted Approximation Theory
+created: 2025-07-05 09:16:35
+updated: 2025-11-29 10:09:33
+---
 ## 前言
 
 第六章**随机近似理论**作为第七章 **[[时序差分方法 Temporal-Difference Learning（TD learning）|时序差分方法]]** 的理论基础

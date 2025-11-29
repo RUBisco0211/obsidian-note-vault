@@ -1,3 +1,8 @@
+---
+title: 贝尔曼公式 Bellman Equation
+created: 2025-07-05 08:50:17
+updated: 2025-11-29 10:09:24
+---
 ## 引入：计算Return(Discounted)的方法
 
 ### 法1：根据定义

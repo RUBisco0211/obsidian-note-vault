@@ -1,3 +1,8 @@
+---
+title: 演员-评论家方法 Actor-Critic Methods
+created: 2025-10-29 22:03:52
+updated: 2025-11-29 10:09:34
+---
 回顾策略梯度方法
 1. 目标函数$J(\theta)$
 2. 迭代公式

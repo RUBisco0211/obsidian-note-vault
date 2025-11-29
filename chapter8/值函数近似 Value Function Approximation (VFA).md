@@ -1,3 +1,8 @@
+---
+title: 值函数近似 Value Function Approximation (VFA)
+created: 2025-07-05 09:27:26
+updated: 2025-11-29 10:09:36
+---
 ## 从离散表示到连续表示
 
 之前的方法中，$q(s,a)$都是由表格的离散形式表示
