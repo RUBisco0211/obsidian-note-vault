@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "5b3ed73eb785bb21",
+        "id": "c3097ed130ef49e5",
         "type": "tabs",
         "children": [
           {
-            "id": "c246557e13dd0ae4",
+            "id": "75a75cc111d2526d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "强化学习的数学原理/2.Bellman Equation.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2.Bellman Equation"
+              "title": "新标签页"
             }
           }
         ]
@@ -105,7 +91,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "chapter0/引言.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "引言 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -124,12 +109,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "chapter3/贝尔曼最优公式 Bellman Optimality Equation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "贝尔曼最优公式 Bellman Optimality Equation 的出链列表"
+              "title": "出链"
             }
           },
           {
@@ -153,13 +137,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "强化学习的数学原理/2.Bellman Equation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2.Bellman Equation 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -173,7 +156,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -194,10 +177,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "c246557e13dd0ae4",
+  "active": "75a75cc111d2526d",
   "lastOpenFiles": [
-    "强化学习的数学原理/3.Bellman Optimality Equation（BOE）.md",
+    "强化学习的数学原理/5.Monte-Carlo Methods（model-free）.md",
     "强化学习的数学原理/2.Bellman Equation.md",
+    "强化学习的数学原理/4.model-based methods.md",
+    "强化学习的数学原理/3.Bellman Optimality Equation（BOE）.md",
     "强化学习的数学原理/1.基本概念.md",
     "计算机视觉/基本概念.md",
     "强化学习的数学原理/7.Temporal-Difference Learning（TD learning）.md",
@@ -206,8 +191,6 @@
     "强化学习的数学原理/9.Policy Gradient Methods.md",
     "强化学习的数学原理/8.Value Function Approximation (VFA).md",
     "强化学习的数学原理/6.Stochasted Approximation Theory.md",
-    "强化学习的数学原理/5.Monte-Carlo Methods（model-free）.md",
-    "强化学习的数学原理/4.model-based methods.md",
     "强化学习的数学原理/DQN.grpah.md",
     "控制理论/基础知识/数学基础.md",
     "强化学习的数学原理/0.引言.md",
