@@ -50,11 +50,11 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "\"",
                 "matchingCase": false,
-                "explainSearch": false,
+                "explainSearch": true,
                 "collapseAll": false,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
@@ -84,12 +84,11 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 338.5
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -153,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter10/演员-评论家方法 Actor-Critic Methods.md",
+                "file": "chapter3/贝尔曼最优公式 Bellman Optimality Equation（BOE）.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "演员-评论家方法 Actor-Critic Methods 的大纲"
+              "title": "贝尔曼最优公式 Bellman Optimality Equation（BOE） 的大纲"
             }
           },
           {
@@ -194,8 +193,12 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "6e519bcf3cb975b6",
+  "active": "6238dd7f45eac9c6",
   "lastOpenFiles": [
+    "chapter2/贝尔曼公式 Bellman Equation.md",
+    "chapter1/基本概念.md",
+    "chapter0/引言.md",
+    "chapter3/贝尔曼最优公式 Bellman Optimality Equation（BOE）.md",
     "chapter10/演员-评论家方法 Actor-Critic Methods.md",
     "chapter9/策略梯度方法 Policy Gradient Methods.md",
     "chapter8/值函数近似 Value Function Approximation (VFA).md",
@@ -205,12 +208,8 @@
     "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "chapter8/DQN.excalidraw.md",
     "chapter4/基于模型的（model-based）BOE求解方法.md",
-    "chapter3/贝尔曼最优公式 Bellman Optimality Equation（BOE）.md",
-    "chapter2/贝尔曼公式 Bellman Equation.md",
     "notes.base",
     "Excalidraw",
-    "chapter1/基本概念.md",
-    "chapter0/引言.md",
     "未命名.md",
     "chapter10",
     "[[.md",
