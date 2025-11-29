@@ -1,0 +1,26 @@
+/* ==========================================================
+   自动给 H2 标题上方添加分隔线
+   ========================================================== */
+
+/* 1. 阅读模式 (Reading Mode) */
+.markdown-preview-view h2 {
+    border-top: 1px solid var(--text-faint); /* 使用主题自带的淡色变量 */
+    padding-top: 1em; /* 线条和标题文字的距离 */
+    margin-top: 2em; /* 线条和上一段文字的距离 */
+}
+
+/* 2. 编辑模式 / 实时预览 (Live Preview) */
+/* .HyperMD-header-2 是编辑模式下二级标题的专用类名 */
+.markdown-source-view .HyperMD-header-2 {
+    border-top: 1px solid var(--text-faint);
+    padding-top: 1em;
+    margin-top: 2em !important; /* 强制覆盖默认间距 */
+}
+
+/* 3. (可选) 排除第一个标题 */
+/* 如果文章开头就是 H2，不想让它上面有线，可以加上这一段 */
+.markdown-preview-view h2:first-child,
+.markdown-source-view .HyperMD-header-2:first-child {
+    border-top: none;
+    padding-top: 0;
+}

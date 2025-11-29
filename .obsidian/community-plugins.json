@@ -9,5 +9,7 @@
   "editing-toolbar",
   "obsidian-latex-suite",
   "obsidian-excalidraw-plugin",
-  "replace-all"
+  "replace-all",
+  "templater-obsidian",
+  "obsidian-linter"
 ]

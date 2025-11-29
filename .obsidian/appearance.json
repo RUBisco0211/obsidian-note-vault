@@ -9,5 +9,8 @@
   "nativeMenus": false,
   "showViewHeader": true,
   "textFontFamily": "Comic Sans MS",
-  "interfaceFontFamily": ""
+  "interfaceFontFamily": "",
+  "enabledCssSnippets": [
+    "h2-divider"
+  ]
 }
