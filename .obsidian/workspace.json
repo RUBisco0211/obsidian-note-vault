@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "f8849954faae1b79",
+        "id": "18ea76e882cf5c1b",
         "type": "tabs",
         "children": [
           {
-            "id": "6e519bcf3cb975b6",
+            "id": "06e703117fe2f891",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "chapter9/策略梯度方法 Policy Gradient Methods.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "策略梯度方法 Policy Gradient Methods"
+              "title": "新标签页"
             }
           }
         ]
@@ -153,13 +139,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter9/策略梯度方法 Policy Gradient Methods.md",
+                "file": "chapter10/演员-评论家方法 Actor-Critic Methods.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "策略梯度方法 Policy Gradient Methods 的大纲"
+              "title": "演员-评论家方法 Actor-Critic Methods 的大纲"
             }
           },
           {
@@ -195,44 +181,48 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "6e519bcf3cb975b6",
+  "active": "a7647c4f7e52d880",
   "lastOpenFiles": [
-    "chapter10/Actor-Critic.excalidraw.md",
-    "chapter8/DQN.excalidraw.md",
-    "chapter9/策略梯度方法 Policy Gradient Methods.md",
+    "c+cpp/cpp/左右值.md",
+    "c+cpp/cpp/gcc及g++.md",
+    "c+cpp/cpp",
+    "c+cpp/cmake/make与cmake.md",
+    "c+cpp/cmake",
+    "linux/常用bash指令.md",
+    "linux",
+    "c+cpp",
     "notes.base",
-    "未命名.base",
-    "chapter10/演员-评论家方法 Actor-Critic Methods.md",
-    "chapter8/值函数近似 Value Function Approximation (VFA).md",
-    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
-    "chapter6/随机近似理论 Stochasted Approximation Theory.md",
-    "chapter5/基于蒙特卡洛的方法 Monte-Carlo Methods（model-free）.md",
-    "chapter2/贝尔曼公式 Bellman Equation.md",
-    "chapter3/贝尔曼最优公式 Bellman Optimality Equation（BOE）.md",
-    "chapter0/引言.md",
-    "chapter4/基于模型的（model-based）BOE求解方法.md",
-    "chapter1/基本概念.md",
-    "Excalidraw",
-    "未命名.md",
-    "chapter10",
-    "[[.md",
-    "Untitled.md",
-    "未命名 1.base",
-    "chapter5/Drawing 2025-09-28 11.10.32.excalidraw.md",
-    "().md",
-    "2025-07-12.md",
+    "机器学习/库/pytorch/torch.util.data/Dataset.md",
+    "机器学习/库/pytorch/torch.util.data/DataLoader.md",
+    "机器学习/库/pytorch/torch.optim/Optimizer.md",
+    "机器学习/库/pytorch/torch.nn/Module.md",
+    "python/Decorator 装饰器.md",
+    "python",
+    "控制理论/基础知识/基础知识.md",
+    "机器学习/理论/网络/卷积神经网络.md",
+    "机器学习/理论/网络",
+    "机器学习/理论/目标检测/基本概念/评估指标.md",
+    "机器学习/理论/目标检测/基本概念/损失函数.md",
+    "机器学习/理论/目标检测/基本概念/损失函数.graph.md",
+    "机器学习/理论/目标检测/yolo/yolov11.graph.md",
+    "机器学习/理论/目标检测/基本概念",
+    "机器学习/理论/目标检测/yolo",
+    "机器学习/理论/目标检测",
+    "机器学习/理论/特征处理/图像特征提取.md",
+    "机器学习/理论/特征处理/图像特征提取.graph.md",
+    "机器学习/理论/基本概念.md",
+    "机器学习/库/pytorch/torchvision/tv_tensors.md",
+    "机器学习/库/pytorch/torchvision/transforms.md",
+    "机器学习/库/tqdm.md",
+    "控制理论/控制障碍函数CBF/Bayesian CBF.md",
+    "控制理论/控制障碍函数CBF/Stochastic Neural CBF.md",
+    "控制理论/控制障碍函数CBF/Risk-Aware CBF.md",
+    "强化学习的数学原理/chapter10/演员-评论家方法 Actor-Critic Methods.md",
+    "强化学习的数学原理/chapter9/策略梯度方法 Policy Gradient Methods.md",
     "未命名.canvas",
-    "[!help].md",
-    "2025-07-06.md",
     "PixPin_2025-07-05_10-18-37.png",
     "src/PixPin_2025-07-05_10-02-03.png",
     "src/PixPin_2025-07-05_10-13-06.png",
-    "src",
-    "src/PixPin_2025-07-05_08-55-32.png",
-    "chapter0",
-    "chapter10",
-    "chapter9",
-    "chapter8",
-    "欢迎.md"
+    "src/PixPin_2025-07-05_08-55-32.png"
   ]
 }

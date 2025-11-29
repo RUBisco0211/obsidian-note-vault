@@ -196,7 +196,7 @@
       "enabled": false
     },
     "empty-line-around-math-blocks": {
-      "enabled": true
+      "enabled": false
     },
     "empty-line-around-tables": {
       "enabled": false
@@ -210,10 +210,10 @@
       "enabled": false
     },
     "move-math-block-indicators-to-their-own-line": {
-      "enabled": false
+      "enabled": true
     },
     "paragraph-blank-lines": {
-      "enabled": false
+      "enabled": true
     },
     "remove-empty-lines-between-list-markers-and-checklists": {
       "enabled": false

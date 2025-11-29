@@ -10,7 +10,5 @@
   "showViewHeader": true,
   "textFontFamily": "Comic Sans MS",
   "interfaceFontFamily": "",
-  "enabledCssSnippets": [
-    "h2-divider"
-  ]
+  "enabledCssSnippets": []
 }
