@@ -1,0 +1,33 @@
+{
+  "publishedContentList": [
+    {
+      "name": "工具链",
+      "isFolder": true
+    },
+    {
+      "name": "强化学习的数学原理",
+      "isFolder": true
+    },
+    {
+      "name": "控制理论",
+      "isFolder": true
+    },
+    {
+      "name": "计算机视觉",
+      "isFolder": true
+    }
+  ],
+  "needCleanDirFolder": false,
+  "useDataView": false,
+  "useDataViewJs": false,
+  "vitepressDir": "",
+  "vitepressSrcDir": "",
+  "vitepressStaticDir": "",
+  "deployScriptPath": "",
+  "ignoreFileRegex": "^_",
+  "autoSyncMdFile": true,
+  "devCommand": "npm run docs:dev",
+  "buildCommand": "npm run docs:build",
+  "previewCommand": "npm run docs:preview",
+  "enableCustomCommands": false
+}

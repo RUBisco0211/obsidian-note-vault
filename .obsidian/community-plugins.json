@@ -12,5 +12,6 @@
   "replace-all",
   "templater-obsidian",
   "global-proxy",
-  "obsidian-linter"
+  "obsidian-linter",
+  "vitepress-publisher"
 ]
