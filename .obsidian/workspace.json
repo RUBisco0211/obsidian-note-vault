@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机视觉/基本概念.md",
+                "file": "控制理论/基础知识/数学基础.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "基本概念"
+              "title": "数学基础"
             }
           }
         ]
@@ -197,6 +197,7 @@
   },
   "active": "c246557e13dd0ae4",
   "lastOpenFiles": [
+    "计算机视觉/基本概念.md",
     "强化学习的数学原理/7.时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "强化学习的数学原理/6.随机近似理论 Stochasted Approximation Theory.md",
     "强化学习的数学原理/5.基于蒙特卡洛的方法 Monte-Carlo Methods（model-free）.md",
@@ -219,7 +220,6 @@
     "计算机视觉/特征处理/图像特征提取.md",
     "计算机视觉/特征处理/图像特征提取.graph.md",
     "计算机视觉/网络/卷积神经网络.md",
-    "计算机视觉/基本概念.md",
     "工具链/python/库/pytorch/torch.nn/Module.md",
     "工具链/python/Decorator 装饰器.md",
     "工具链/c+cpp/cpp/左右值.md",
