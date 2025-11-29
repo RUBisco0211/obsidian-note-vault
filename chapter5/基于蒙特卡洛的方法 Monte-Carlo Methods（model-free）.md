@@ -3,7 +3,7 @@
 >[!question] 问题
 >- 如何在没有模型的情况下进行进行估计？ > Monte Carlo 模拟
 
----
+
 ## Monte Carlo Basic
 
 ### 思路
@@ -45,7 +45,7 @@
 > [!info] 蒙特卡洛模拟中episode的长度设置
 > - 过短：只有离目标较近的状态可以达到最优
 
----
+
 ## Monte Carlo Exploring Starts
 
 ### 思路
@@ -79,7 +79,7 @@ Generalized Policy Iteration（GPI）
 >[!info] 细节
 >- 计算一个episode中各个子episode的reward $g$ 时，从后往前计算以减少计算量
 
----
+
 ## Monte Carlo $\epsilon-$greedy
 
 > [!warning] 收敛性

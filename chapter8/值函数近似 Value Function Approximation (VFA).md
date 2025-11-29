@@ -11,7 +11,7 @@
 - 只需要存储函数参数，大大减少存储空间
 - **仅需要访问部分状态数据即可对未访问的状态值进行估计**，泛化能力大幅提升
 
----
+
 ## 使用VFA的状态值估计
 
 令$v_{\pi}(s), \hat{v}(s,w)$是**真状态值函数**及其的一个估计，$w$是估计函数的参数
@@ -108,7 +108,7 @@ $${w}_{t + 1} = {w}_{t} + {\alpha }_{t}\left\lbrack  {{r}_{t + 1} + \gamma {\phi
 
 **数据**：500 个 episode，每个 500 步，出发时的$(s,a)$随机选择，服从均匀分布
 
----
+
 ## 使用VFA的Sarsa
 
 VFA Sarsa的迭代公式
@@ -116,7 +116,7 @@ $${w}_{t + 1} = {w}_{t} + {\alpha }_{t}\left\lbrack  {{r}_{t + 1} + \gamma \wide
 
 ![PixPin_2025-11-01_22-09-08.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1762006168332_PixPin_2025-11-01_22-09-08.png)
 
----
+
 ## 使用VFA的Q-Learning
 
 VFA Q-Learning的迭代公式
@@ -124,7 +124,7 @@ $${w}_{t + 1} = {w}_{t} + {\alpha }_{t}\left\lbrack  {{r}_{t + 1} + \gamma \math
 相应的on-policy算法
 ![PixPin_2025-11-01_22-13-05.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1762006401246_PixPin_2025-11-01_22-13-05.png)
 
----
+
 ## Deep Q-Learning (DQN)
 
 DQN要优化的目标函数为
@@ -158,7 +158,7 @@ $${\nabla }_{w}J = (-2) \mathbb{E}\left\lbrack  {\left( {R + \gamma \mathop{\max
 [[DQN.excalidraw]]
 ![PixPin_2025-11-02_09-40-13.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1762047643084_PixPin_2025-11-02_09-40-13.png)
 
----
+
 ## 在强化学习中引入神经网络
 
 例：仅需要少量数据（一个极致exploratory的行为策略进行一个1000步的episode收集数据）即可完成训练并使模型收敛：用神经网络进行值函数近似的泛化能力强

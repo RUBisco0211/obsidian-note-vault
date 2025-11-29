@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chapter3/贝尔曼最优公式 Bellman Optimality Equation（BOE）.md",
+                "file": "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "贝尔曼最优公式 Bellman Optimality Equation（BOE）"
+              "title": "时序差分方法 Temporal-Difference Learning（TD learning）"
             }
           }
         ]
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"",
+                "query": "^---$",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -84,7 +84,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -152,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "chapter3/贝尔曼最优公式 Bellman Optimality Equation（BOE）.md",
+                "file": "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "贝尔曼最优公式 Bellman Optimality Equation（BOE） 的大纲"
+              "title": "时序差分方法 Temporal-Difference Learning（TD learning） 的大纲"
             }
           },
           {
@@ -193,21 +194,22 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "6238dd7f45eac9c6",
+  "active": "6e519bcf3cb975b6",
   "lastOpenFiles": [
-    "chapter2/贝尔曼公式 Bellman Equation.md",
-    "chapter1/基本概念.md",
+    "chapter6/随机近似理论 Stochasted Approximation Theory.md",
+    "chapter5/基于蒙特卡洛的方法 Monte-Carlo Methods（model-free）.md",
     "chapter0/引言.md",
+    "未命名.base",
+    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
+    "chapter4/基于模型的（model-based）BOE求解方法.md",
+    "chapter2/贝尔曼公式 Bellman Equation.md",
     "chapter3/贝尔曼最优公式 Bellman Optimality Equation（BOE）.md",
+    "chapter1/基本概念.md",
     "chapter10/演员-评论家方法 Actor-Critic Methods.md",
     "chapter9/策略梯度方法 Policy Gradient Methods.md",
     "chapter8/值函数近似 Value Function Approximation (VFA).md",
     "chapter10/Actor-Critic.excalidraw.md",
-    "chapter5/基于蒙特卡洛的方法 Monte-Carlo Methods（model-free）.md",
-    "chapter6/随机近似理论 Stochasted Approximation Theory.md",
-    "chapter7/时序差分方法 Temporal-Difference Learning（TD learning）.md",
     "chapter8/DQN.excalidraw.md",
-    "chapter4/基于模型的（model-based）BOE求解方法.md",
     "notes.base",
     "Excalidraw",
     "未命名.md",
@@ -230,7 +232,6 @@
     "chapter10",
     "chapter9",
     "chapter8",
-    "chapter7",
     "欢迎.md"
   ]
 }

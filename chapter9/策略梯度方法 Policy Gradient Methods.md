@@ -3,7 +3,7 @@
 - value based：通过优化与值（状态值或动作值）相关的目标函数来得到最优值，从而得到目标策略
 - policy based：直接优化与策略相关的目标函数来得到最优策略
 
----
+
 ## 基本概念
 
 ### 策略的连续形式
@@ -40,7 +40,7 @@ $$\pi(a | s, \theta), \quad \text{或} \quad \pi_{\theta}(a | s)$$
 > 1. 如何选择指标或目标函数
 > 2. 如何计算梯度？
 
----
+
 ## 定义最优策略的指标
 
 主要有两种指标
@@ -114,7 +114,7 @@ $$
 > - 难点：metrics可以在discounted case和undiscounted case种定义，即$\gamma \in [0,1)$或者$\gamma = 1$的两种情况
 > - 直观上看，$\bar{r}_{\pi}$似乎比$\bar{v}_{\pi}$更短视。**但实际上二者等价，解出的最优策略是一致的。** 在discounted case的情况下，可以证明$$\bar{r}_{\pi} = (1-\gamma)\bar{v}_{\pi}$$
 
----
+
 ## 求解策略梯度
 
 求解策略梯度最为复杂，需要考虑不同的目标函数以及discounted 和 undiscounted case 两种情况
@@ -176,7 +176,7 @@ $$
  > 则策略函数改写为$$\pi \left( {a \mid  s,\theta }\right)  = \frac{{e}^{h\left( {s,a,\theta }\right) }}{\mathop{\sum }\limits_{{{a}^{\prime } \in  \mathcal{A}}}{e}^{h\left( {s,{a}^{\prime },\theta }\right) }}$$
  > 其中$h(s,a,\theta)$可以为一特征函数（神经网络的最后一层用softmax归一化）
  
----
+
 ## 梯度上升方法 (REINFORCE)
 
 ### 基本思路

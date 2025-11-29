@@ -14,7 +14,7 @@ $$
 
 - Actor：负责策略更新policy update
 - Critic：负责策略评估policy evaluation
----
+
 ## Q-value Actor-Critic (QAC)
 
 ![image.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1763294404371_20251116195952461.png)
@@ -24,7 +24,7 @@ $$
 - Actor：输入三元组$(s_{t},a_{t},q_{t})$，进行策略更新
 以上方法中生成数据的策略需要由Actor网络进行更新，behavior policy和target policy是同一个，故为on-policy方法
 
----
+
 ## Advantage Actor-Critic (A2C)
 
 ### 理论基础
@@ -100,7 +100,7 @@ $$
 
 依旧on-policy，但由于网络输出$\pi(a|s, \theta)$时使用了softmax，已经是stochastic策略
 
----
+
 ## Off-policy的Actor-Critic方法
 
 
@@ -179,7 +179,7 @@ $$
 ![image.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1763309297993_20251117000811020.png)
 
 
----
+
 ## Deterministic Actor-Critic
 
 本章前面提到的算法，其求得的最佳策略都为stochastic策略，即必须满足$\pi(a | s, \theta) > 0$

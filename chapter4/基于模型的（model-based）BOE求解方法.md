@@ -19,7 +19,7 @@
 	- 策略更新：$\pi_{k+1} (a \mid s)= \begin{cases} 1 \quad a = a^*_{k} \\ 0 \quad a \not = a^*_{k}\end{cases}$
 	- 值更新：$v_{k+1}(s) = \max_{a \in \mathcal{A}(s)} q_k(a,s)$
 
----
+
 ## 策略迭代 policy iteration (PI)
 
 ### 算法思路（矩阵向量形式）
@@ -44,7 +44,7 @@
 		- 求出动作值最大的$a_{k}^*(s) = \arg \max_{a} q_{\pi_{k}}(s,a)$
 	- 计算$\pi_{k+1} (a \mid s)= \begin{cases} 1 \quad a = a^*_{k} \\ 0 \quad a \not = a^*_{k}\end{cases}$
 
----
+
 ## 截断策略迭代 truncated policy iteration
 
 VI和PI的一般化形式

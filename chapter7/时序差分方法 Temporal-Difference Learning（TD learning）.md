@@ -6,7 +6,7 @@
 
 令其中 $R$ 为[[基本概念#奖励 Reward|奖励]]，$\gamma$ 为[[基本概念#折扣率 Discount Rate|折扣率]]
 
----
+
 ## TD Basic：学习状态值
 
 基于数据，学习一个给定策略的状态值State Value
@@ -120,7 +120,7 @@ $$
 - **TD 方法** 强调“边走边学”，依靠部分经验（bootstrapping），效率高但略带偏差。
 - **MC 方法** 强调“完整体验后再学”，不依赖估计（non-bootstrapping），理论上无偏但方差大。
 
----
+
 ## Sarsa：学习动作值
 
 通过估计动作值$q(s,a)$来求解最优策略
@@ -156,7 +156,7 @@ $$
 
 使用 $\epsilon$-greedy 策略进行策略更新
 
----
+
 ## Expected Sarsa
 
 把Sarsa中的$q_{t}(s_{t+1},a_{t+1})$替换为**对该状态上各个不同动作得到的动作值的期望** $\mathbb{E}[q_{t}(s_{t+1},A)])$，即$v_{t}(s_{t+1})$
@@ -182,7 +182,7 @@ $$q_{\pi}(s,a) = \mathbb{E}\big[ R_{t+1} + \gamma \mathbb{E}_{A_{t+1} \sim \pi(S
 即
 $$q_{\pi}(s,a)=\mathbb{E}\left[R_{t+1}+\gamma v_{\pi}(S_{t+1})|S_{t}=s,A_{t}=a\right]$$
 
----
+
 ## $n$-step Sarsa
 
 **$n$-step Sarsa是Sarsa的一种推广，可以变形为Sarsa和Monte Carlo两种方法**
@@ -202,7 +202,7 @@ $$q_{\pi}(s,a)=\mathbb{E}\left[R_{t+1}+\gamma v_{\pi}(S_{t+1})|S_{t}=s,A_{t}=a\r
 $$q_{t+1}(s,a) = r_{t+1} + \gamma r_{t+2} + \gamma^2 r_{t+3} + \dots$$
 即为Monte Carlo方法
 
----
+
 ## Q-Learning：直接估计最优动作值
 
 $$
@@ -238,7 +238,7 @@ $$q(s, a) = \mathbb{E} [ R_{t+1} + \gamma \max_{a} q(S_{t+1}, a) \mid S_t = s, A
 假设有一**行为策略 $\pi_{b}$** 负责生成trajectory经验数据
 策略提升可以直接使用greedy的**确定性策略$\pi_{T}$**（目标策略不会用于数据采样，故无需满足exploration要求）
 
----
+
 ## on-policy和off-policy方法
 
 ### RL中的两个策略
@@ -275,7 +275,7 @@ $$q(s, a) = \mathbb{E} [ R_{t+1} + \gamma \max_{a} q(S_{t+1}, a) \mid S_t = s, A
 > 
 > 故Q-Learning 的两个策略可以不相同，可以有on-policy和off-policy的两种实现
 
----
+
 ## TD 算法概览 
 
 基于动作值 $q(s,a)$ 估计的TD算法（即除TD-Basic外）的迭代公式都可以写作统一形式：

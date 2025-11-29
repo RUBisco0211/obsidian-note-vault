@@ -15,7 +15,7 @@
 
 即为特定条件的确定性问题上的**贝尔曼公式**
 
----
+
 ## 状态值 State value
 
 考虑如下单步状态转换过程：
@@ -38,7 +38,7 @@ $$v_\pi(s)=\mathbb{E}[G_t|S_t=s]$$
 **确定性策略的状态值和**
 ![PixPin_2025-07-06_09-56-26.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1751767006334_PixPin_2025-07-06_09-56-26.png)
 
----
+
 ## 贝尔曼公式 Bellman Equation
 
 描述不同状态的State value之间的关系
@@ -199,7 +199,7 @@ $$
 > 
 > ![PixPin_2025-07-12_09-12-18.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/rl/1/1752282749047_PixPin_2025-07-12_09-12-18.png)
 
----
+
 ## 动作值 Action value
 
 ### 定义
