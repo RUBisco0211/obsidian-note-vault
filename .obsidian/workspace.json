@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "控制理论/基础知识/数学基础.md",
+                "file": "强化学习的数学原理/9.Policy Gradient Methods.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "数学基础"
+              "title": "9.Policy Gradient Methods"
             }
           }
         ]
@@ -195,23 +195,24 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a7647c4f7e52d880",
+  "active": "c246557e13dd0ae4",
   "lastOpenFiles": [
-    "计算机视觉/基本概念.md",
-    "强化学习的数学原理/7.时序差分方法 Temporal-Difference Learning（TD learning）.md",
-    "强化学习的数学原理/6.随机近似理论 Stochasted Approximation Theory.md",
-    "强化学习的数学原理/5.基于蒙特卡洛的方法 Monte-Carlo Methods（model-free）.md",
-    "强化学习的数学原理/4.基于模型的（model-based）BOE求解方法.md",
-    "强化学习的数学原理/3.贝尔曼最优公式 Bellman Optimality Equation（BOE）.md",
-    "强化学习的数学原理/2.贝尔曼公式 Bellman Equation.md",
+    "强化学习的数学原理/8.Value Function Approximation (VFA).md",
+    "强化学习的数学原理/7.Temporal-Difference Learning（TD learning）.md",
+    "强化学习的数学原理/6.Stochasted Approximation Theory.md",
+    "强化学习的数学原理/5.Monte-Carlo Methods（model-free）.md",
+    "强化学习的数学原理/4.model-based methods.md",
+    "强化学习的数学原理/3.Bellman Optimality Equation（BOE）.md",
+    "强化学习的数学原理/2.Bellman Equation.md",
     "强化学习的数学原理/1.基本概念.md",
-    "强化学习的数学原理/0.引言.md",
-    "强化学习的数学原理/9.策略梯度方法 Policy Gradient Methods.md",
-    "强化学习的数学原理/Actor-Critic.graph.md",
+    "强化学习的数学原理/10.Actor-Critic Methods.md",
+    "强化学习的数学原理/9.Policy Gradient Methods.md",
     "强化学习的数学原理/DQN.grpah.md",
+    "控制理论/基础知识/数学基础.md",
+    "计算机视觉/基本概念.md",
+    "强化学习的数学原理/0.引言.md",
+    "强化学习的数学原理/Actor-Critic.graph.md",
     "计算机视觉/目标检测/基本概念/损失函数.graph.md",
-    "强化学习的数学原理/8.值函数近似 Value Function Approximation (VFA).md",
-    "强化学习的数学原理/10.演员-评论家方法 Actor-Critic Methods.md",
     "Excalidraw/Drawing 2025-11-29 10.37.14.excalidraw.md",
     "Excalidraw/Drawing 2025-11-29 10.37.07.excalidraw.md",
     "Excalidraw",
@@ -224,7 +225,6 @@
     "工具链/python/Decorator 装饰器.md",
     "工具链/c+cpp/cpp/左右值.md",
     "工具链",
-    "工具链/c+cpp/cmake/make与cmake.md",
     "notes.base",
     "工具链/c+cpp/cpp",
     "工具链/c+cpp/cmake",
