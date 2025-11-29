@@ -6,7 +6,6 @@
 
 令其中 $R$ 为[[基本概念#奖励 Reward|奖励]]，$\gamma$ 为[[基本概念#折扣率 Discount Rate|折扣率]]
 
-
 ## TD Basic：学习状态值
 
 基于数据，学习一个给定策略的状态值State Value
