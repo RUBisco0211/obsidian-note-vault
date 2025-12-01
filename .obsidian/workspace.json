@@ -11,10 +11,24 @@
             "id": "160bc3e7f124f275",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "控制理论/基础知识/数学基础.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "数学基础"
             }
           }
         ]
@@ -75,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338.5
+    "width": 338.5,
+    "collapsed": true
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -109,11 +124,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "控制理论/基础知识/数学基础.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "数学基础 的出链列表"
             }
           },
           {
@@ -137,12 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "控制理论/基础知识/数学基础.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "数学基础 的大纲"
             }
           },
           {
@@ -156,15 +173,16 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "vitepress-publisher:start vitepress": false,
+      "vitepress-publisher:start vitepress": true,
       "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
@@ -180,21 +198,21 @@
   },
   "active": "160bc3e7f124f275",
   "lastOpenFiles": [
-    "强化学习的数学原理/10.Actor-Critic Methods.md",
-    "强化学习的数学原理/8.Value Function Approximation (VFA).md",
+    "强化学习的数学原理/DQN.grpah.md",
     "强化学习的数学原理/Actor-Critic.graph.md",
-    "强化学习的数学原理/2.Bellman Equation.md",
-    "强化学习的数学原理/5.Monte-Carlo Methods（model-free）.md",
-    "强化学习的数学原理/4.model-based methods.md",
     "强化学习的数学原理/3.Bellman Optimality Equation（BOE）.md",
-    "强化学习的数学原理/1.基本概念.md",
-    "计算机视觉/基本概念.md",
+    "强化学习的数学原理/4.model-based methods.md",
+    "强化学习的数学原理/5.Monte-Carlo Methods（model-free）.md",
+    "强化学习的数学原理/8.Value Function Approximation (VFA).md",
+    "强化学习的数学原理/6.Stochasted Approximation Theory.md",
     "强化学习的数学原理/7.Temporal-Difference Learning（TD learning）.md",
     "强化学习的数学原理/9.Policy Gradient Methods.md",
-    "强化学习的数学原理/6.Stochasted Approximation Theory.md",
-    "强化学习的数学原理/DQN.grpah.md",
-    "控制理论/基础知识/数学基础.md",
+    "强化学习的数学原理/10.Actor-Critic Methods.md",
+    "强化学习的数学原理/1.基本概念.md",
     "强化学习的数学原理/0.引言.md",
+    "强化学习的数学原理/2.Bellman Equation.md",
+    "计算机视觉/基本概念.md",
+    "控制理论/基础知识/数学基础.md",
     "计算机视觉/目标检测/基本概念/损失函数.graph.md",
     "Excalidraw/Drawing 2025-11-29 10.37.14.excalidraw.md",
     "Excalidraw/Drawing 2025-11-29 10.37.07.excalidraw.md",
