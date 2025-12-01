@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c3097ed130ef49e5",
+        "id": "9db124849529c719",
         "type": "tabs",
         "children": [
           {
-            "id": "75a75cc111d2526d",
+            "id": "160bc3e7f124f275",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -178,19 +178,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "75a75cc111d2526d",
+  "active": "160bc3e7f124f275",
   "lastOpenFiles": [
-    "强化学习的数学原理/5.Monte-Carlo Methods（model-free）.md",
+    "强化学习的数学原理/10.Actor-Critic Methods.md",
+    "强化学习的数学原理/8.Value Function Approximation (VFA).md",
+    "强化学习的数学原理/Actor-Critic.graph.md",
     "强化学习的数学原理/2.Bellman Equation.md",
+    "强化学习的数学原理/5.Monte-Carlo Methods（model-free）.md",
     "强化学习的数学原理/4.model-based methods.md",
     "强化学习的数学原理/3.Bellman Optimality Equation（BOE）.md",
     "强化学习的数学原理/1.基本概念.md",
     "计算机视觉/基本概念.md",
     "强化学习的数学原理/7.Temporal-Difference Learning（TD learning）.md",
-    "强化学习的数学原理/Actor-Critic.graph.md",
-    "强化学习的数学原理/10.Actor-Critic Methods.md",
     "强化学习的数学原理/9.Policy Gradient Methods.md",
-    "强化学习的数学原理/8.Value Function Approximation (VFA).md",
     "强化学习的数学原理/6.Stochasted Approximation Theory.md",
     "强化学习的数学原理/DQN.grpah.md",
     "控制理论/基础知识/数学基础.md",
