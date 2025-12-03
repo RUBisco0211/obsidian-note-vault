@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "控制理论/基础知识/数学基础.md",
+                "file": "强化学习的数学原理/10.Actor-Critic Methods.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "数学基础"
+              "title": "10.Actor-Critic Methods"
             }
           }
         ]
@@ -89,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338.5,
-    "collapsed": true
+    "width": 338.5
   },
   "right": {
     "id": "33ec167af8f4cd10",
@@ -198,8 +197,9 @@
   },
   "active": "160bc3e7f124f275",
   "lastOpenFiles": [
-    "强化学习的数学原理/DQN.grpah.md",
     "强化学习的数学原理/Actor-Critic.graph.md",
+    "控制理论/基础知识/数学基础.md",
+    "强化学习的数学原理/DQN.grpah.md",
     "强化学习的数学原理/3.Bellman Optimality Equation（BOE）.md",
     "强化学习的数学原理/4.model-based methods.md",
     "强化学习的数学原理/5.Monte-Carlo Methods（model-free）.md",
@@ -212,7 +212,6 @@
     "强化学习的数学原理/0.引言.md",
     "强化学习的数学原理/2.Bellman Equation.md",
     "计算机视觉/基本概念.md",
-    "控制理论/基础知识/数学基础.md",
     "计算机视觉/目标检测/基本概念/损失函数.graph.md",
     "Excalidraw/Drawing 2025-11-29 10.37.14.excalidraw.md",
     "Excalidraw/Drawing 2025-11-29 10.37.07.excalidraw.md",
