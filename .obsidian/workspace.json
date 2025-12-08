@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ln",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -84,7 +84,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -193,7 +194,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "160bc3e7f124f275",
+  "active": "a7647c4f7e52d880",
   "lastOpenFiles": [
     "强化学习",
     "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",
