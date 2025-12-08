@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "reinforce",
+                "query": "ln",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -84,8 +84,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
