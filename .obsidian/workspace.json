@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "控制理论/基础知识/数学基础.md",
+                "file": "强化学习/笔记-强化学习的数学原理/9.Policy Gradient Methods.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "数学基础 的大纲"
+              "title": "9.Policy Gradient Methods 的大纲"
             }
           },
           {
@@ -176,8 +176,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -195,7 +194,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a7647c4f7e52d880",
+  "active": "160bc3e7f124f275",
   "lastOpenFiles": [
     "强化学习",
     "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",

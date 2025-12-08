@@ -5,7 +5,7 @@
   "showLineNumber": false,
   "rightToLeft": false,
   "attachmentFolderPath": "./",
-  "readableLineLength": true,
+  "readableLineLength": false,
   "propertiesInDocument": "visible",
   "showIndentGuide": true,
   "autoPairBrackets": true,
