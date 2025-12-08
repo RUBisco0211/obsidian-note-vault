@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "强化学习/笔记-强化学习的数学原理/9.Policy Gradient Methods.md",
+                "file": "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "9.Policy Gradient Methods"
+              "title": "10.Actor-Critic Methods"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "强化学习/笔记-强化学习的数学原理/9.Policy Gradient Methods.md",
+                "file": "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "9.Policy Gradient Methods 的大纲"
+              "title": "10.Actor-Critic Methods 的大纲"
             }
           },
           {
@@ -194,8 +194,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a7647c4f7e52d880",
+  "active": "160bc3e7f124f275",
   "lastOpenFiles": [
+    "强化学习/笔记-强化学习的数学原理/9.Policy Gradient Methods.md",
     "强化学习",
     "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",
     "强化学习/笔记-强化学习的数学原理/Actor-Critic.graph.md",
@@ -207,7 +208,6 @@
     "强化学习/笔记-强化学习的数学原理/8.Value Function Approximation (VFA).md",
     "强化学习/笔记-强化学习的数学原理/6.Stochasted Approximation Theory.md",
     "强化学习/笔记-强化学习的数学原理/7.Temporal-Difference Learning（TD learning）.md",
-    "强化学习/笔记-强化学习的数学原理/9.Policy Gradient Methods.md",
     "强化学习/笔记-强化学习的数学原理/1.基本概念.md",
     "强化学习/笔记-强化学习的数学原理/0.引言.md",
     "强化学习/笔记-强化学习的数学原理/2.Bellman Equation.md",
@@ -231,7 +231,6 @@
     "工具链/c+cpp",
     "工具链/python",
     "计算机视觉/网络",
-    "计算机视觉/目标检测/基本概念",
     "未命名.canvas",
     "PixPin_2025-07-05_10-18-37.png",
     "src/PixPin_2025-07-05_10-02-03.png",
