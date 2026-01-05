@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "控制理论/基础知识/数学基础.md",
+                "file": "git/Owner如何为自己的项目开发feature？.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "数学基础"
+              "title": "Owner如何为自己的项目开发feature？"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "控制理论/基础知识/数学基础.md",
+                "file": "git/Owner如何为自己的项目开发feature？.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "数学基础 的大纲"
+              "title": "Owner如何为自己的项目开发feature？ 的大纲"
             }
           },
           {
@@ -196,12 +196,15 @@
   },
   "active": "160bc3e7f124f275",
   "lastOpenFiles": [
+    "git/如何为开源项目贡献feature？.md",
+    "git/Owner如何为自己的项目开发feature？.md",
+    "控制理论/基础知识/数学基础.md",
+    "git",
     "控制理论/控制障碍函数CBF/Bayesian CBF.md",
     "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",
     "强化学习/笔记-强化学习的数学原理/9.Policy Gradient Methods.md",
     "强化学习",
     "强化学习/笔记-强化学习的数学原理/Actor-Critic.graph.md",
-    "控制理论/基础知识/数学基础.md",
     "强化学习/笔记-强化学习的数学原理/DQN.grpah.md",
     "强化学习/笔记-强化学习的数学原理/3.Bellman Optimality Equation（BOE）.md",
     "强化学习/笔记-强化学习的数学原理/4.model-based methods.md",
@@ -222,8 +225,6 @@
     "计算机视觉/特征处理/图像特征提取.md",
     "计算机视觉/特征处理/图像特征提取.graph.md",
     "计算机视觉/网络/卷积神经网络.md",
-    "工具链/python/库/pytorch/torch.nn/Module.md",
-    "工具链/python/Decorator 装饰器.md",
     "工具链",
     "notes.base",
     "工具链/c+cpp/cpp",
@@ -231,7 +232,6 @@
     "工具链/linux",
     "工具链/c+cpp",
     "工具链/python",
-    "计算机视觉/网络",
     "未命名.canvas",
     "PixPin_2025-07-05_10-18-37.png",
     "src/PixPin_2025-07-05_10-02-03.png",
