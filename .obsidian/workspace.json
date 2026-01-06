@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "git/Owner如何为自己的项目开发feature？.md",
+                "file": "git/如何为开源项目贡献feature？.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Owner如何为自己的项目开发feature？"
+              "title": "如何为开源项目贡献feature？"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "git/Owner如何为自己的项目开发feature？.md",
+                "file": "git/如何为开源项目贡献feature？.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Owner如何为自己的项目开发feature？ 的大纲"
+              "title": "如何为开源项目贡献feature？ 的大纲"
             }
           },
           {
@@ -196,8 +196,8 @@
   },
   "active": "160bc3e7f124f275",
   "lastOpenFiles": [
-    "git/如何为开源项目贡献feature？.md",
     "git/Owner如何为自己的项目开发feature？.md",
+    "git/如何为开源项目贡献feature？.md",
     "控制理论/基础知识/数学基础.md",
     "git",
     "控制理论/控制障碍函数CBF/Bayesian CBF.md",
