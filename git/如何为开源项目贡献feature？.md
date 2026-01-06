@@ -1,7 +1,7 @@
 ---
 title: 如何为开源项目贡献feature？
 created: 2026-01-05 11:42:36
-updated: 2026-01-05 11:45:22
+updated: 2026-01-06 10:08:44
 ---
 
 - ✅ **新建 feature 分支开发**
@@ -300,4 +300,5 @@ git branch -d feature/my-awesome-feature
 > **本地 main 只做镜像，不写代码；  
 > 每个功能一个 feature 分支；  
 > 经常 fetch + rebase upstream/main；  
-> push 到自己 fork，PR 到原项目。**
+> push 到自己 fork，PR 到原项目。
+
