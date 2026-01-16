@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "强化学习/安全强化学习/PPO-Langrangian.md",
+                "file": "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "PPO-Langrangian"
+              "title": "10.Actor-Critic Methods"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "强化学习/安全强化学习/PPO-Langrangian.md",
+                "file": "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "PPO-Langrangian 的大纲"
+              "title": "10.Actor-Critic Methods 的大纲"
             }
           },
           {
@@ -196,15 +196,17 @@
   },
   "active": "160bc3e7f124f275",
   "lastOpenFiles": [
-    "工具链/c+cpp/cpp/gcc及g++.md",
+    "强化学习/笔记-强化学习的数学原理/Actor-Critic.graph.md",
+    "强化学习/笔记-强化学习的数学原理/7.Temporal-Difference Learning（TD learning）.md",
+    "强化学习/笔记-强化学习的数学原理/8.Value Function Approximation (VFA).md",
     "强化学习/安全强化学习/PPO-Langrangian.md",
+    "工具链/c+cpp/cpp/gcc及g++.md",
     "强化学习/安全强化学习",
     "工具链/c+cpp/cpp/左右值.md",
     "工具链/c+cpp/cmake/make与cmake.md",
     "工具链/linux/常用bash指令.md",
     "强化学习/笔记-强化学习的数学原理/1.基本概念.md",
     "强化学习/笔记-强化学习的数学原理/0.引言.md",
-    "强化学习/笔记-强化学习的数学原理/7.Temporal-Difference Learning（TD learning）.md",
     "工具链/git/如何为开源项目贡献feature？.md",
     "工具链/git/Owner如何为自己的项目开发feature？.md",
     "控制理论/基础知识/数学基础.md",
@@ -213,12 +215,10 @@
     "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",
     "强化学习/笔记-强化学习的数学原理/9.Policy Gradient Methods.md",
     "强化学习",
-    "强化学习/笔记-强化学习的数学原理/Actor-Critic.graph.md",
     "强化学习/笔记-强化学习的数学原理/DQN.grpah.md",
     "强化学习/笔记-强化学习的数学原理/3.Bellman Optimality Equation（BOE）.md",
     "强化学习/笔记-强化学习的数学原理/4.model-based methods.md",
     "强化学习/笔记-强化学习的数学原理/5.Monte-Carlo Methods（model-free）.md",
-    "强化学习/笔记-强化学习的数学原理/8.Value Function Approximation (VFA).md",
     "强化学习/笔记-强化学习的数学原理/6.Stochasted Approximation Theory.md",
     "强化学习/笔记-强化学习的数学原理/2.Bellman Equation.md",
     "计算机视觉/基本概念.md",
