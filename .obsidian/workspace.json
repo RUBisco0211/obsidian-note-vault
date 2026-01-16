@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工具链/python/库/pytorch/torch.util.data/Dataset.md",
+                "file": "工具链/shell/类unix常用shell指令.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Dataset"
+              "title": "类unix常用shell指令"
             }
           }
         ]
@@ -105,6 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "工具链/shell/类unix常用shell指令.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "类unix常用shell指令 的反向链接列表"
             }
           },
           {
@@ -123,12 +124,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "控制理论/基础知识/数学基础.md",
+                "file": "工具链/shell/类unix常用shell指令.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "数学基础 的出链列表"
+              "title": "类unix常用shell指令 的出链列表"
             }
           },
           {
@@ -152,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工具链/python/库/pytorch/torch.util.data/Dataset.md",
+                "file": "工具链/shell/类unix常用shell指令.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Dataset 的大纲"
+              "title": "类unix常用shell指令 的大纲"
             }
           },
           {
@@ -167,8 +168,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -194,14 +195,14 @@
       "vitepress-publisher:start vitepress": false
     }
   },
-  "active": "160bc3e7f124f275",
+  "active": "6c9f9b8a96d96c19",
   "lastOpenFiles": [
+    "工具链/python/库/pytorch/torch.nn/Module.md",
+    "工具链/python/库/pytorch/torch.util.data/Dataset.md",
     "工具链/python/库/pytorch/torchvision/tv_tensors.md",
     "工具链/python/库/pytorch/torchvision/transforms.md",
-    "工具链/python/库/pytorch/torch.util.data/Dataset.md",
     "工具链/python/库/pytorch/torch.util.data/DataLoader.md",
     "工具链/python/库/pytorch/torch.optim/Optimizer.md",
-    "工具链/python/库/pytorch/torch.nn/Module.md",
     "工具链/c+cpp/cpp/gcc及g++.md",
     "工具链/c+cpp/cpp/左右值.md",
     "工具链/c+cpp/cmake/make与cmake.md",
