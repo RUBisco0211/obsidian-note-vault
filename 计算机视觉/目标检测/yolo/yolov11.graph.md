@@ -3,13 +3,17 @@
 excalidraw-plugin: parsed
 tags: [excalidraw]
 
+title: Excalidraw Data
+created: 2025-12-26 15:25:52
+updated: 2026-01-16 22:44:01
 ---
-==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
 
+==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
 
 # Excalidraw Data
 
 ## Text Elements
+
 0 Conv ^sXb9ka4e
 
 1 Conv ^A6FSManz

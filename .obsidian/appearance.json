@@ -4,7 +4,7 @@
   "baseFontSizeAction": true,
   "monospaceFontFamily": "Jetbrains Mono",
   "accentColor": "#8067bc",
-  "cssTheme": "Minimal",
+  "cssTheme": "Border",
   "showRibbon": true,
   "nativeMenus": false,
   "showViewHeader": true,
