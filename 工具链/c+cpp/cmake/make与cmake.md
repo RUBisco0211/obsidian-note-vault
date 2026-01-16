@@ -1,3 +1,8 @@
+---
+title: make与cmake
+created: 2025-12-26 15:25:52
+updated: 2026-01-16 11:34:30
+---
 #### make 构建流程
 
 1. 编写 Makefile

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "git/如何为开源项目贡献feature？.md",
+                "file": "强化学习/安全强化学习/PPO-Langrangian.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "如何为开源项目贡献feature？"
+              "title": "PPO-Langrangian"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "git/如何为开源项目贡献feature？.md",
+                "file": "强化学习/安全强化学习/PPO-Langrangian.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "如何为开源项目贡献feature？ 的大纲"
+              "title": "PPO-Langrangian 的大纲"
             }
           },
           {
@@ -196,10 +196,19 @@
   },
   "active": "160bc3e7f124f275",
   "lastOpenFiles": [
-    "git/Owner如何为自己的项目开发feature？.md",
-    "git/如何为开源项目贡献feature？.md",
+    "工具链/c+cpp/cpp/gcc及g++.md",
+    "强化学习/安全强化学习/PPO-Langrangian.md",
+    "强化学习/安全强化学习",
+    "工具链/c+cpp/cpp/左右值.md",
+    "工具链/c+cpp/cmake/make与cmake.md",
+    "工具链/linux/常用bash指令.md",
+    "强化学习/笔记-强化学习的数学原理/1.基本概念.md",
+    "强化学习/笔记-强化学习的数学原理/0.引言.md",
+    "强化学习/笔记-强化学习的数学原理/7.Temporal-Difference Learning（TD learning）.md",
+    "工具链/git/如何为开源项目贡献feature？.md",
+    "工具链/git/Owner如何为自己的项目开发feature？.md",
     "控制理论/基础知识/数学基础.md",
-    "git",
+    "工具链/git",
     "控制理论/控制障碍函数CBF/Bayesian CBF.md",
     "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",
     "强化学习/笔记-强化学习的数学原理/9.Policy Gradient Methods.md",
@@ -211,27 +220,18 @@
     "强化学习/笔记-强化学习的数学原理/5.Monte-Carlo Methods（model-free）.md",
     "强化学习/笔记-强化学习的数学原理/8.Value Function Approximation (VFA).md",
     "强化学习/笔记-强化学习的数学原理/6.Stochasted Approximation Theory.md",
-    "强化学习/笔记-强化学习的数学原理/7.Temporal-Difference Learning（TD learning）.md",
-    "强化学习/笔记-强化学习的数学原理/1.基本概念.md",
-    "强化学习/笔记-强化学习的数学原理/0.引言.md",
     "强化学习/笔记-强化学习的数学原理/2.Bellman Equation.md",
     "计算机视觉/基本概念.md",
     "计算机视觉/目标检测/基本概念/损失函数.graph.md",
     "Excalidraw/Drawing 2025-11-29 10.37.14.excalidraw.md",
     "Excalidraw/Drawing 2025-11-29 10.37.07.excalidraw.md",
     "Excalidraw",
-    "计算机视觉/目标检测/基本概念/损失函数.md",
-    "计算机视觉/目标检测/基本概念/评估指标.md",
-    "计算机视觉/特征处理/图像特征提取.md",
-    "计算机视觉/特征处理/图像特征提取.graph.md",
-    "计算机视觉/网络/卷积神经网络.md",
     "工具链",
     "notes.base",
     "工具链/c+cpp/cpp",
     "工具链/c+cpp/cmake",
     "工具链/linux",
     "工具链/c+cpp",
-    "工具链/python",
     "未命名.canvas",
     "PixPin_2025-07-05_10-18-37.png",
     "src/PixPin_2025-07-05_10-02-03.png",
