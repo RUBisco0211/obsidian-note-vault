@@ -1,7 +1,7 @@
 ---
 title: Dataset
 created: 2025-12-26 15:25:52
-updated: 2026-01-16 21:53:39
+updated: 2026-01-16 22:49:22
 ---
 ## torchvison提供的数据集
 
@@ -62,14 +62,14 @@ class CustomImageDataset(Dataset):
         return image, label
 ```
 ---
-## 划分数据集
+### 划分数据集
 
 推荐使用`random_split`函数，不推荐手动对数据进行切片
 
 ```python
 from torch.utils.data import random_split
-# 划分原训练集为新训练集和验证集
-# split = (0.7, 0.3)
+## 划分原训练集为新训练集和验证集
+## split = (0.7, 0.3)
 train_size, val_size = int(split[0] * len(train_dataset)), int(split[1] * len(train_dataset))
 
 train_dataset, val_dataset = random_split(train_dataset, [train_size, val_size])

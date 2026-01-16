@@ -1,9 +1,10 @@
 ---
-title: 先给结论
+title: Owner如何为自己的项目开发feature？
 created: 2026-01-05 11:46:54
-updated: 2026-01-05 11:52:32
+updated: 2026-01-16 22:53:06
 ---
-# 先给结论
+
+先给结论
 
 > **即使你是项目 owner，也不建议直接在 `main` 上开发 feature。**
 
@@ -11,9 +12,6 @@ updated: 2026-01-05 11:52:32
 
 > **main = 可随时发布 / 可被别人依赖的稳定分支**
 
----
-
-# 作为 owner，推荐的标准工作流
 
 ### 你自己开发 feature 的正确姿势：
 
@@ -23,10 +21,6 @@ main
 ```
 
 流程和普通贡献者 **高度一致**，只是少了 fork / upstream。
-
----
-
-# owner 开发一个 feature 的完整流程（一步不漏）
 
 ## 确保 main 是干净、稳定的
 
@@ -42,7 +36,7 @@ git pull origin main
 > - main 上的代码 = 当前对外状态
 >     
 
----
+
 
 ## 从 main 新建 feature 分支
 
@@ -57,7 +51,7 @@ git checkout -b feature/my-new-feature
 - `chore/*`
 - `docs/*`
 
----
+
 
 ## 在 feature 分支上开发（和普通开发完全一样）
 
@@ -70,8 +64,6 @@ git commit -m "feat: add xxx support"
 
 ✔ 可以拆成多个小 commit  
 ✔ 提交信息越清晰，越方便 code review（哪怕 reviewer 是未来的你）
-
----
 
 ## 同步 main（当有其他人 push 或 PR 合并时）
 
@@ -91,7 +83,7 @@ git rebase origin/main
 
 > 把你的 feature 提交「挪到最新 main 后面」
 
----
+
 
 ## feature 开发完成 → 发 PR（哪怕是你自己）
 
@@ -114,7 +106,7 @@ compare: feature/my-new-feature
 - 自己 approve
 - 或要求至少 1 个 reviewer
 
----
+
 
 ## PR 通过后再合并到 main
 
@@ -131,8 +123,6 @@ compare: feature/my-new-feature
 - main 仍然线性
 
 ❌ 不推荐 `Create a merge commit`（除非你明确要保留分支结构）
-
----
 
 ## 如果你“就我一个人”，还需要这么麻烦吗？
 
@@ -157,7 +147,7 @@ compare: feature/my-new-feature
 
 **这套流程不用改。**
 
----
+
 
 ## owner 额外应该做的 5 件事（进阶）
 
@@ -170,7 +160,7 @@ GitHub → Settings → Branch protection rules：
 - 必须 CI 通过
 - 至少 1 个 review（可以是你自己）
 
----
+
 
 ### 2️写 `CONTRIBUTING.md`
 
@@ -181,7 +171,7 @@ GitHub → Settings → Branch protection rules：
 - 是否要求 rebase
 - commit message 规范
 
----
+
 
 ### 定义 commit message 规范
 
@@ -198,13 +188,9 @@ chore:
 
 为以后自动发版（semantic release）打基础。
 
----
-
 ### CI 只对 PR 和 main 跑
 
 避免 feature 分支浪费资源。
-
----
 
 ### release ≠ main（当项目变大）
 
@@ -214,9 +200,9 @@ release/*   ← 发布分支
 hotfix/*    ← 紧急修复
 ```
 
----
 
-# 一句话总结
+
+## 一句话总结
 
 > **我是 owner ≠ 我可以乱来**  
 > **main 永远稳定，feature 永远隔离**  

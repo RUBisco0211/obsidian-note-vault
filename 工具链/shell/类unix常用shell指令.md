@@ -1,10 +1,10 @@
 ---
-title: "`ls` 即 list"
+title: 类unix常用shell指令
 created: 2025-12-26 15:25:52
-updated: 2026-01-16 22:22:32
+updated: 2026-01-16 22:47:31
 reference: https://www.runoob.com/linux/linux-command-manual.html
 ---
-# `ls` 即 list
+## `ls` 即 list
 
 `ls` 列出目录下的文件和目录
 
@@ -14,7 +14,7 @@ reference: https://www.runoob.com/linux/linux-command-manual.html
 -   `-l` 列出目录下的文件和目录的详细信息
 -   `-la` 列出包括隐藏目录和文件的详细信息，缩写为`ll`
 
-## `ls -l` 的结果
+### `ls -l` 的结果
 
 ```shell
 -rwxr-xr-x 1 user group size date time your_script.sh
@@ -32,46 +32,46 @@ reference: https://www.runoob.com/linux/linux-command-manual.html
 - `date` 和 `time` 代表文件最后修改的日期和时间。
 - 最后是文件名 `your_script.sh`。
 
-# `cd` 即 change directory
+## `cd` 即 change directory
 
 `cd {相对或绝对路径}` 切换到某个目录
 
 `cd -` 回到上一个目录
 
-# `pwd` 即 print working directory
+## `pwd` 即 print working directory
 
 `pwd` 显示当前目录
 
-# `cat` 即 concatenate 连接文本文件
+## `cat` 即 concatenate 连接文本文件
 
 `cat {file1} {file2} ...` 连接文本文件并打印在控制台
 
 `cat {file1} {file2} ... > {output_file}` 把文本文件 file1、2...连接并写入 output_file
 
-# `head` 显示文本文件头部内容；`tail` 显示文本文件尾部内容
+## `head` 显示文本文件头部内容；`tail` 显示文本文件尾部内容
 
 参数：
 
 -   `--lines={行数}`
 
-# `less` 显示文本文件内容
+## `less` 显示文本文件内容
 
 快捷键：
 
 -   按`Q`退出
 
-# `file` 查看文件信息
+## `file` 查看文件信息
 
-# `which` 查看可执行文件路径
+## `which` 查看可执行文件路径
 
 ```bash
 rubisco0211@LAPTOP-OFVDFEMH:~/code/noob_json$ which gcc
 /usr/bin/gcc
 ```
 
-# `echo` 打印
+## `echo` 打印
 
-# `chmod` 即 change mode 修改文件权限
+## `chmod` 即 change mode 修改文件权限
 
 ```shell
 chmod [options] mode file_or_directory

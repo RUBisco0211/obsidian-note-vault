@@ -1,13 +1,13 @@
 ---
 title: 如何为开源项目贡献feature？
 created: 2026-01-05 11:42:36
-updated: 2026-01-06 10:27:24
+updated: 2026-01-16 22:50:58
 ---
 
 - ✅ **新建 feature 分支开发**
 - ✅ **持续跟进远程 main 分支上其他人的更改**
 
----
+
 
 ## 总体流程鸟瞰
 
@@ -31,7 +31,7 @@ Push 到自己的 fork
 向原项目发 Pull Request
 ```
 
----
+
 
 ## Fork 原项目
 
@@ -54,7 +54,7 @@ Push 到自己的 fork
 > - 向原项目发 **PR**
 >     
 
----
+
 
 ## Clone 你的 fork 
 
@@ -70,7 +70,7 @@ cd repo
 - **还不知道原项目在哪**
     
 
----
+
 
 ## 添加 upstream
 
@@ -100,7 +100,7 @@ upstream  https://github.com/owner/repo.git (push)
 > - `upstream`：原项目（所有人共同维护）
 >     
 
----
+
 
 ## 永远不要在 main 上直接开发
 
@@ -119,7 +119,7 @@ git reset --hard upstream/main
 - 本地 `main` 只是“基线”，不用来写代码
     
 
----
+
 
 ### 从最新 main 创建 feature 分支
 
@@ -136,7 +136,7 @@ git checkout -b feature/my-awesome-feature
 - `docs/xxx`
     
 
----
+
 
 ## 在 feature 分支上开发
 
@@ -149,8 +149,6 @@ git commit -m "feat: add xxx support"
 
 你可以多次 commit，没问题。
 
----
-
 ## 跟进 upstream/main 的最新改动
 
 在你开发期间，**别人可能已经往 main 合并了新代码**，你必须同步。
@@ -161,7 +159,7 @@ git commit -m "feat: add xxx support"
 git fetch upstream
 ```
 
----
+
 
 ### 推荐方式：rebase（开源项目首选）
 
@@ -187,7 +185,7 @@ git add <冲突文件>
 git rebase --continue
 ```
 
----
+
 
 ### ⚠️ 为什么不用 merge？
 
@@ -206,7 +204,7 @@ Merge branch 'main'
 > 👉 看项目的 `CONTRIBUTING.md`  
 > 没写的话：**默认 rebase**
 
----
+
 
 ## 推送 feature 分支到你的 fork
 
@@ -223,7 +221,7 @@ git push --force-with-lease origin feature/my-awesome-feature
 > `--force-with-lease` 比 `--force` 安全  
 > 不会误覆盖别人提交
 
----
+
 
 ## 在 GitHub 上创建 Pull Request
 
@@ -260,7 +258,7 @@ git push --force-with-lease origin feature/my-awesome-feature
 - [ ] 单元测试
 ```
 
----
+
 
 ## PR 审核期间你还可以继续改
 
@@ -280,8 +278,6 @@ git push origin feature/my-awesome-feature
 
 PR 会 **自动更新**
 
----
-
 ## PR 合并后你本地该怎么做
 
 ```bash
@@ -292,8 +288,6 @@ git branch -d feature/my-awesome-feature
 ```
 
 下一个需求 → 新建新 feature 分支
-
----
 
 ## 一句话总结
 

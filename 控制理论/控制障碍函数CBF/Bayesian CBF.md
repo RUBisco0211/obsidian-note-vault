@@ -4,7 +4,7 @@ code: https://github.com/wecacuee/Bayesian_CBF
 home: https://vikasdhiman.info/Bayesian_CBF/
 title: Bayesian CBF
 created: 2025-11-29 10:21:22
-updated: 2025-12-12 10:26:38
+updated: 2026-01-16 22:55:36
 ---
 ## 引言
 
@@ -554,19 +554,22 @@ $$
 假设系统动力学以至少$1 - \delta_{L}$的概率为Lipschitz连续的
 $h$的Lipschitz常数为$L_{h_{k}}$
 则在时间段$[t_{k}, t_{k} + \tau_{k})$内以至少$p_{k} = \tilde{p_{k}}(1 - \delta_{L})$的概率满足：
-$$h(x(t)) \geq 0, \forall t \in [t_{k}, t_{k} + \tau_{k})
 $$
 
+h(x(t)) \geq 0, \forall t \in [t_{k}, t_{k} + \tau_{k})
+
+$$
 其中${\tau }_{k} \leq  \frac{1}{{L}_{{\mathbf{f}}_{k}}}\ln \left( {1 + \frac{{L}_{{\mathbf{f}}_{k}}{\zeta }_{b}}{{L}_{{h}_{k}}\begin{Vmatrix}{\dot{\mathbf{x}}}_{k}\end{Vmatrix}}}\right) .$
 
 ---
 ## 相对度为2的特殊情况
 
 本部分为计算相对度为2的安全条件的均值和方差提供了一种高效方法：
-
-$$\mathrm{CBC}^{(2)}(\mathbf{x}, \mathbf{u})=\left[\nabla_{\mathbf{x}} \mathcal{L}_f h(\mathbf{x})\right]^{\top} F(\mathbf{x}) \underline{\mathbf{u}}+\left[h(\mathbf{x}), \mathcal{L}_f h(\mathbf{x})\right]^{\top} \mathbf{k}_\alpha
 $$
 
+\mathrm{CBC}^{(2)}(\mathbf{x}, \mathbf{u})=\left[\nabla_{\mathbf{x}} \mathcal{L}_f h(\mathbf{x})\right]^{\top} F(\mathbf{x}) \underline{\mathbf{u}}+\left[h(\mathbf{x}), \mathcal{L}_f h(\mathbf{x})\right]^{\top} \mathbf{k}_\alpha
+
+$$
 $\text{CBC}^{(2)}(x,u)$为一随机过程，其分布由高斯过程$\text{vec}(F(x))$引入
 
 其中各部分的计算图如下，包括点乘以及取梯度两种操作：
@@ -574,22 +577,39 @@ $\text{CBC}^{(2)}(x,u)$为一随机过程，其分布由高斯过程$\text{vec}(
 ![PixPin_2025-09-13_19-02-01.png](https://cloudflare-imgbed-1v8.pages.dev/file/img/note/paper/1757761333066_PixPin_2025-09-13_19-02-01.png)
 
 **引理5**：通过高斯随机向量$\mathbf{x},\mathbf{y},\mathbf{z}$的均值$\bar{\mathbf{x}},\bar{\mathbf{y}},\bar{\mathbf{z}}$和方差$Var[\mathbf{x}],Var[\mathbf{y}],Var[\mathbf{z}]$以及两两协方差$\text{cov}(\mathbf{x},\mathbf{y}),\text{cov}(\mathbf{x},\mathbf{y}),\text{cov}(\mathbf{x},\mathbf{y})$求$\mathbf{x}^\top \mathbf{y}$均值、方差以及$\mathbf{x},\mathbf{y},\mathbf{z}$与其的协方差的方法
-$$\begin{gathered}
-\mathbb{E}[\mathbf{x}^{\top}\mathbf{y}]=\bar{\mathbf{x}}^{\top}\bar{\mathbf{y}}+\frac{1}{2}\operatorname{tr}(\operatorname{cov}(\mathbf{x},\mathbf{y})+\operatorname{cov}(\mathbf{y},\mathbf{x})) \\
-Var[\mathbf{x}^\top\mathbf{y}]=\frac{1}{2}\mathbf{tr}(\mathrm{cov}(\mathbf{x},\mathbf{y})+\mathrm{cov}(\mathbf{y},\mathbf{x}))^2+\bar{\mathbf{y}}^\top Var[\mathbf{x}]\bar{\mathbf{y}} \\
-+\bar{\mathbf{x}}^\top Var[\mathbf{y}]\bar{\mathbf{x}}+\bar{\mathbf{y}}^\top\mathrm{cov}(\mathbf{x},\mathbf{y})\bar{\mathbf{x}}+\bar{\mathbf{x}}^\top\mathrm{cov}(\mathbf{y},\mathbf{x})\bar{\mathbf{y}} \\
-\begin{bmatrix}
-\operatorname{cov}(\mathbf{x},\mathbf{x}^\top\mathbf{y}) \\
-\operatorname{cov}(\mathbf{y},\mathbf{x}^\top\mathbf{y}) \\
-\operatorname{cov}(\mathbf{z},\mathbf{x}^\top\mathbf{y})
-\end{bmatrix}=
-\begin{bmatrix}
-\operatorname{cov}(\mathbf{x},\mathbf{y})\bar{\mathbf{x}}+Var[\mathbf{x}]\bar{\mathbf{y}} \\
-Var[\mathbf{y}]\bar{\mathbf{x}}+\operatorname{cov}(\mathbf{y},\mathbf{x})\bar{\mathbf{y}} \\
-\operatorname{cov}(\mathbf{z},\mathbf{y})\bar{\mathbf{x}}+\operatorname{cov}(\mathbf{z},\mathbf{x})\bar{\mathbf{y}}
-\end{bmatrix}.
-\end{gathered}$$
+$$
 
+\begin{gathered}
+
+\mathbb{E}[\mathbf{x}^{\top}\mathbf{y}]=\bar{\mathbf{x}}^{\top}\bar{\mathbf{y}}+\frac{1}{2}\operatorname{tr}(\operatorname{cov}(\mathbf{x},\mathbf{y})+\operatorname{cov}(\mathbf{y},\mathbf{x})) \\
+
+Var[\mathbf{x}^\top\mathbf{y}]=\frac{1}{2}\mathbf{tr}(\mathrm{cov}(\mathbf{x},\mathbf{y})+\mathrm{cov}(\mathbf{y},\mathbf{x}))^2+\bar{\mathbf{y}}^\top Var[\mathbf{x}]\bar{\mathbf{y}} \\
+
++\bar{\mathbf{x}}^\top Var[\mathbf{y}]\bar{\mathbf{x}}+\bar{\mathbf{y}}^\top\mathrm{cov}(\mathbf{x},\mathbf{y})\bar{\mathbf{x}}+\bar{\mathbf{x}}^\top\mathrm{cov}(\mathbf{y},\mathbf{x})\bar{\mathbf{y}} \\
+
+\begin{bmatrix}
+
+\operatorname{cov}(\mathbf{x},\mathbf{x}^\top\mathbf{y}) \\
+
+\operatorname{cov}(\mathbf{y},\mathbf{x}^\top\mathbf{y}) \\
+
+\operatorname{cov}(\mathbf{z},\mathbf{x}^\top\mathbf{y})
+
+\end{bmatrix}=
+
+\begin{bmatrix}
+
+\operatorname{cov}(\mathbf{x},\mathbf{y})\bar{\mathbf{x}}+Var[\mathbf{x}]\bar{\mathbf{y}} \\
+
+Var[\mathbf{y}]\bar{\mathbf{x}}+\operatorname{cov}(\mathbf{y},\mathbf{x})\bar{\mathbf{y}} \\
+
+\operatorname{cov}(\mathbf{z},\mathbf{y})\bar{\mathbf{x}}+\operatorname{cov}(\mathbf{z},\mathbf{x})\bar{\mathbf{y}}
+
+\end{bmatrix}.
+
+\end{gathered}
+
+$$
 **引理6**：令$q(\mathbf{x})$为一标量高斯过程，$\mu(\mathbf{x}): \mathbb{R}^n \rightarrow \mathbb{R}$为其可微的均值函数，$\kappa(\mathbf{x}， \mathbf{x'}): \mathbb{R}^n \times \mathbb{R}^n \rightarrow \mathbb{R}$为二阶可微的协方差函数（核函数）
 若$\nabla_{x} \mu(\mathbf{x})$对所有$\mathbf{x} \in \mathbb{R}$存在且有限，且核函数的海森矩阵$\mathcal{H}_{\mathbf{x},\mathbf{x'}}\kappa(\mathbf{x},\mathbf{x'}) = \left [\frac{\partial^2 \kappa(\mathbf{x},\mathbf{x'})}{\partial \mathbf{x_{i}},\partial \mathbf{x'}_{j}} \right]^{n,n}_{i=1,j=1}$对任意$(\mathbf{x},\mathbf{x'}) \in \mathbb{R}^{2n}$存在且有限
 则该GP存在一个均方导数$\nabla_{x} q(\mathbf{x})$且其也为一高斯过程
@@ -612,6 +632,14 @@ $\text{CBC}^{(2)}(\mathbf{x},\mathbf{u})$的均值和方差可根据**引理4**�
 1. 将$\underline{\mathbf{u}} = [1,\mathbf{0}_{m}^\top]^\top$代入**引理2**计算
 $$\mathbb{E}[\mathcal{L}_{f}h(\mathbf{x})] = \nabla_{\mathbf{x}}h(\mathbf{x})^\top \mathbf{M}_{k}(\mathbf{x})[1,\mathbf{0}_{m}^\top]
 $$$$Var[\mathcal{L}_{f}h(\mathbf{x})] = \left[\mathbf{B}_k\left(\mathbf{x}, \mathbf{x}^{\prime}\right)\right]_{1,1}\left(\nabla_{\mathbf{x}} h(\mathbf{x})^{\top} \mathbf{A} \nabla_{\mathbf{x}} h(\mathbf{x})\right)
+
+
+
+
 $$
+
+
+
+
 2. 
 

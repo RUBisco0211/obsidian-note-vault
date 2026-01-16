@@ -1,7 +1,7 @@
 ---
 title: transforms
 created: 2025-12-26 15:25:52
-updated: 2026-01-16 21:52:13
+updated: 2026-01-16 22:49:47
 ---
 ## 转换管道`Compose`
 
@@ -14,7 +14,7 @@ transform = transforms.Compose(
          transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),  # 标准化 / 均值归一化 
          ])
 
-# 加载数据
+## 加载数据
 train_dataset = datasets.CIFAR10(root=root, train=True, download=True, transform=transform)
 test_dataset = datasets.CIFAR10(root=root, train=False, download=True, transform=transform)
 ```
@@ -45,7 +45,7 @@ class RandomCrop:
         img_cropped = img.crop((left, top, left + crop_width, top + crop_height))
         return img_cropped
 
-# 使用自定义 Transform
+## 使用自定义 Transform
 transform = transforms.Compose([
     RandomCrop((100, 100)),  # 随机裁剪为 100x100
     transforms.ToTensor(),   # 转换为张量
@@ -78,7 +78,7 @@ transform = transforms.Compose([
 ```python
 import torchvision.transforms.v2 as T
 
-# ...
+## ...
 
 transforms = [
     T.Resize((512, 256)),
