@@ -4,11 +4,12 @@
   "baseFontSizeAction": true,
   "monospaceFontFamily": "Jetbrains Mono",
   "accentColor": "#8067bc",
-  "cssTheme": "AnuPpuccin",
+  "cssTheme": "",
   "showRibbon": true,
   "nativeMenus": false,
   "showViewHeader": true,
   "textFontFamily": "Comic Sans MS",
   "interfaceFontFamily": "",
-  "enabledCssSnippets": []
+  "enabledCssSnippets": [],
+  "translucency": false
 }
