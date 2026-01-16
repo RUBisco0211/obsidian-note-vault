@@ -195,8 +195,10 @@
       "vitepress-publisher:start vitepress": false
     }
   },
-  "active": "6c9f9b8a96d96c19",
+  "active": "160bc3e7f124f275",
   "lastOpenFiles": [
+    "未命名.canvas",
+    "工具链/shell/类unix常用shell指令.md",
     "工具链/python/库/pytorch/torch.nn/Module.md",
     "工具链/python/库/pytorch/torch.util.data/Dataset.md",
     "工具链/python/库/pytorch/torchvision/tv_tensors.md",
@@ -206,7 +208,6 @@
     "工具链/c+cpp/cpp/gcc及g++.md",
     "工具链/c+cpp/cpp/左右值.md",
     "工具链/c+cpp/cmake/make与cmake.md",
-    "工具链/shell/类unix常用shell指令.md",
     "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",
     "强化学习/笔记-强化学习的数学原理/Actor-Critic.graph.md",
     "强化学习/笔记-强化学习的数学原理/7.Temporal-Difference Learning（TD learning）.md",
@@ -225,7 +226,6 @@
     "强化学习/笔记-强化学习的数学原理/DQN.grpah.md",
     "强化学习/笔记-强化学习的数学原理/3.Bellman Optimality Equation（BOE）.md",
     "强化学习/笔记-强化学习的数学原理/4.model-based methods.md",
-    "强化学习/笔记-强化学习的数学原理/5.Monte-Carlo Methods（model-free）.md",
     "Excalidraw",
     "工具链",
     "notes.base",
@@ -233,7 +233,6 @@
     "工具链/c+cpp/cmake",
     "工具链/shell",
     "工具链/c+cpp",
-    "未命名.canvas",
     "PixPin_2025-07-05_10-18-37.png",
     "src/PixPin_2025-07-05_10-02-03.png",
     "src/PixPin_2025-07-05_10-13-06.png",

@@ -1,7 +1,7 @@
 ---
 title: "`ls` 即 list"
 created: 2025-12-26 15:25:52
-updated: 2026-01-16 21:48:10
+updated: 2026-01-16 22:22:32
 reference: https://www.runoob.com/linux/linux-command-manual.html
 ---
 # `ls` 即 list
