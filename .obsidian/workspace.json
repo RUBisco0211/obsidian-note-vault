@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工具链/linux/常用shell指令.md",
+                "file": "工具链/python/库/pytorch/torch.util.data/Dataset.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "常用shell指令"
+              "title": "Dataset"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工具链/linux/常用shell指令.md",
+                "file": "工具链/python/库/pytorch/torch.util.data/Dataset.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "常用shell指令 的大纲"
+              "title": "Dataset 的大纲"
             }
           },
           {
@@ -196,16 +196,22 @@
   },
   "active": "160bc3e7f124f275",
   "lastOpenFiles": [
+    "工具链/python/库/pytorch/torchvision/tv_tensors.md",
+    "工具链/python/库/pytorch/torchvision/transforms.md",
+    "工具链/python/库/pytorch/torch.util.data/Dataset.md",
+    "工具链/python/库/pytorch/torch.util.data/DataLoader.md",
+    "工具链/python/库/pytorch/torch.optim/Optimizer.md",
+    "工具链/python/库/pytorch/torch.nn/Module.md",
+    "工具链/c+cpp/cpp/gcc及g++.md",
+    "工具链/c+cpp/cpp/左右值.md",
+    "工具链/c+cpp/cmake/make与cmake.md",
+    "工具链/shell/类unix常用shell指令.md",
     "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",
     "强化学习/笔记-强化学习的数学原理/Actor-Critic.graph.md",
     "强化学习/笔记-强化学习的数学原理/7.Temporal-Difference Learning（TD learning）.md",
     "强化学习/笔记-强化学习的数学原理/8.Value Function Approximation (VFA).md",
     "强化学习/安全强化学习/PPO-Langrangian.md",
-    "工具链/c+cpp/cpp/gcc及g++.md",
     "强化学习/安全强化学习",
-    "工具链/c+cpp/cpp/左右值.md",
-    "工具链/c+cpp/cmake/make与cmake.md",
-    "工具链/linux/常用shell指令.md",
     "强化学习/笔记-强化学习的数学原理/1.基本概念.md",
     "强化学习/笔记-强化学习的数学原理/0.引言.md",
     "工具链/git/如何为开源项目贡献feature？.md",
@@ -219,18 +225,12 @@
     "强化学习/笔记-强化学习的数学原理/3.Bellman Optimality Equation（BOE）.md",
     "强化学习/笔记-强化学习的数学原理/4.model-based methods.md",
     "强化学习/笔记-强化学习的数学原理/5.Monte-Carlo Methods（model-free）.md",
-    "强化学习/笔记-强化学习的数学原理/6.Stochasted Approximation Theory.md",
-    "强化学习/笔记-强化学习的数学原理/2.Bellman Equation.md",
-    "计算机视觉/基本概念.md",
-    "计算机视觉/目标检测/基本概念/损失函数.graph.md",
-    "Excalidraw/Drawing 2025-11-29 10.37.14.excalidraw.md",
-    "Excalidraw/Drawing 2025-11-29 10.37.07.excalidraw.md",
     "Excalidraw",
     "工具链",
     "notes.base",
     "工具链/c+cpp/cpp",
     "工具链/c+cpp/cmake",
-    "工具链/linux",
+    "工具链/shell",
     "工具链/c+cpp",
     "未命名.canvas",
     "PixPin_2025-07-05_10-18-37.png",

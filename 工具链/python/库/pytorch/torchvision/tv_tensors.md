@@ -1,3 +1,8 @@
+---
+title: tv_tensors
+created: 2025-12-26 15:25:52
+updated: 2026-01-16 21:51:05
+---
 ## `torch.Tensor`的一些子类
 
 ```python

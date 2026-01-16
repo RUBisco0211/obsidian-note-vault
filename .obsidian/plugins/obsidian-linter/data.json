@@ -272,7 +272,7 @@
   },
   "lintOnSave": true,
   "recordLintOnSaveLogs": false,
-  "displayChanged": true,
+  "displayChanged": false,
   "lintOnFileChange": true,
   "displayLintOnFileChangeNotice": true,
   "settingsConvertedToConfigKeyValues": true,

@@ -1,15 +1,15 @@
 ---
-title: make与cmake
+title: make 构建流程
 created: 2025-12-26 15:25:52
-updated: 2026-01-16 11:34:30
+updated: 2026-01-16 21:48:24
 ---
-#### make 构建流程
+# make 构建流程
 
 1. 编写 Makefile
    make 会自动查找`makefile`或`Makefile`文件，一般用`Makefile`
 2. 执行`make`或用`-f {文件路径}`指定文件
 
-#### Makefile 编写
+# Makefile 编写
 
 -   make 规则格式
 

@@ -1,4 +1,9 @@
-## 使用[Dataset](Dataset.md)创建`DataLoader`
+---
+title: 使用Dataset创建`DataLoader`
+created: 2025-12-26 15:25:52
+updated: 2026-01-16 21:49:39
+---
+# 使用[Dataset](Dataset.md)创建`DataLoader`
 
 ```python
 from torch.utils.data import DataLoader
@@ -14,7 +19,7 @@ train_dataloader = DataLoader(training_data, batch_size=64, shuffle=True)
 test_dataloader = DataLoader(test_data, batch_size=64, shuffle=True)
 ```
 ---
-## 迭代
+# 迭代
 
 `DataLoader`可迭代，其元素为对应`Dataset`的`__getitem__`方法返回的数据，但被整合为`batch_size`大小的`Tensor`，即其第一维度大小为`batch_size`
 
@@ -28,6 +33,7 @@ for batch in dataloader:
     print("Target shape:", targets.shape)  # 输出: torch.Size([10])
 ```
 ---
+
 使用[`tqdm`](tqdm.md)迭代
 
 ```python

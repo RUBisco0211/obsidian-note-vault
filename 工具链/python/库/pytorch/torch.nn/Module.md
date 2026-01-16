@@ -1,4 +1,9 @@
-## 所有模型的基类
+---
+title: 所有模型的基类
+created: 2025-12-26 15:25:52
+updated: 2026-01-16 21:49:22
+---
+# 所有模型的基类
 
 - 需要实现`__init__`方法（构造函数）和`forward`前向传播方法
 - `Module`内部实现了`__call__`方法并调用了用户实现的`forward`函数，故可以实现**自动微分**
@@ -19,7 +24,7 @@ class Model(nn.Module):
 ```
 
 ---
-## 方法
+# 方法
 
 - `add_module(name, module)`: 可以通过`name`作为属性名来访问对应的子模块
 - `cuda(device)`: 把模型部署到gpu上
@@ -31,7 +36,7 @@ class Model(nn.Module):
 - ...
 
 ---
-## 保存模型参数
+# 保存模型参数
 
 - `torch.save(state_dict, path)`: 保存模型参数到文件
 - `torch.load(path)`: 加载参数文件
