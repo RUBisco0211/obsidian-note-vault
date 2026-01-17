@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",
+                "file": "工具链/python/库/torchvision/tv_tensors.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,23 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "10.Actor-Critic Methods"
-            }
-          },
-          {
-            "id": "7f5f89e0181fc690",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.11.4"
+              "title": "tv_tensors"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -166,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",
+                "file": "工具链/python/库/torchvision/tv_tensors.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "10.Actor-Critic Methods 的大纲"
+              "title": "tv_tensors 的大纲"
             }
           },
           {
@@ -207,8 +194,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7f5f89e0181fc690",
+  "active": "160bc3e7f124f275",
   "lastOpenFiles": [
+    "工具链/python/库/pyrallis.md",
+    "工具链/python/库/torchvision/transforms.md",
+    "工具链/python/库/tqdm.md",
+    "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",
     "强化学习/安全强化学习/PPO-Langrangian.md",
     "控制理论/控制障碍函数CBF/Stochastic Neural CBF.md",
     "控制理论/控制障碍函数CBF/Risk-Aware CBF.md",
@@ -219,9 +210,7 @@
     "工具链/c+cpp/cmake/make与cmake.md",
     "工具链/git/如何为开源项目贡献feature？.md",
     "工具链/git/Owner如何为自己的项目开发feature？.md",
-    "工具链/python/库/tqdm.md",
-    "工具链/python/库/pytorch/torchvision/tv_tensors.md",
-    "工具链/python/库/pytorch/torchvision/transforms.md",
+    "工具链/python/库/torchvision/tv_tensors.md",
     "工具链/python/库/pytorch/torch.util.data/DataLoader.md",
     "工具链/python/库/pytorch/torch.util.data/Dataset.md",
     "工具链/python/库/pytorch/torch.optim/Optimizer.md",
@@ -233,8 +222,6 @@
     "计算机视觉/特征处理/图像特征提取.md",
     "计算机视觉/目标检测/yolo/yolov11.graph.md",
     "计算机视觉/目标检测/基本概念/损失函数.graph.md",
-    "计算机视觉/目标检测/基本概念/损失函数.md",
-    "计算机视觉/目标检测/基本概念/评估指标.md",
     "未命名.canvas",
     "强化学习/安全强化学习",
     "工具链/git",

@@ -5,7 +5,7 @@ updated: 2026-01-16 22:49:22
 ---
 ## torchvison提供的数据集
 
-使用数据转换器[`torchvision.transforms`](transforms.md)
+使用数据转换器[`torchvision.transforms`](../../torchvision/transforms.md)
 
 ```python
 import torch
