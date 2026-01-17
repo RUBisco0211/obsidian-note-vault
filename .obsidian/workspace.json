@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9db124849529c719",
+        "id": "f38c13007cd097d5",
         "type": "tabs",
         "children": [
           {
-            "id": "160bc3e7f124f275",
+            "id": "ee5b8388e23f7654",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工具链/python/库/torchvision/tv_tensors.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "tv_tensors"
+              "title": "新标签页"
             }
           }
         ]
@@ -153,13 +139,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工具链/python/库/torchvision/tv_tensors.md",
+                "file": "未命名.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "tv_tensors 的大纲"
+              "title": "未命名 的大纲"
             }
           },
           {
@@ -194,12 +180,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "160bc3e7f124f275",
+  "active": "a7647c4f7e52d880",
   "lastOpenFiles": [
+    "未命名.md",
+    "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",
+    "强化学习/笔记-强化学习的数学原理/Actor-Critic.graph.md",
+    "强化学习/笔记-强化学习的数学原理/7.Temporal-Difference Learning（TD learning）.md",
+    "强化学习/笔记-强化学习的数学原理/3.Bellman Optimality Equation（BOE）.md",
     "工具链/python/库/pyrallis.md",
+    "工具链/python/库/torchvision/tv_tensors.md",
     "工具链/python/库/torchvision/transforms.md",
     "工具链/python/库/tqdm.md",
-    "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",
     "强化学习/安全强化学习/PPO-Langrangian.md",
     "控制理论/控制障碍函数CBF/Stochastic Neural CBF.md",
     "控制理论/控制障碍函数CBF/Risk-Aware CBF.md",
@@ -210,7 +201,6 @@
     "工具链/c+cpp/cmake/make与cmake.md",
     "工具链/git/如何为开源项目贡献feature？.md",
     "工具链/git/Owner如何为自己的项目开发feature？.md",
-    "工具链/python/库/torchvision/tv_tensors.md",
     "工具链/python/库/pytorch/torch.util.data/DataLoader.md",
     "工具链/python/库/pytorch/torch.util.data/Dataset.md",
     "工具链/python/库/pytorch/torch.optim/Optimizer.md",
@@ -218,10 +208,6 @@
     "工具链/shell/类unix常用shell指令.md",
     "计算机视觉/基本概念.md",
     "计算机视觉/网络/卷积神经网络.md",
-    "计算机视觉/特征处理/图像特征提取.graph.md",
-    "计算机视觉/特征处理/图像特征提取.md",
-    "计算机视觉/目标检测/yolo/yolov11.graph.md",
-    "计算机视觉/目标检测/基本概念/损失函数.graph.md",
     "未命名.canvas",
     "强化学习/安全强化学习",
     "工具链/git",
