@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "强化学习/安全强化学习/CMDP.md",
+                "file": "工具链/shell/类unix常用shell指令.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "CMDP"
+              "title": "类unix常用shell指令"
             }
           }
         ]
@@ -153,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "强化学习/安全强化学习/CMDP.md",
+                "file": "工具链/shell/类unix常用shell指令.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "CMDP 的大纲"
+              "title": "类unix常用shell指令 的大纲"
             }
           },
           {
@@ -173,7 +173,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -194,12 +194,12 @@
       "templater-obsidian:Templater": true
     }
   },
-  "active": "ee5b8388e23f7654",
+  "active": "6c9f9b8a96d96c19",
   "lastOpenFiles": [
+    "强化学习/安全强化学习/CMDP.md",
     "强化学习/安全强化学习/PPO-Langrangian.md",
     "base.base",
     "工具链/c+cpp/cpp/gcc及g++.md",
-    "强化学习/安全强化学习/CMDP.md",
     "未命名.md",
     "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",
     "强化学习/笔记-强化学习的数学原理/Actor-Critic.graph.md",
