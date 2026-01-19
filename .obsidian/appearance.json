@@ -10,6 +10,8 @@
   "showViewHeader": true,
   "textFontFamily": "Comic Sans MS",
   "interfaceFontFamily": "",
-  "enabledCssSnippets": [],
+  "enabledCssSnippets": [
+    "custom"
+  ],
   "translucency": false
 }
