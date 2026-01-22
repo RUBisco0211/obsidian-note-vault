@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "强化学习/笔记-强化学习的数学原理/9.Policy Gradient Methods.md",
+                "file": "强化学习/安全强化学习/多目标优化MOO/Pareto Front.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "9.Policy Gradient Methods"
+              "title": "Pareto Front"
             }
           }
         ]
@@ -153,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "强化学习/笔记-强化学习的数学原理/9.Policy Gradient Methods.md",
+                "file": "强化学习/安全强化学习/多目标优化MOO/Pareto Front.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "9.Policy Gradient Methods 的大纲"
+              "title": "Pareto Front 的大纲"
             }
           },
           {
@@ -196,11 +196,15 @@
   },
   "active": "ee5b8388e23f7654",
   "lastOpenFiles": [
+    "强化学习/安全强化学习/CMDP.md",
+    "强化学习/安全强化学习/多目标优化MOO/Pareto Front.md",
+    "强化学习/安全强化学习/多目标优化MOO",
+    "强化学习/安全强化学习/未命名.md",
+    "强化学习/安全强化学习/PPO-Langrangian.md",
+    "强化学习/笔记-强化学习的数学原理/9.Policy Gradient Methods.md",
     "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",
     "强化学习/笔记-强化学习的数学原理/1.基本概念.md",
     "工具链/shell/类unix常用shell指令.md",
-    "强化学习/安全强化学习/CMDP.md",
-    "强化学习/安全强化学习/PPO-Langrangian.md",
     "base.base",
     "工具链/c+cpp/cpp/gcc及g++.md",
     "未命名.md",
@@ -220,9 +224,6 @@
     "工具链/git/如何为开源项目贡献feature？.md",
     "工具链/git/Owner如何为自己的项目开发feature？.md",
     "工具链/python/库/pytorch/torch.util.data/DataLoader.md",
-    "工具链/python/库/pytorch/torch.util.data/Dataset.md",
-    "工具链/python/库/pytorch/torch.optim/Optimizer.md",
-    "工具链/python/库/pytorch/torch.nn/Module.md",
     "未命名.canvas",
     "强化学习/安全强化学习",
     "工具链/git",
@@ -232,7 +233,6 @@
     "notes.base",
     "工具链/c+cpp/cpp",
     "工具链/c+cpp/cmake",
-    "工具链/shell",
     "PixPin_2025-07-05_10-18-37.png",
     "src/PixPin_2025-07-05_10-02-03.png",
     "src/PixPin_2025-07-05_10-13-06.png",
