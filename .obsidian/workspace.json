@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "强化学习/安全强化学习/多目标优化MOO/Pareto Front.md",
+                "file": "强化学习/笔记-强化学习的数学原理/1.基本概念.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,23 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Pareto Front"
-            }
-          },
-          {
-            "id": "2695db7bb94ab52e",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.5"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.11.5"
+              "title": "1.基本概念"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -166,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "强化学习/安全强化学习/多目标优化MOO/Pareto Front.md",
+                "file": "强化学习/笔记-强化学习的数学原理/1.基本概念.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Pareto Front 的大纲"
+              "title": "1.基本概念 的大纲"
             }
           },
           {
@@ -207,14 +194,15 @@
       "templater-obsidian:Templater": true
     }
   },
-  "active": "2695db7bb94ab52e",
+  "active": "ee5b8388e23f7654",
   "lastOpenFiles": [
-    "强化学习/笔记-强化学习的数学原理/0.引言.md",
     "强化学习/安全强化学习/多目标优化MOO/Pareto Front.md",
+    "强化学习/笔记-强化学习的数学原理/8.Value Function Approximation (VFA).md",
     "强化学习/安全强化学习/CMDP.md",
+    "强化学习/安全强化学习/PPO-Langrangian.md",
+    "强化学习/笔记-强化学习的数学原理/0.引言.md",
     "强化学习/安全强化学习/多目标优化MOO",
     "强化学习/安全强化学习/未命名.md",
-    "强化学习/安全强化学习/PPO-Langrangian.md",
     "强化学习/笔记-强化学习的数学原理/9.Policy Gradient Methods.md",
     "强化学习/笔记-强化学习的数学原理/10.Actor-Critic Methods.md",
     "强化学习/笔记-强化学习的数学原理/1.基本概念.md",
@@ -236,7 +224,6 @@
     "工具链/c+cpp/cpp/左右值.md",
     "工具链/c+cpp/cmake/make与cmake.md",
     "工具链/git/如何为开源项目贡献feature？.md",
-    "工具链/git/Owner如何为自己的项目开发feature？.md",
     "未命名.canvas",
     "强化学习/安全强化学习",
     "工具链/git",
