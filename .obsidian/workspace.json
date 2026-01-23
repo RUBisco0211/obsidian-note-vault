@@ -30,8 +30,21 @@
               "icon": "lucide-file",
               "title": "Pareto Front"
             }
+          },
+          {
+            "id": "2695db7bb94ab52e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.11.5"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -194,10 +207,11 @@
       "templater-obsidian:Templater": true
     }
   },
-  "active": "ee5b8388e23f7654",
+  "active": "2695db7bb94ab52e",
   "lastOpenFiles": [
-    "强化学习/安全强化学习/CMDP.md",
+    "强化学习/笔记-强化学习的数学原理/0.引言.md",
     "强化学习/安全强化学习/多目标优化MOO/Pareto Front.md",
+    "强化学习/安全强化学习/CMDP.md",
     "强化学习/安全强化学习/多目标优化MOO",
     "强化学习/安全强化学习/未命名.md",
     "强化学习/安全强化学习/PPO-Langrangian.md",
@@ -223,7 +237,6 @@
     "工具链/c+cpp/cmake/make与cmake.md",
     "工具链/git/如何为开源项目贡献feature？.md",
     "工具链/git/Owner如何为自己的项目开发feature？.md",
-    "工具链/python/库/pytorch/torch.util.data/DataLoader.md",
     "未命名.canvas",
     "强化学习/安全强化学习",
     "工具链/git",
